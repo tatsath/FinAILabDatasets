@@ -37,7 +37,7 @@ The data covered in this documentation include:
    :maxdepth: 1
    :caption: Content
 
-   Type/Equities
+   Type/Equity
    Type/FX
    Type/OptionFutures
    Type/FixedIncome
@@ -45,8 +45,8 @@ The data covered in this documentation include:
    Type/Crypto
    Type/News
    Type/Macroeconomic
-   Type/RealTime
-   Type/Financial Datasets
+   Type/Realtime
+   Type/FinancialDatasets
 
 
 Contributing
