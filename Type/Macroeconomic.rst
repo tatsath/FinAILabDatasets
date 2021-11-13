@@ -4,6 +4,8 @@
 Macroeconomic Data
 ================
 
+https://github.com/mortada/fredapi
+
 After training an agent, you may want to deploy/use it in an other language
 or framework, like PyTorch or `tensorflowjs <https://github.com/tensorflow/tfjs>`_.
 Stable Baselines does not include tools to export models to other frameworks, but

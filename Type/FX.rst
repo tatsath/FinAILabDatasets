@@ -8,6 +8,8 @@ The aim of this section is to help you doing reinforcement learning experiments.
 It covers general advice about RL (where to start, which algorithm to choose, how to evaluate an algorithm, ...),
 as well as tips and tricks when using a custom environment or implementing an RL algorithm.
 
+o	Alphavantage: https://github.com/RomelTorres/alpha_vantage
+
 
 General advice when using Reinforcement Learning
 ================================================

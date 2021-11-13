@@ -19,8 +19,28 @@ related to these building blocks of machine learning in finance are demonstrated
 utilized throughout this document.
 
 
-General advice when using Machine Learning
+Volume and price data:
 ================================================
+
+https://aroussi.com/post/download-options-data
+https://towardsdatascience.com/a-comprehensive-guide-to-downloading-stock-prices-in-python-2cd93ff821d4
+
+Importing many stocks:
+================================================
+
+Indices
+================================================
+
+Stock Splits and dividends
+================================================
+	Yahoo Finance
+	Alpha vantage
+
+Technical Indicators
+================================================
+	Alpha vantage
+
+
 
 TL;DR
 -----
@@ -54,7 +74,7 @@ and look at common preprocessing done on other environments (e.g. for `Atari <ht
 Please refer to *Tips and Tricks when creating a custom environment* paragraph below for more advice related to custom environments.
 
 
-Current Limitations of RL
+Importing many stocks:
 -------------------------
 
 You have to be aware of the current `limitations <https://www.alexirpan.com/2018/02/14/rl-hard.html>`_ of reinforcement learning.

@@ -1,7 +1,7 @@
-.. _OptionFuture:
+.. _Fundamentals:
 
 =================
-Options and Future
+Stock Fundamentals
 =================
 
 o	Yahoo Finance: https://aroussi.com/post/download-options-data

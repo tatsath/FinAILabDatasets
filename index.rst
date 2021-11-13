@@ -43,6 +43,7 @@ The data covered in this documentation include:
    Type/FixedIncome
    Type/Commodities
    Type/Crypto
+   Type/Fundamentals
    Type/News
    Type/Macroeconomic
    Type/Realtime
