@@ -1,7 +1,7 @@
 .. _FX:
 
 ======================================
-Interpretability
+FX
 ======================================
 
 The aim of this section is to help you doing reinforcement learning experiments.

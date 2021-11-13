@@ -1,7 +1,7 @@
 .. _FinancialDatasets:
 
 ===============
-Unsupervised Learning
+Financial Datasets
 ===============
 
 Most of the library tries to follow a sklearn-like syntax for the Reinforcement Learning algorithms.

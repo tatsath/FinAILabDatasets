@@ -1,6 +1,6 @@
 .. _ML_Sup:
 
-Supervised Learning
+Real Time Data
 ==========================
 
 To use the rl baselines with custom environments, they just need to follow the *gym* interface.

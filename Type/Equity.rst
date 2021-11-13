@@ -1,7 +1,7 @@
 .. _Equities:
 
 ======================================
-AI and Machine Learning in Finance
+Equities
 ======================================
 
 There is a new wave of machine learning and data science in finance, and the related
