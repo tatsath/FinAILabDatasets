@@ -1,15 +1,25 @@
-.. _ML_CheatSheets:
+.. _AI_ML_Fin:
 
 ======================================
-Machine Learning Cheatsheets
+AI and Machine Learning in Finance
 ======================================
 
-The aim of this section is to help you doing reinforcement learning experiments.
-It covers general advice about RL (where to start, which algorithm to choose, how to evaluate an algorithm, ...),
-as well as tips and tricks when using a custom environment or implementing an RL algorithm.
+There is a new wave of machine learning and data science in finance, and the related
+applications will transform the industry over the next few decades.
+Currently, most financial firms, including hedge funds, investment and retail banks,
+and fintech firms, are adopting and investing heavily in machine learning. Going for‐
+ward, financial institutions will need a growing number of machine learning and data
+science experts.
+Machine learning in finance has become more prominent recently due to the availa‐
+bility of vast amounts of data and more affordable computing power. The use of data
+science and machine learning is exploding exponentially across all areas of finance.
+The success of machine learning in finance depends upon building efficient infra‐
+structure, using the correct toolkit, and applying the right algorithms. The concepts
+related to these building blocks of machine learning in finance are demonstrated and
+utilized throughout this document.
 
 
-General advice when using Reinforcement Learning
+General advice when using Machine Learning
 ================================================
 
 TL;DR

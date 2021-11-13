@@ -10,7 +10,7 @@ Getting the Data is the most critical and most expensive part when working on ma
 However, in 95% of all cases where Finance Professionals or Researchers require Financial Data, it can actually be obtained from Free or low-priced web sources.
 Some of them provide powerful APIs and Python wrapper packages, which makes it easy and comfortable to import the data with and into Python.
 
-+++ This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code +++
+This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code
 
 The data covered in this documentation include:
 --------------------------------------
@@ -34,74 +34,19 @@ The data covered in this documentation include:
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Content
 
-   guide/quickstart
-   guide/AI_ML_Fin
-   guide/ML_Model_steps
-   guide/ML_Model_Python
-   guide/ML_Sup
-   guide/ML_UnSup
-   guide/ML_Reinforcement
-   guide/ML_NLP
-   guide/Interpretability
-   guide/MasterTemplate
-   guide/ML_CheatSheets
-   guide/Python_CheatSheets
-
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Supervised Learning
-
-  sup/lr
-  sup/rr
-  sup/logr
-  sup/svm
-  sup/knn
-  sup/lda
-  sup/cart
-  sup/ensemble
-  sup/ann
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Unsupervised-Dim Reduction
-
-  unsup/pca
-  unsup/KernelPCA
-  unsup/tsne
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Unsupervised-Clustering
-
-  unsup/kmeans
-  unsup/hierarchical
-  unsup/affinity_prop
-
-.. toctree::
-  :maxdepth: 1
-  :caption: RL Algorithms
-
-  rl/DQN
-  rl/PolicyGradient
-
-.. toctree::
-  :maxdepth: 1
-  :caption: NLP
-
-  NLP/preprocessing
-  NLP/feature_representation
-
-.. toctree::
-  :maxdepth: 1
-  :caption: Common
-
-  misc/changelog
-  misc/projects
-  misc/visualization
+   Type/Equities
+   Type/FX
+   Type/OptionFutures
+   Type/FixedIncome
+   Type/Commodities
+   Type/Crypto
+   Type/News
+   Type/Macroeconomic
+   Type/RealTime
+   Type/Financial Datasets
 
 
 Contributing

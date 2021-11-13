@@ -1,7 +1,11 @@
-.. _ML_Model_Python:
+.. _Crypto:
 
-Python for ML and AI in Finance
+Crypto
 =========
+
+Working through machine learning problems from end to end is critically important.
+Applied machine learning will not come alive unless the steps from beginning to end
+are well defined.
 
 A callback is a set of functions that will be called at given stages of the training procedure.
 You can use callbacks to access internal state of the RL model during training.

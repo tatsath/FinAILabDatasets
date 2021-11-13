@@ -1,7 +1,7 @@
-.. _ML_Reinforcement:
+.. _News:
 
 
-Reinforcement Learning
+News and Sentiments
 ================
 
 After training an agent, you may want to deploy/use it in an other language

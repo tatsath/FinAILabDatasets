@@ -1,6 +1,6 @@
-.. _ML_Model_steps:
+.. _Commodities:
 
-Modeling steps
+Commodities
 =========
 
 A callback is a set of functions that will be called at given stages of the training procedure.

@@ -1,7 +1,7 @@
-.. _ML_NLP:
+.. _Macroeconomic:
 
 
-Natural Language Processing
+Reinforcement Learning
 ================
 
 After training an agent, you may want to deploy/use it in an other language

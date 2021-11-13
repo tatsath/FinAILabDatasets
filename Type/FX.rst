@@ -1,7 +1,7 @@
-.. _AI_ML_Fin:
+.. _FX:
 
 ======================================
-AI and Machine Learning in Finance
+Interpretability
 ======================================
 
 The aim of this section is to help you doing reinforcement learning experiments.
