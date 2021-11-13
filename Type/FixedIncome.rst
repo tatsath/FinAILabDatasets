@@ -1,7 +1,7 @@
 .. _FixedIncome:
 
 ======================================
-Machine Learning Cheatsheets
+Fixed Income
 ======================================
 
 The aim of this section is to help you doing reinforcement learning experiments.

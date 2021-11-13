@@ -1,7 +1,7 @@
 .. _Macroeconomic:
 
 
-Reinforcement Learning
+Macroeconomic Data
 ================
 
 After training an agent, you may want to deploy/use it in an other language

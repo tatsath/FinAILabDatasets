@@ -1,6 +1,6 @@
 .. _Crypto:
 
-Crypto
+Cryptocurrencies
 =========
 
 Working through machine learning problems from end to end is critically important.

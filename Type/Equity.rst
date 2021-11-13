@@ -1,4 +1,4 @@
-.. _AI_ML_Fin:
+.. _Equities:
 
 ======================================
 AI and Machine Learning in Finance
