@@ -5,9 +5,8 @@ into two categories:
 1. You want to propose a new Data source and include it in the documentation
     - Create an python code about your intended data set and include the details under the "Data sources" and link the items to whichever section is good. 
 2. You want to implement a new item:
-    - Look at the outstanding issues here: https://github.com/hill-a/stable-baselines/issues
     - Look at the roadmap here: https://github.com/tatsath/FinAILabDatasets/projects/2
-    - Pick an issue or feature and comment on the task that you want to work on this feature.
+    - Pick a to do list or in progress list and comment on the task that you want to work on this feature.
     
 Once you finish implementing a additional items, please send a Pull Request to
 https://github.com/tatsath/FinAILabDatasets/
