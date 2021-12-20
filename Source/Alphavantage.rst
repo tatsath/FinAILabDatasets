@@ -8,7 +8,8 @@ Alpha Vantage provides enterprise-grade financial market data through a set of p
 To do:
 Add details from:
 https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-with-code/
-
+https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
+https://github.com/RomelTorres/alpha_vantage
 
 Fetching the data
 ---------------
