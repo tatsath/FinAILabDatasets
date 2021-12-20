@@ -4,6 +4,8 @@
 Financial Datasets
 ===============
 
+This page contains the details of the financial datasets
+
 Most of the library tries to follow a sklearn-like syntax for the Reinforcement Learning algorithms.
 
 Here is a quick example of how to train and run PPO2 on a cartpole environment:

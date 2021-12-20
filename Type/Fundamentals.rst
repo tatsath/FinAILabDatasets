@@ -6,20 +6,6 @@ Stock Fundamentals
 
 o	Yahoo Finance: https://aroussi.com/post/download-options-data
 
-Python-based master template for supervised regression, a time
-series model template, and the Jupyter notebook for all case studies
-presented is included in the Chapter 5 - Sup.
-Learning - Regression and Time Series models of the code repository
-for this book.
-For any new supervised regression–based case study, use the com‐
-mon template from the code repository, modify the elements spe‐
-cific to the case study, and borrow the concepts and insights from
-the case studies presented in this chapter. The template also
-includes the implementation and tuning of the ARIMA and LSTM
-models.3 The templates are designed to run on the cloud (i.e., Kag‐
-gle, Google Colab, and AWS). All the case studies have been
-designed on a uniform regression template.4
-
 `RL Baselines ZooO <https://github.com/araffin/rl-baselines-zoo>`_. is a collection of pre-trained Reinforcement Learning agents using
 Stable-Baselines.
 It also provides basic scripts for training, evaluating agents, tuning hyperparameters and recording videos.

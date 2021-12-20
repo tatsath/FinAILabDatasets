@@ -1,90 +1,31 @@
-.. _FX:
+.. _AlternativeData:
 
 ======================================
-FX
+Alternative Data
 ======================================
 
-o	Alphavantage: https://github.com/RomelTorres/alpha_vantage
 
 
-General advice when using Reinforcement Learning
+Volume and price data:
 ================================================
 
-TL;DR
------
+https://aroussi.com/post/download-options-data
+https://towardsdatascience.com/a-comprehensive-guide-to-downloading-stock-prices-in-python-2cd93ff821d4
 
-1. Read about RL and Stable Baselines
-2. Do quantitative experiments and hyperparameter tuning if needed
-3. Evaluate the performance using a separate test environment
-4. For better performance, increase the training budget
+Importing many stocks:
+================================================
 
+Indices
+================================================
 
-Like any other subject, if you want to work with RL, you should first read about it (we have a dedicated `resource page <rl.html>`_ to get you started)
-to understand what you are using. We also recommend you read Stable Baselines (SB) documentation and do the `tutorial <https://github.com/araffin/rl-tutorial-jnrr19>`_.
-It covers basic usage and guide you towards more advanced concepts of the library (e.g. callbacks and wrappers).
+Stock Splits and dividends
+================================================
+	Yahoo Finance
+	Alpha vantage
 
-Reinforcement Learning differs from other machine learning methods in several ways. The data used to train the agent is collected
-through interactions with the environment by the agent itself (compared to supervised learning where you have a fixed dataset for instance).
-This dependence can lead to vicious circle: if the agent collects poor quality data (e.g., trajectories with no rewards), then it will not improve and continue to amass
-bad trajectories.
-
-This factor, among others, explains that results in RL may vary from one run to another (i.e., when only the seed of the pseudo-random generator changes).
-For this reason, you should always do several runs to have quantitative results.
-
-Good results in RL are generally dependent on finding appropriate hyperparameters. Recent algorithms (PPO, SAC, TD3) normally require little hyperparameter tuning,
-however, *don't expect the default ones to work* on any environment.
-
-Therefore, we *highly recommend you* to take a look at the `RL zoo <https://github.com/araffin/rl-baselines-zoo>`_ (or the original papers) for tuned hyperparameters.
-A best practice when you apply RL to a new problem is to do automatic hyperparameter optimization. Again, this is included in the `RL zoo <https://github.com/araffin/rl-baselines-zoo>`_.
-
-When applying RL to a custom problem, you should always normalize the input to the agent (e.g. using VecNormalize for PPO2/A2C)
-and look at common preprocessing done on other environments (e.g. for `Atari <https://danieltakeshi.github.io/2016/11/25/frame-skipping-and-preprocessing-for-deep-q-networks-on-atari-2600-games/>`_, frame-stack, ...).
-Please refer to *Tips and Tricks when creating a custom environment* paragraph below for more advice related to custom environments.
-
-
-Current Limitations of RL
--------------------------
-
-You have to be aware of the current `limitations <https://www.alexirpan.com/2018/02/14/rl-hard.html>`_ of reinforcement learning.
-
-
-Model-free RL algorithms (i.e. all the algorithms implemented in SB) are usually *sample inefficient*. They require a lot of samples (sometimes millions of interactions) to learn something useful.
-That's why most of the successes in RL were achieved on games or in simulation only. For instance, in this `work <https://www.youtube.com/watch?v=aTDkYFZFWug>`_ by ETH Zurich, the ANYmal robot was trained in simulation only, and then tested in the real world.
-
-As a general advice, to obtain better performances, you should augment the budget of the agent (number of training timesteps).
-
-
-In order to achieve the desired behavior, expert knowledge is often required to design an adequate reward function.
-This *reward engineering* (or *RewArt* as coined by `Freek Stulp <http://www.freekstulp.net/>`_), necessitates several iterations. As a good example of reward shaping,
-you can take a look at `Deep Mimic paper <https://xbpeng.github.io/projects/DeepMimic/index.html>`_ which combines imitation learning and reinforcement learning to do acrobatic moves.
-
-One last limitation of RL is the instability of training. That is to say, you can observe during training a huge drop in performance.
-This behavior is particularly present in ``DDPG``, that's why its extension ``TD3`` tries to tackle that issue.
-Other method, like ``TRPO`` or ``PPO`` make use of a *trust region* to minimize that problem by avoiding too large update.
-
-
-How to evaluate an RL algorithm?
---------------------------------
-
-Because most algorithms use exploration noise during training, you need a separate test environment to evaluate the performance
-of your agent at a given time. It is recommended to periodically evaluate your agent for ``n`` test episodes (``n`` is usually between 5 and 20)
-and average the reward per episode to have a good estimate.
-
-As some policy are stochastic by default (e.g. A2C or PPO), you should also try to set `deterministic=True` when calling the `.predict()` method,
-this frequently leads to better performance.
-Looking at the training curve (episode reward function of the timesteps) is a good proxy but underestimates the agent true performance.
-
-
-.. note::
-
-	We provide an ``EvalCallback`` for doing such evaluation. You can read more about it in the :ref:`Callbacks <callbacks>` section.
-
-
-
-We suggest you reading `Deep Reinforcement Learning that Matters <https://arxiv.org/abs/1709.06560>`_ for a good discussion about RL evaluation.
-
-You can also take a look at this `blog post <https://openlab-flowers.inria.fr/t/how-many-random-seeds-should-i-use-statistical-power-analysis-in-deep-reinforcement-learning-experiments/457>`_
-and this `issue <https://github.com/hill-a/stable-baselines/issues/199>`_ by Cédric Colas.
+Technical Indicators
+================================================
+	Alpha vantage
 
 
 Which algorithm should I use?

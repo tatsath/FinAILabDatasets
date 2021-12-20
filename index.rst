@@ -35,9 +35,8 @@ The data covered in this documentation include:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Content
+   :caption: Categories
 
-   Type/Sources
    Type/Equity
    Type/FX
    Type/OptionFutures
@@ -47,8 +46,25 @@ The data covered in this documentation include:
    Type/Fundamentals
    Type/News
    Type/Macroeconomic
+   Type/AlternativeData
    Type/Realtime
    Type/FinancialDatasets
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Source
+
+   Source/YahooFinance
+   Source/Alphavantage
+   Source/FXCM
+   Source/quandl
+   Source/FRED
+   Source/Stooq
+
+.. toctree::
+  :maxdepth: 1
+  :caption: DataFrequency
+
 
 
 Contributing
@@ -56,7 +72,7 @@ Contributing
 
 To any interested in making the FinAIML better, there are still some improvements
 that need to be done.
-A full TODO list is available in the `roadmap <https://github.com/hill-a/stable-baselines/projects/1>`_.
+A full TODO list is available in the `roadmap <https://github.com/users/tatsath/projects/4>`_.
 
 If you want to contribute, please go through `CONTRIBUTING.md <https://github.com/tatsath/FinAILabDatasets/blob/master/CONTRIBUTING.md>`_ first.
 
