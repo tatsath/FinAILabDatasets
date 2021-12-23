@@ -6,7 +6,7 @@ Alphavantage
 Alpha Vantage provides enterprise-grade financial market data through a set of powerful and developer-friendly APIs. To set up this environment you will need to have an API key, it can be straightly taken from the documentation here.
 
 To do:
-Add details from:
+Add all the details:
 https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-with-code/
 https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
 https://github.com/RomelTorres/alpha_vantage

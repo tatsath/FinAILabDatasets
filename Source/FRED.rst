@@ -2,6 +2,10 @@
 
 FRED
 =========
+To Do:
+
+https://github.com/mortada/fredapi
+
 
 Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
 

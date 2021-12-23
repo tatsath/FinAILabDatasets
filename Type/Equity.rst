@@ -4,7 +4,12 @@
 Equities
 ======================================
 
-Refer to Details on Yahoo Finance `YahooFinance page <YahooFinance.html>`_
+To Do:
+
+- For each category the data can be retrieved from either or the source (i.e. yahoo finance, alphavantage)
+- Add the code for each of the items and refer to the source page in this documentation, wherever needed.
+
+Refer to Details on Yahoo Finance `YahooFinance page <Source/YahooFinance.html>`_
 
 Volume and price data:
 ================================================
