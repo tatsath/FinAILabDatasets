@@ -17,9 +17,12 @@ The quandl get method takes this stock market data as input and returns the open
 
 
 To do- Add details from following sites
-https://blog.quantinsti.com/stock-market-data-analysis-python/
-https://towardsdatascience.com/python-i-have-tested-quandl-api-and-how-to-get-real-estates-economics-data-in-one-line-of-code-a13806ca9bb
-https://medium.datadriveninvestor.com/financial-data-431b75975bb#cc62
+- https://blog.quantinsti.com/stock-market-data-analysis-python/
+- https://towardsdatascience.com/python-i-have-tested-quandl-api-and-how-to-get-real-estates-economics-data-in-one-line-of-code-a13806ca9bb
+- https://medium.datadriveninvestor.com/financial-data-431b75975bb#cc62
+- Add more description into each of the component.
+- Add the details about how to see the list of all tickers available for download in each section.
+- Provide a link to the jupyter notebook for this.
 
 
 

@@ -2,9 +2,12 @@
 
 FXCM
 =========
+https://fxcm-api.readthedocs.io/en/latest/fxcmpy.html
 
-Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
-
+To Do:
+- Add more description into each of the component.
+- Add the details about how to see the list of all tickers available for download in each section.
+- Provide a link to the jupyter notebook for this.
 
 Fetching the data
 ---------------

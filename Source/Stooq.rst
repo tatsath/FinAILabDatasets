@@ -1,10 +1,16 @@
-.. _YahooFinance:
+.. _Stooq:
 
-Yahoo Finance
+Stooq
 =========
 
-Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
+Stooq is an odd one. This website looks about 20 years old but it is a real hidden gem.
+By searching a ticker and going to ‘historical data’, you can get historical data going back over 20 years.
+You can also download a .csv. Unfortunately there is no API access but its a great resource nonetheless.
 
+To Do:
+
+- Add the details about how to see the list of all tickers available for download in each section.
+- Provide a link to the jupyter notebook for this.
 
 Fetching the data
 ---------------
