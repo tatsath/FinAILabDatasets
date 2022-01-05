@@ -1,7 +1,7 @@
 .. _Alphavantage:
 
 Alphavantage
-=========
+============
 
 Alpha Vantage provides enterprise-grade financial market data through a set of powerful and developer-friendly APIs. To set up this environment you will need to have an API key, it can be straightly taken from the documentation here.
 
@@ -12,14 +12,14 @@ https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-fre
 https://github.com/RomelTorres/alpha_vantage
 
 Fetching the data
----------------
+-----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
--  `6. Finanical Indices <#6>`__
+-  `1. Historical Price and Volume for 1 Stock. <#1>`_
+-  `2. Time Periods <#2>`_
+-  `3. Frequency <#3>`_
+-  `4. Split and Dividends <#4>`_
+-  `5. Many Stocks <#5>`_
+-  `6. Finanical Indices <#6>`_
 -  `7. Currencies <#7>`_
 - `8. Crypto <#8>`_
 - `9. Mutual Funds <#9>`_
@@ -27,110 +27,95 @@ Fetching the data
 - `11. Stock Fundamentals <#11>`_
 - `12.   Financials <#12>`_
 - `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`__
+- `14. Stream Real  Time Data <#14>`_
+- `15. Economic Indicators <#15>`_
+- `16. Technical Indicators <#16>`_
 
 .. code:: ipython3
 
-    import numpy as np
-    import yfinance as yf
+    from alpha_vantage.timeseries import TimeSeries
+    import pandas as pd
+    import time
+    import requests
+    from io import BytesIO
 
 Historical Price and Volume for 1 Stock
-----------
+---------------------------------------
 
 .. code:: ipython3
-    import numpy as np
-    import yfinance as yf
-    ticker = 'GE'
-    yf.download(ticker)
+
+    data = {
+    "function": "DIGITAL_CURRENCY_DAILY", # WEEKLY, MONTHLY possible
+    "symbol": "ETH",
+    "market": 'CNY',
+    "apikey": key
+    }
+    r = requests.get(url, params=data)
+    data = r.json()
+    crypto_df = pd.DataFrame(data['Time Series (Digital Currency Daily)']).T.reset_index()
+    crypto_df = crypto_df.rename(columns={"index": "Date"})
+    crypto_df['Date'] = pd.to_datetime(crypto_df['Date'])
 
 Adding Time Periods
-----------
+-------------------
 
 .. code:: ipython3
 
-    yf.download(ticker, start = "2014-01-01", end = "2018-12-31")
-    GE = yf.download(ticker, start = "2014-01-01", end = "2018-12-31")
-    GE.info()
+    weekly = {
+    "function": "DIGITAL_CURRENCY_WEEKLY", # WEEKLY, MONTHLY possible
+    "symbol": "ETH",
+    "market": 'CNY',
+    "apikey": key
+    }
 
-
-.. parsed-literal::
-
-    <class 'pandas.core.frame.DataFrame'>
-    DatetimeIndex: 1257 entries, 2014-01-02 to 2018-12-28
-    Data columns (total 6 columns):
-    Open         1257 non-null float64
-    High         1257 non-null float64
-    Low          1257 non-null float64
-    Close        1257 non-null float64
-    Adj Close    1257 non-null float64
-    Volume       1257 non-null int64
-    dtypes: float64(5), int64(1)
-    memory usage: 68.7 KB
-
-
-
-.. code:: ipython3
-
-    yf.download(ticker, period = "ytd")
-    yf.download(ticker, period = "1mo")
-    yf.download(ticker, period = "5d")
-    yf.download(ticker, period = "10y")
-
+    monthly = {
+    "function": "DIGITAL_CURRENCY_MONTHLY", # WEEKLY, MONTHLY possible
+    "symbol": "ETH",
+    "market": 'CNY',
+    "apikey": key
+    }
 
 Frequency Setting
-----------
+-----------------
 
 .. code:: ipython3
 
-    yf.download('GE',period='1mo',interval='1h')
-    yf.download('GE',period='1mo',interval='5m')
-    GE = yf.download('GE',period='5d',interval='5m')
-    #Pre or post market data
-    GE=yf.download('GE',prepost=True,period='5d',interval='5m')
+    ticker = 'TSLA'
+    interval = '1min'
+    api_key = key
+
+    api_url = f'https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={ticker}&interval={interval}&apikey={api_key}'
+    raw_df = requests.get(api_url).json()
+    df = pd.DataFrame(raw_df[f'Time Series ({interval})']).T
+    df = df.rename(columns = {'1. open': 'open', '2. high': 'high', '3. low': 'low', '4. close': 'close', '5. volume': 'volume'})
+    for i in df.columns:
+        df[i] = df[i].astype(float)
+    df.index = pd.to_datetime(df.index)
+    df = df.iloc[::-1]
+    df.tail()
 
 Stock Split and dividends
-----------
+-------------------------
 
 .. code:: ipython3
 
-    ticker = "AAPL"
-    # action = True for dividend and Stock Split
-    AAPL = yf.download(ticker, period="10y", actions = True)
-    AAPL.head()
+    ticker = "IBM"
+    url = 'https://www.alphavantage.co/query?function=OVERVIEW&symbol='+ticker+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
+    dividends = pd.DataFrame(data, index = ['Values'])
+    dividends = dividends[['DividendPerShare', 'DividendYield', 'DividendDate', 'ExDividendDate']].T
+
+Financial Indices
+-----------------
 
 .. code:: ipython3
 
-    AAPL[AAPL["Dividends"]>0]
-    AAPL.loc["2019-08-05":"2019-08-15"].diff()
-    AAPL[AAPL["Stock Splits"] > 0]
-    ticker = ['GE', 'AAPL','FB']
-     yf.download(ticker, period="5y")
-.. code:: ipython3
-
-     stock=yf.download(ticker, period="5y").Close
-
-
-FInancial Indices
- ---------------
-
-.. code:: ipython3
-
-    index = ['^DJI', '^GSPC']
-
-.. code:: ipython3
-
-    stock = yf.download(index,period='10y').Close
-
-
-.. code:: ipython3
-
-    #Total Return
-    index = ['^DJITR', '^SP500TR']
-
-.. code:: ipython3
-
-    indexes = yf.download(index,period='10y').Close
-
+    # premium feature, NOT FULLY TESTED
+    index = "DJI" # FCHI, IXIC, ...
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol='+index+'&outputsize=full&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
 
 
 Currencies
@@ -138,34 +123,23 @@ Currencies
 
 .. code:: ipython3
 
-    #Tickers
-    ticker1 = "EURUSD=X"
-    ticker2 = "USDEUR=X"
-
-.. code:: ipython3
-
-    yf.download(ticker1,period='5y')
-
-.. code:: ipython3
-
-    yf.download(ticker2,period='5y')
-
-
-
-
-
+    # Currency list: https://www.alphavantage.co/physical_currency_list/
+    currency_a = 'EUR'
+    currency_b = 'USD'
+    interval = '5min' # 1min, 5min, 15min, 30min, 60min
+    url = 'https://www.alphavantage.co/query?function=FX_INTRADAY&from_symbol=EUR&to_symbol=USD&interval=5min&apikey=demo'
+    r = requests.get(url)
+    data = r.json()
 
 Crypto
 ---------------
 
 .. code:: ipython3
 
-    #Tickers
-    ticker1 = ["BTC-USD", "ETH-USD"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,start='2019-08-01',end='2020-05-01')
+    ticker = 'ETH'
+    url = 'https://www.alphavantage.co/query?function=CRYPTO_INTRADAY&symbol='+ticker+'&market=USD&interval=5min&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
 
 
 
@@ -175,13 +149,10 @@ Mutual Funds
 
 .. code:: ipython3
 
-    #Tickers
-    #20+Y Treasury Bobd ETF and Vivoldi Multi-Strategy Fund Class
-    ticker1 = ["TLT", "OMOIX"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,start='2019-08-01',end='2020-05-01')
+    ticker = 'OMOIX'
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol='+ticker+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
 
 
 
@@ -191,103 +162,113 @@ Treasury Rates
 
 .. code:: ipython3
 
-    #10Y and 5Y Treasury Rates
-    ticker1 = ["^TNX", "^FVX"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,period="5y")
+    maturity = '10year' # 3month, 5year, 10year, 30year
+    interval = 'daily' # weekly, monthly
+    url = 'https://www.alphavantage.co/query?function=TREASURY_YIELD&interval='+interval+'&maturity='+maturity+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
 
 
 Stock Fundamentals
----------------
+------------------
 
 .. code:: ipython3
 
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
-
-.. code:: ipython3
-
-    dis.ticker
-
-
-.. parsed-literal::
-
-    'DIS'
-
-.. code:: ipython3
-
-    data=dis.history()
-
-.. code:: ipython3
-
-    ticker = ["MSFT","FB"]
-
-.. code:: ipython3
-
-    for i in ticker:
-        df.loc["{}".format(i)] = pd.Series(yf.Ticker(i).info)
-
-.. code:: ipython3
-
-    df.info()
+    ticker = "IBM"
+    url = 'https://www.alphavantage.co/query?function=OVERVIEW&symbol='+ticker+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
 
 Import Financials
----------------
+-----------------
 
 .. code:: ipython3
 
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
+    document = 'INCOME_STATEMENT' # BALANCE_SHEET, CASH_FLOW
+    url = 'https://www.alphavantage.co/query?function='+document+'&symbol=IBM&apikey=demo'
+    r = requests.get(url)
+    data = r.json()
+
+Stream Realtime Data
+--------------------
 
 .. code:: ipython3
 
-    dis.balance_sheet
+    def get_live_updates(symbol):
+        api_key = key
+        api_url = f'https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol={symbol}&apikey={api_key}'
+        raw_df = requests.get(api_url).json()
+        attributes = {'attributes':['symbol', 'open', 'high', 'low', 'price', 'volume', 'latest trading day', 'previous close', 'change', 'change percent']}
+        attributes_df = pd.DataFrame(attributes)
+        values = []
+        for i in list(raw_df['Global Quote']):
+            values.append(raw_df['Global Quote'][i])
+        values_dict = {'values':values}
+        values_df = pd.DataFrame(values).rename(columns = {0:'values'})
+        frames = [attributes_df, values_df]
+        df = pd.concat(frames, axis = 1, join = 'inner').set_index('attributes')
+        return df
+
+    ibm_updates = get_live_updates('IBM')
+    ibm_updates
+
+Economic Indicators
+-------------------
 
 .. code:: ipython3
 
-    dis.financials
+    gdp = {
+        "function": "REAL_GDP",
+        "interval": "annual", # quarterly
+        "apikey": key
+    }
+    treasury_yield = {
+        "function": "TREASURY_YIELD",
+        "interval": "weekly", # daily, monthly
+        "maturity": "3month", # OPTIONAL 5year, 10year, 30year
+        "apikey": key
+    }
+    federal_funds_rate = {
+        "function": "FEDERAL_FUNDS_RATE",
+        "interval": "weekly", # daily, monthly
+        "apikey": key
+    }
+    cpi = {
+        "function": "CPI",
+        "interval": "weekly", # daily, monthly
+        "apikey": key
+    }
+    inflation = {
+        "function": "INFLATION",
+        "interval": "weekly", # daily, monthly
+        "apikey": key
+    }
+    consumer_sentiment = {
+        "function": "CONSUMER_SENTIMENT",
+        "apikey": key
+    }
+    unemployment = {
+        "function": "UNEMPLOYMENT",
+        "apikey": key
+    }
+    r = requests.get(url, params=unemployment) # REPLACE 'params' with desired dict
+    data = r.json()
+    df = pd.DataFrame(data['data'])
+    df = crypto_df.set_index("date")
+
+Technical Indicators
+--------------------
 
 .. code:: ipython3
 
-    dis.cashflow
+    popular_ti = {
+        "function": "ADX", # REPLACE: EMA, RSI, ADX, SMA
+        "symbol": "IBM",
+        "interval": "weekly",
+        "time_period": "10",
+        "series_type": "open",
+        "apikey": key
+    }
 
-Put Call Option
----------------
-
-.. code:: ipython3
-
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
-
-.. code:: ipython3
-
-    dis.option_chain()
-
-.. code:: ipython3
-
-    calls = dis.option_chain()[0]
-    calls
-
-.. code:: ipython3
-
-    puts = dis.option_chain()[1]
-    puts
-
- ### Stream Realtime Data
-
-.. code:: ipython3
-
-    import time
-
-.. code:: ipython3
-
-    ticker1 ="EURUSD=X"
-    data = yf.download(ticker1,interval = '1m', period='1d')
-    print(data.index[-1], data.iloc[-1,3])
-    #Every 5 second data corresponding to 5 seconds
-    while True:
-        time.sleep(5)
-        data = yf.download(ticker1,interval = '1m', period='1d')
-        print(data.index[-1], data.iloc[-1,3])
+    r = requests.get(url, params=popular_ti)
+    data = r.json()
