@@ -21,17 +21,17 @@ Fetching the data
 -  `5. Many Stocks <#5>`_
 -  `6. Finanical Indices <#6>`_
 -  `7. Currencies <#7>`_
-- `8. Crypto <#8>`_
-- `9. Mutual Funds <#9>`_
-- `10. Treasury <#10>`_
-- `11. Stock Fundamentals <#11>`_
-- `12.   Financials <#12>`_
-- `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`_
-- `15. Economic Indicators <#15>`_
-- `16. Technical Indicators <#16>`_
+-  `8. Crypto <#8>`_
+-  `9. Mutual Funds <#9>`_
+-  `10. Treasury <#10>`_
+-  `11. Stock Fundamentals <#11>`_
+-  `12. Financials <#12>`_
+-  `13. Put Call Options <#13>`_
+-  `14. Stream Real  Time Data <#14>`_
+-  `15. Economic Indicators <#15>`_
+-  `16. Technical Indicators <#16>`_
 
-.. code:: ipython3
+.. code-block:: ipython3
 
     from alpha_vantage.timeseries import TimeSeries
     import pandas as pd
@@ -41,6 +41,10 @@ Fetching the data
 
 Historical Price and Volume for 1 Stock
 ---------------------------------------
+
+Link to the `historic price and volume of one stock`_ JupyterNB cell.
+
+.. _historic price and volume of one stock: Source/Alphavantage.ipynb#Historic-Stock-Price-and-Volume
 
 .. code:: ipython3
 
@@ -77,6 +81,9 @@ Adding Time Periods
 
 Frequency Setting
 -----------------
+Link to the `intraday data`_ JupyterNB cell.
+
+.. _intraday data: Source/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
@@ -96,6 +103,9 @@ Frequency Setting
 
 Stock Split and dividends
 -------------------------
+Link to the `dividends`_ JupyterNB cell.
+
+.. _dividends: Source/Alphavantage.ipynb#Dividends
 
 .. code:: ipython3
 
@@ -108,6 +118,9 @@ Stock Split and dividends
 
 Financial Indices
 -----------------
+Link to the `financial indices`_ JupyterNB cell.
+
+.. _Financial Indices: Source/Alphavantage.ipynb#Indices
 
 .. code:: ipython3
 
@@ -120,6 +133,9 @@ Financial Indices
 
 Currencies
 ---------------
+Link to the `currency exchange`_ JupyterNB cell.
+
+.. _Currency Exchange: Source/Alphavantage.ipynb#Currency-Exchange
 
 .. code:: ipython3
 
@@ -131,8 +147,11 @@ Currencies
     r = requests.get(url)
     data = r.json()
 
-Crypto
----------------
+Cryptocurrencies
+----------------
+Link to the `cryptocurrencies`_ JupyterNB cell.
+
+.. _Cryptocurrencies: Source/Alphavantage.ipynb#Cryptocurrencies
 
 .. code:: ipython3
 
@@ -146,6 +165,9 @@ Crypto
 
 Mutual Funds
 ---------------
+Link to the `mutual funds`_ JupyterNB cell.
+
+.. _Mutual Funds: Source/Alphavantage.ipynb#Mutual-Funds
 
 .. code:: ipython3
 
@@ -159,6 +181,9 @@ Mutual Funds
 
 Treasury Rates
 ---------------
+Link to the `treasury yield`_ JupyterNB cell.
+
+.. _Treasury Yield: Source/Alphavantage.ipynb#Treasury-Yield
 
 .. code:: ipython3
 
@@ -171,6 +196,9 @@ Treasury Rates
 
 Stock Fundamentals
 ------------------
+Link to the `intraday data`_ JupyterNB cell.
+
+.. _intraday data: Source/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
@@ -181,6 +209,9 @@ Stock Fundamentals
 
 Import Financials
 -----------------
+Link to the `financials`_ JupyterNB cell.
+
+.. _Financials: Source/Alphavantage.ipynb#Financials
 
 .. code:: ipython3
 
@@ -191,6 +222,9 @@ Import Financials
 
 Stream Realtime Data
 --------------------
+Link to the `realtime data`_ JupyterNB cell.
+
+.. _Realtime Data: Source/Alphavantage.ipynb#Realtime-Data
 
 .. code:: ipython3
 
@@ -214,6 +248,9 @@ Stream Realtime Data
 
 Economic Indicators
 -------------------
+Link to the `economic indicators`_ JupyterNB cell.
+
+.. _Economic Indicators: Source/Alphavantage.ipynb#Economic-Indicators
 
 .. code:: ipython3
 
@@ -258,6 +295,9 @@ Economic Indicators
 
 Technical Indicators
 --------------------
+Link to the `technical indicators`_ JupyterNB cell.
+
+.. _Technical Indicators: Source/Alphavantage.ipynb#Technical-Indicators
 
 .. code:: ipython3
 
