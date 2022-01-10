@@ -31,7 +31,7 @@ Fetching the data
 -  `15. Economic Indicators <#15>`_
 -  `16. Technical Indicators <#16>`_
 
-.. code-block:: ipython3
+.. code:: ipython3
 
     from alpha_vantage.timeseries import TimeSeries
     import pandas as pd
@@ -44,7 +44,7 @@ Historical Price and Volume for 1 Stock
 
 Link to the `historic price and volume of one stock`_ JupyterNB cell.
 
-.. _historic price and volume of one stock: Source/Alphavantage.ipynb#Historic-Stock-Price-and-Volume
+.. _historic price and volume of one stock: JupyterNotebooks/Alphavantage.ipynb#Historic-Stock-Price-and-Volume
 
 .. code:: ipython3
 
@@ -83,7 +83,7 @@ Frequency Setting
 -----------------
 Link to the `intraday data`_ JupyterNB cell.
 
-.. _intraday data: Source/Alphavantage.ipynb#Intraday-Data
+.. _intraday data: JupyterNotebooks/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
@@ -105,7 +105,7 @@ Stock Split and dividends
 -------------------------
 Link to the `dividends`_ JupyterNB cell.
 
-.. _dividends: Source/Alphavantage.ipynb#Dividends
+.. _dividends: JupyterNotebooks/Alphavantage.ipynb#Dividends
 
 .. code:: ipython3
 
@@ -120,7 +120,7 @@ Financial Indices
 -----------------
 Link to the `financial indices`_ JupyterNB cell.
 
-.. _Financial Indices: Source/Alphavantage.ipynb#Indices
+.. _Financial Indices: JupyterNotebooks/Alphavantage.ipynb#Indices
 
 .. code:: ipython3
 
@@ -135,7 +135,7 @@ Currencies
 ---------------
 Link to the `currency exchange`_ JupyterNB cell.
 
-.. _Currency Exchange: Source/Alphavantage.ipynb#Currency-Exchange
+.. _Currency Exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
 
 .. code:: ipython3
 
@@ -151,7 +151,7 @@ Cryptocurrencies
 ----------------
 Link to the `cryptocurrencies`_ JupyterNB cell.
 
-.. _Cryptocurrencies: Source/Alphavantage.ipynb#Cryptocurrencies
+.. _Cryptocurrencies: JupyterNotebooks/Alphavantage.ipynb#Cryptocurrencies
 
 .. code:: ipython3
 
@@ -167,7 +167,7 @@ Mutual Funds
 ---------------
 Link to the `mutual funds`_ JupyterNB cell.
 
-.. _Mutual Funds: Source/Alphavantage.ipynb#Mutual-Funds
+.. _Mutual Funds: JupyterNotebooks/Alphavantage.ipynb#Mutual-Funds
 
 .. code:: ipython3
 
@@ -183,7 +183,7 @@ Treasury Rates
 ---------------
 Link to the `treasury yield`_ JupyterNB cell.
 
-.. _Treasury Yield: Source/Alphavantage.ipynb#Treasury-Yield
+.. _Treasury Yield: JupyterNotebooks/Alphavantage.ipynb#Treasury-Yield
 
 .. code:: ipython3
 
@@ -198,7 +198,7 @@ Stock Fundamentals
 ------------------
 Link to the `intraday data`_ JupyterNB cell.
 
-.. _intraday data: Source/Alphavantage.ipynb#Intraday-Data
+.. _intraday data: JupyterNotebooks/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
@@ -211,7 +211,7 @@ Import Financials
 -----------------
 Link to the `financials`_ JupyterNB cell.
 
-.. _Financials: Source/Alphavantage.ipynb#Financials
+.. _Financials: JupyterNotebooks/Alphavantage.ipynb#Financials
 
 .. code:: ipython3
 
@@ -224,7 +224,7 @@ Stream Realtime Data
 --------------------
 Link to the `realtime data`_ JupyterNB cell.
 
-.. _Realtime Data: Source/Alphavantage.ipynb#Realtime-Data
+.. _Realtime Data: JupyterNotebooks/Alphavantage.ipynb#Realtime-Data
 
 .. code:: ipython3
 
@@ -250,7 +250,7 @@ Economic Indicators
 -------------------
 Link to the `economic indicators`_ JupyterNB cell.
 
-.. _Economic Indicators: Source/Alphavantage.ipynb#Economic-Indicators
+.. _Economic Indicators: JupyterNotebooks/Alphavantage.ipynb#Economic-Indicators
 
 .. code:: ipython3
 
@@ -297,7 +297,7 @@ Technical Indicators
 --------------------
 Link to the `technical indicators`_ JupyterNB cell.
 
-.. _Technical Indicators: Source/Alphavantage.ipynb#Technical-Indicators
+.. _Technical Indicators: JupyterNotebooks/Alphavantage.ipynb#Technical-Indicators
 
 .. code:: ipython3
 
