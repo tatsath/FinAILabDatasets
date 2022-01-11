@@ -1,6 +1,5 @@
 .. _Alphavantage:
 
-
 Alphavantage
 ============
 
@@ -90,24 +89,24 @@ Historical Price and Volume for 1 Stock
 
 Link to the `historic price and volume of one stock`_ JupyterNB cell.
 
-.. _historic price and volume of one stock: ../JupyterNotebooks/Alphavantage.ipynb
+.. _historic price and volume of one stock: FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb#1
+
+Adjust the symbol using the dictionary below
 
 .. code:: ipython3
 
     data = {
-    "function": "DIGITAL_CURRENCY_DAILY", # WEEKLY, MONTHLY possible
-    "symbol": "ETH",
-    "market": 'CNY',
+    "function": "TIME_SERIES_DAILY", # WEEKLY, MONTHLY possible
+    "symbol": "TSLA",
     "apikey": key
     }
     r = requests.get(url, params=data)
     data = r.json()
-    crypto_df = pd.DataFrame(data['Time Series (Digital Currency Daily)']).T.reset_index()
-    crypto_df = crypto_df.rename(columns={"index": "Date"})
-    crypto_df['Date'] = pd.to_datetime(crypto_df['Date'])
+    data = pd.DataFrame(data['Time Series (Daily)']).T
+    data
 
 Adding Time Periods
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 .. code:: ipython3
 
@@ -129,7 +128,7 @@ Frequency Setting
 -----------------
 Link to the `intraday data`_ JupyterNB cell.
 
-.. _intraday data: JupyterNotebooks/Alphavantage.ipynb###Intraday-Data
+.. _intraday data: JupyterNotebooks/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
