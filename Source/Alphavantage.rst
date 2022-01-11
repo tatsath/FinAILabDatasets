@@ -12,27 +12,57 @@ https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-
 https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
 https://github.com/RomelTorres/alpha_vantage
 
-.. warning:: Links are currently not working.
+.. warning::
+    Links to JupyterNBs are currently not working.
 
-Fetching the data
+Table of Contents
 -----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`_
--  `2. Time Periods <#2>`_
--  `3. Frequency <#3>`_
--  `4. Split and Dividends <#4>`_
--  `5. Many Stocks <#5>`_
--  `6. Finanical Indices <#6>`_
--  `7. Currencies <#7>`_
--  `8. Crypto <#8>`_
--  `9. Mutual Funds <#9>`_
--  `10. Treasury <#10>`_
--  `11. Stock Fundamentals <#11>`_
--  `12. Financials <#12>`_
--  `13. Put Call Options <#13>`_
--  `14. Stream Real  Time Data <#14>`_
--  `15. Economic Indicators <#15>`_
--  `16. Technical Indicators <#16>`_
+-  `Installation`_
+-  `Usage`_
+-  `Symbol Search`_
+-  `Historical Price and Volume for 1 Stock`_
+-  `Adding Time Periods`_
+-  `Frequency Setting`_
+-  `Stock Split and Dividends`_
+-  `Currencies`_
+-  `Cryptocurrencies`_
+-  `Mutual Funds`_
+-  `Treasury Rates`_
+-  `Stock Fundamentals`_
+-  `Financials`_
+-  `Stream Realtime Data`_
+-  `Economic Indicators`_
+-  `Technical Indicators`_
+
+Installation
+------------
+
+.. note::
+    Before working with this API, you will need to obtain
+    a key from `AlphaVantage's Website <https://www.alphavantage.co>`_
+
+To install the package use:
+
+.. code:: ipython3
+
+    pip install alpha_vantage 
+
+Or install with pandas support
+
+.. code:: ipython3
+
+    pip install alpha_vantage pandas
+
+Or install from the source
+
+.. code:: ipython3
+
+    git clone https://github.com/RomelTorres/alpha_vantage.git
+    pip install -e alpha_vantage
+
+Usage
+-----
 
 .. code:: ipython3
 
@@ -42,6 +72,19 @@ Fetching the data
     import requests
     from io import BytesIO
 
+    key = 'insert your unique key here'
+
+Symbol Search
+-------------
+
+.. code:: ipython3
+
+    symbol_to_search = 'TSLA'
+    url = 'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='+symbol_to_search+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
+    data = pd.DataFrame(data['bestMatches'])
+    
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
@@ -135,7 +178,7 @@ Link to the `financial indices`_ JupyterNB cell.
 
 
 Currencies
----------------
+----------
 Link to the `currency exchange`_ JupyterNB cell.
 
 .. _currency exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
@@ -179,9 +222,6 @@ Link to the `mutual funds`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
-
-
-
 Treasury Rates
 ---------------
 Link to the `treasury yield`_ JupyterNB cell.
@@ -196,7 +236,6 @@ Link to the `treasury yield`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
-
 Stock Fundamentals
 ------------------
 
@@ -207,8 +246,8 @@ Stock Fundamentals
     r = requests.get(url)
     data = r.json()
 
-Import Financials
------------------
+Financials
+----------
 Link to the `financials`_ JupyterNB cell.
 
 .. _financials: JupyterNotebooks/Alphavantage.ipynb#Financials
