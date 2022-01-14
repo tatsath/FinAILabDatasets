@@ -1,9 +1,10 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
+L1
+This will :hoverxref:`first link <Equity:Equities>` in the linked words to ``hoverxref``.
 
-This will :hoverxref:`show a tooltip <Equity:Equities>` in the linked words to ``hoverxref``.
-
-This will :hoverxref:`show a tooltip <Equity:Equity>` in the linked words to ``hoverxref``.
+L2
+This will :hoverxref:`second link <Equity:Equity>` in the linked words to ``hoverxref``.
 
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
