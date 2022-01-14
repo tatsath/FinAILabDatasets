@@ -1,6 +1,6 @@
 extensions = [
-	"nbsphinx",
-	# "hoverxref.extension"
+	# "nbsphinx",
+	"hoverxref.extension"
 ]
 
 # source_suffix = [".rst", ".md"]
