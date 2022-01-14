@@ -25,7 +25,7 @@ Some of them provide powerful APIs and Python wrapper packages, which makes it e
 
 This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code
 
-The data covered in this documentation include: is this building properly
+The data covered in this documentation include:
 -----------------------------------------------
 - Historical Price and Volume Data for thousands of Stocks, Indexes, Mutual Funds and ETFs
 - Data of macroeconomic variables
