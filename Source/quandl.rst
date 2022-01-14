@@ -27,7 +27,7 @@ To do- Add details from following sites
 
 
 Fetching the data
----------------
+-----------------
 
 -  `1. Historical Price and Volume for 1 Stock. <#1>`__
 -  `2. Time Periods <#2>`__

@@ -1,4 +1,4 @@
-.. _iex:
+.. _IEX:
 
 IEX
 =============
@@ -8,10 +8,10 @@ Fetching the data
 
 -  `1. Show all Functions <#1>`__
 -  `2. Historical Price and Volume for 1 Stock <#2>`__
--  `3. Time Periods or Frequency<#3>`__
--  `4. Split and Dividends <#4>`__
+-  `3. Time Periods or Frequency <#3>`__
+-  `4. Stock Split and Dividends <#4>`__
 -  `5. News <#5>`__
--  `6. Stream Real  Time Data <#6>`__
+-  `6. Stream Realtime Data <#6>`__
 
 .. code:: ipython3
 
@@ -19,7 +19,7 @@ Fetching the data
     import pyEX as p 
     import requests
 
-Show all functions
+Show all Functions
 ------------------
 
 The following command shows all functions available, all of which follow the same structure as the examples below

@@ -1,7 +1,7 @@
 .. _YahooFinance:
 
 Yahoo Finance
-=========
+=============
 
 To Do:
 - Add more description into each of the component.
@@ -11,7 +11,7 @@ Yahoo! Finance is a component of Yahoo’s network. It is the most widely used b
 
 
 Fetching the data
----------------
+-----------------
 
 -  `1. Historical Price and Volume for 1 Stock. <#1>`__
 -  `2. Time Periods <#2>`__
@@ -34,16 +34,17 @@ Fetching the data
     import yfinance as yf
 
 Historical Price and Volume for 1 Stock
-----------
+---------------------------------------
 
 .. code:: ipython3
+
     import numpy as np
     import yfinance as yf
     ticker = 'GE'
     yf.download(ticker)
 
 Adding Time Periods
-----------
+-------------------
 
 .. code:: ipython3
 
@@ -77,7 +78,7 @@ Adding Time Periods
 
 
 Frequency Setting
-----------
+-----------------
 
 .. code:: ipython3
 
@@ -88,7 +89,7 @@ Frequency Setting
     GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
 Stock Split and dividends
-----------
+-------------------------
 
 .. code:: ipython3
 
@@ -109,8 +110,8 @@ Stock Split and dividends
      stock=yf.download(ticker, period="5y").Close
 
 
-FInancial Indices
- ---------------
+Financial Indices
+-----------------
 
 .. code:: ipython3
 
@@ -199,7 +200,7 @@ Treasury Rates
 
 
 Stock Fundamentals
----------------
+------------------
 
 .. code:: ipython3
 
@@ -233,7 +234,7 @@ Stock Fundamentals
     df.info()
 
 Import Financials
----------------
+-----------------
 
 .. code:: ipython3
 
