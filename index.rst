@@ -1,3 +1,10 @@
+.. toctree::
+   :maxdepth: 2
+   :caption: Hover Files
+   :hidden:
+
+   Equity
+
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 L1
