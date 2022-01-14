@@ -1,7 +1,7 @@
 gym
 pandas
 nbsphinx
-hoverxref
+sphinx-hoverxref
 ipykernel
 numpy
 yfinance
