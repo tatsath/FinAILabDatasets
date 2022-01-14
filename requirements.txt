@@ -1,3 +1,5 @@
 gym
 pandas
 nbsphinx
+ipykernel
+numpy
