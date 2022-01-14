@@ -1,5 +1,5 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
-===========================================================
+==========================================================================================
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
 This documentation contains the information about the **Free financial dataset** for thousands
@@ -13,7 +13,7 @@ Some of them provide powerful APIs and Python wrapper packages, which makes it e
 This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code
 
 The data covered in this documentation include:
---------------------------------------
+-----------------------------------------------
 - Historical Price and Volume Data for thousands of Stocks, Indexes, Mutual Funds and ETFs
 - Data of macroeconomic variables
 - 60+ Exchanges all around the world
@@ -33,6 +33,7 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
+   
 .. toctree::
    :maxdepth: 1
    :caption: Categories
@@ -60,6 +61,7 @@ The data covered in this documentation include:
    Source/quandl
    Source/FRED
    Source/Stooq
+   Source/IEX
 
 .. toctree::
   :maxdepth: 1

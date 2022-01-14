@@ -87,9 +87,7 @@ Symbol Search
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Link to the `historic price and volume of one stock`_ JupyterNB cell.
-
-.. _historic price and volume of one stock: FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb#1
+Link to the `historic price and volume of one stock <FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
 
 Adjust the symbol using the dictionary below
 
