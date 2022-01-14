@@ -6,7 +6,7 @@ numpy
 yfinance
 alphavantage
 datetime
-finvizfinance.quote
+finvizfinance
 requests
 seaborn
 matplotlib
