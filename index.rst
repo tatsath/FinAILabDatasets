@@ -1,6 +1,8 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
+This will :hoverxref:`show a tooltip <Type:Equity.rst>` in the linked words to ``hoverxref``.
+
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
 This documentation contains the information about the **Free financial dataset** for thousands
 of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `FinAILab <http://finailab.com/>`_.
