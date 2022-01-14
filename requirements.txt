@@ -3,3 +3,16 @@ pandas
 nbsphinx
 ipykernel
 numpy
+yfinance
+alphavantage
+datetime
+finvizfinance.quote
+requests
+seaborn
+matplotlib
+pandas_datareader
+FundamentalAnalysis
+financedatabase
+pyEX
+quandl
+YahooFinancials 
