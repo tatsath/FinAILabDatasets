@@ -1,3 +1,4 @@
 gym
 pandas
 nbsphinx
+hoverxref
