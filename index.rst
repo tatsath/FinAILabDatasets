@@ -1,6 +1,4 @@
 .. toctree::
-   :maxdepth: 2
-   :caption: Hover Files
    :hidden:
 
    Equities
