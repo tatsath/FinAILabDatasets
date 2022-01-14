@@ -1,5 +1,5 @@
 extensions = [
-	"nbsphinx",
+	# "nbsphinx",
 	# "hoverxref.extension"
 ]
 

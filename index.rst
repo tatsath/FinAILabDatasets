@@ -33,7 +33,23 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
-   
+.. toctree::
+   :maxdepth: 1
+   :caption: Notebooks
+
+   JupyterNotebooks/Alphavantage.ipynb
+   JupyterNotebooks/EOD.ipynb
+   JupyterNotebooks/finviz.ipynb
+   JupyterNotebooks/FRED.ipynb
+   JupyterNotebooks/FundamentalAnalysis.ipynb
+   JupyterNotebooks/FXCM.ipynb
+   JupyterNotebooks/IEX.ipynb
+   JupyterNotebooks/Oanda.ipynb
+   JupyterNotebooks/quandl.ipynb
+   JupyterNotebooks/stooq.ipynb
+   JupyterNotebooks/yahoofinancials.ipynb
+   JupyterNotebooks/yfinance.ipynb
+
 .. toctree::
    :maxdepth: 1
    :caption: Categories
