@@ -1,3 +1,5 @@
+master_doc = 'index'
+
 extensions = [
 	# "nbsphinx",
 	"hoverxref.extension"

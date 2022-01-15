@@ -1,16 +1,12 @@
-.. toctree::
-   :hidden:
-
-   Equities
-
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
-L1.1
-This will :hoverxref:`first link <Equities:Equities>` in the linked words to ``hoverxref``.
+This is an example page
 
-L2
-This will :hoverxref:`second link <Equities:volume-and-price-data>` in the linked words to ``hoverxref``.
+:hoverxref:`Equity Sources <Equities:Equities>`
+
+
+:hoverxref:`volume price link <Equities:Volume and price data>`
 
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.

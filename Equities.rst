@@ -1,7 +1,5 @@
-.. _Equities:
-
 Equities
-======================================
+========
 
 To Do:
 
@@ -10,7 +8,7 @@ To Do:
 
 Refer to Details on Yahoo Finance `YahooFinance page <Source/YahooFinance.html>`_
 
-Volume and price data:
+Volume and price data
 ================================================
 
 https://aroussi.com/post/download-options-data
