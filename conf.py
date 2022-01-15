@@ -2,15 +2,15 @@ import os
 
 html_theme = 'press'
 
-hoverxref_tooltip_maxwidth = 650
-hoverxref_auto_ref = True
+# hoverxref_tooltip_maxwidth = 650
+# hoverxref_auto_ref = True
 
-hoverxref_sphinxtabs = True
-hoverxref_mathjax = True
+# hoverxref_sphinxtabs = True
+# hoverxref_mathjax = True
 
 extensions = [
-	# "nbsphinx",
-	"hoverxref.extension"
+	"nbsphinx",
+	# "hoverxref.extension"
 ]
 
 source_suffix = [".rst", ".md"]

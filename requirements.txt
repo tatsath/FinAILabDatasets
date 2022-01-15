@@ -1,5 +1,6 @@
 gym
 pandas
+pandoc
 sphinx
 nbsphinx
 sphinx-press-theme
