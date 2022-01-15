@@ -3,7 +3,9 @@ FinAILab's Datasets! - Free Financial data for building AI and Machine Learning 
 
 This is an example page
 
-:hoverxref:`Equity Sources <Equities:Equities>`
+.. code-block:: rst
+
+   :hoverxref:`Equity Sources <Equities:Equities>`
 
 
 :hoverxref:`volume price link <Equities:Volume and price data>`
