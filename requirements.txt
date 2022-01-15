@@ -2,7 +2,8 @@ gym
 pandas
 sphinx
 nbsphinx
-sphinx-hoverxref==1.0.0
+sphinx-press-theme
+sphinx-hoverxref
 ipykernel
 numpy
 yfinance

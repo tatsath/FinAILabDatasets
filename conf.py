@@ -1,5 +1,7 @@
 import os
 
+html_theme = 'press'
+
 hoverxref_tooltip_maxwidth = 650
 hoverxref_auto_ref = True
 

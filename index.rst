@@ -1,14 +1,27 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Summary:
-   :titlesonly:
-   :hidden:
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
 
-   practice
-
+   * - EQUITIES
+     - FX
+     - FIXED INCOME
+     - COMMODITIES
+     - CRYPTOCURRENCIES
+     - STOCK FUNDAMENTALS 
+     - NEWS AND SENTIMENTS
+     - MACROECONOMICS DATA
+     - ALTERNATICE DATA 
+     - REAL TIME DATA
+     - FINANCIAL DATASETS 
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3
 This is an example page
 
 :hoverxref:`Equity Sources <practice:Practice>`
@@ -70,7 +83,7 @@ The data covered in this documentation include:
    :maxdepth: 1
    :caption: Categories
 
-   Type/Equity
+   Type/Equities
    Type/FX
    Type/OptionFutures
    Type/FixedIncome
