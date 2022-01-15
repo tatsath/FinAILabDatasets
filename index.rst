@@ -10,7 +10,7 @@ FinAILab's Datasets! - Free Financial data for building AI and Machine Learning 
      - FIXED INCOME
      - COMMODITIES
      - CRYPTOCURRENCIES
-     - STOCK FUNDAMENTALS 
+     - STOCK FUNDAMENTALS
      - NEWS AND SENTIMENTS
      - MACROECONOMICS DATA
      - ALTERNATICE DATA 
@@ -79,17 +79,7 @@ The data covered in this documentation include:
    :caption: Notebooks
 
    JupyterNotebooks/Alphavantage.ipynb
-   JupyterNotebooks/EOD.ipynb
-   JupyterNotebooks/finviz.ipynb
-   JupyterNotebooks/FRED.ipynb
-   JupyterNotebooks/FundamentalAnalysis.ipynb
-   JupyterNotebooks/FXCM.ipynb
-   JupyterNotebooks/IEX.ipynb
-   JupyterNotebooks/Oanda.ipynb
-   JupyterNotebooks/quandl.ipynb
-   JupyterNotebooks/stooq.ipynb
-   JupyterNotebooks/yahoofinancials.ipynb
-   JupyterNotebooks/yfinance.ipynb
+
 
 .. toctree::
    :maxdepth: 1
