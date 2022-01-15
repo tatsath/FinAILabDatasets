@@ -1,14 +1,20 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Summary:
+   :titlesonly:
+   :hidden:
+
+   practice
+
 This is an example page
 
+:hoverxref:`Equity Sources <practice:Practice>`
 
 
-:hoverxref:`Equity Sources <Equities:Equities>`
-
-
-:hoverxref:`volume price link <Equities:Volume and price data>`
+:hoverxref:`volume price link <practice:Something>`
 
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.

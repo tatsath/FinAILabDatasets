@@ -2,12 +2,7 @@ import os
 
 hoverxref_tooltip_maxwidth = 650
 hoverxref_auto_ref = True
-hoverxref_roles = [
-    'confval',
-]
-hoverxref_domains = [
-    'py',
-]
+
 hoverxref_sphinxtabs = True
 hoverxref_mathjax = True
 
