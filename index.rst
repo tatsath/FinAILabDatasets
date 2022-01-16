@@ -1,7 +1,7 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
-.. csv-table:: Table Title
+.. csv-table:: Summary
    :file: feature_tracker_table.csv
    :header-rows: 1
 
@@ -22,12 +22,7 @@ Link to `Alphavantage NB`_
 
 :ref:`JupyterNotebooks/Alphavantage.ipynb`
 
-This is an example page
-
-:hoverxref:`Equity Sources <practice:Practice>`
-
-
-:hoverxref:`volume price link <practice:Something>`
+Lets try `Another link attempt <JupyterNotebooks/Alphavantage.ipynb>`_
 
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
@@ -61,6 +56,21 @@ The data covered in this documentation include:
 - Streaming high-frequency real-time Data
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
+
+.. list-table:: Title
+   :widths: 25 25 50
+   :header-rows: 1
+
+   * - Heading row 1, column 1
+     - Heading row 1, column 2
+     - Heading row 1, column 3
+   * - Row 1, column 1
+     -
+     - Row 1, column 3
+   * - Row 2, column 1
+     - Row 2, column 2
+     - Row 2, column 3
+
 
 .. toctree::
    :maxdepth: 1
