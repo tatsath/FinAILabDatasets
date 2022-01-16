@@ -33,6 +33,17 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!).
 
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+|   EQUITIES   |      FX      | FIXED INCOME | COMMODITIES  |    CRYPTO    | FUNDAMENTALS |  SENTIMENT   |  MACRO DATA  |   ALT DATA   | REALTIME DATA|  FINANCIALS  |
++==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+
+|`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_| column 3  |`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_|`Alphavantage <Source/Alphavantage.rst>`_|`Alphavantage <Source/Alphavantage.rst>`_| column 3  | body row 1 |`Yahoo Finance <Source/YahooFinance.rst>`_|
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 
 .. list-table:: Summary
    :widths: 12 12 12 12 12 12 12 12 12 12 12
