@@ -34,7 +34,6 @@ Table of Contents
 - `Historical Price and Volume for 1 Stock`_
 - `Adding Time Periods`_
 - `Stock Split and Dividends`_
-- `Many Stocks`_
 - `Cryptocurrencies`_
 - `Mutual Funds`_
 - `Treasury Rates`_

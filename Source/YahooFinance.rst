@@ -17,8 +17,7 @@ Table of Contents
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
 -  `Stock Split and Dividends`_
--  `Many Stocks`_
--  `Finanical Indices`_
+-  `Financial Indices`_
 -  `Currencies`_
 -  `Cryptocurrencies`_
 -  `Mutual Funds`_

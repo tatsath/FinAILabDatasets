@@ -7,7 +7,7 @@ FundamentalAnalysis
 -  `Usage`_
 -  `List all Commands`_
 -  `Historical Price and Volume for 1 Stock`_
--  `Finanical Ratios`_
+-  `Financial Ratios`_
 -  `Stock Fundamentals`_
 -  `Financials`_
 -  `Key Metrics`_
