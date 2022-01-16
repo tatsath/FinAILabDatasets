@@ -1,30 +1,6 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
-.. csv-table:: Summary
-   :file: feature_tracker_table.csv
-   :header-rows: 1
-
-
-Link to `Alphavantage Notebook PV2`_
-
-.. _Alphavantage Notebook PV2: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
-
-Link to `Alphavantage NB`_
-
-.. _Alphavantage NB: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
-
-:ref:`The reference approach <JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`
-
-:ref:`The second reference approach <JupyterNotebooks/Alphavantage.ipynb>`
-
-:ref:`JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock`
-
-:ref:`JupyterNotebooks/Alphavantage.ipynb`
-
-Lets try `Another link attempt <JupyterNotebooks/Alphavantage.ipynb>`_
-
-
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
 This documentation contains the information about the **Free financial dataset** for thousands
 of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `FinAILab <http://finailab.com/>`_.
@@ -61,21 +37,20 @@ The data covered in this documentation include:
    :widths: 25 25 50
    :header-rows: 1
 
-   * - Heading row 1, column 1
-     - Heading row 1, column 2
-     - Heading row 1, column 3
-   * - Row 1, column 1
+   * - EQUITIES
+     - FOREIGN EXCHANGE
+     - FIXED INCOME
+   * - Yahoo Finance
      -
      - Row 1, column 3
-   * - Row 2, column 1
-     - Row 2, column 2
+   * - `Alphavantage <JupyterNotebooks/Alphavantage.ipynb>`_
+     - `Alphavantage <JupyterNotebooks/Alphavantage.ipynb#historic-stock-price-and-volume>`_
      - Row 2, column 3
-
 
 .. toctree::
    :maxdepth: 1
    :caption: Notebooks
-   :hidden:
+   :titlesonly:
    
    JupyterNotebooks/Alphavantage.ipynb
    JupyterNotebooks/EOD.ipynb
