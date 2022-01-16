@@ -1,37 +1,14 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
-.. list-table:: Title
-   :widths: 25 25 50
+.. csv-table:: Table Title
+   :file: 'Feature_tracker_table.csv'
    :header-rows: 1
 
-   * - EQUITIES
-     - FX
-     - FIXED INCOME
-     - COMMODITIES
-     - CRYPTOCURRENCIES
-     - STOCK FUNDAMENTALS
-     - NEWS AND SENTIMENTS
-     - MACROECONOMICS DATA
-     - ALTERNATICE DATA 
-     - REALTIME DATA
-     - FINANCIAL DATASETS 
-   * - Yahoo Finance
-     -
-     - Row 1, column 3
-   * - Alphavantage
-     - Row 2, column 2
-     - Row 2, column 3
-   * - Quandl
-   * - FundamentalAnalysis
-   * - Pandas Datareader
-   * - Stooq
-   * - FunViz
-   * - Oanda
 
 Link to `Alphavantage Notebook`_
 
-.. _Alphavantage Notebook: FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
+.. _Alphavantage Notebook: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
 
 
 This is an example page
@@ -77,8 +54,20 @@ The data covered in this documentation include:
 .. toctree::
    :maxdepth: 1
    :caption: Notebooks
-
+   :titlesonly:
+   
    JupyterNotebooks/Alphavantage.ipynb
+   JupyterNotebooks/EOD.ipynb
+   JupyterNotebooks/finviz.ipynb
+   JupyterNotebooks/FRED.ipynb
+   JupyterNotebooks/FundamentalAnalysis.ipynb
+   JupyterNotebooks/FXCM.ipynb
+   JupyterNotebooks/IEX.ipynb
+   JupyterNotebooks/Oanda.ipynb
+   JupyterNotebooks/quandl.ipynb
+   JupyterNotebooks/stooq.ipynb
+   JupyterNotebooks/yahoofinancials.ipynb
+   JupyterNotebooks/yfinance.ipynb
 
 
 .. toctree::

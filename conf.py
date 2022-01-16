@@ -10,18 +10,7 @@ html_theme = 'press'
 
 extensions = [
 	"nbsphinx",
-# 	   JupyterNotebooks/EOD.ipynb
-#    JupyterNotebooks/finviz.ipynb
-#    JupyterNotebooks/FRED.ipynb
-#    JupyterNotebooks/FundamentalAnalysis.ipynb
-#    JupyterNotebooks/FXCM.ipynb
-#    JupyterNotebooks/IEX.ipynb
-#    JupyterNotebooks/Oanda.ipynb
-#    JupyterNotebooks/quandl.ipynb
-#    JupyterNotebooks/stooq.ipynb
-#    JupyterNotebooks/yahoofinancials.ipynb
-#    JupyterNotebooks/yfinance.ipynb
-	# "hoverxref.extension"
+	"hoverxref.extension"
 ]
 
 source_suffix = [".rst", ".md"]
