@@ -18,8 +18,8 @@ source_suffix = [".rst", ".md"]
 # The master toctree document.
 master_doc = 'index'
 
-exclude_patterns = [
-	'_build'
-]
+# exclude_patterns = [
+# 	'_build'
+# ]
 # nbsphinx_allow_errors = True
 # learn how to make a theme

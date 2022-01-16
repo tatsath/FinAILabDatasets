@@ -6,9 +6,9 @@ FinAILab's Datasets! - Free Financial data for building AI and Machine Learning 
    :header-rows: 1
 
 
-Link to `Alphavantage Notebook PV`_
+Link to `Alphavantage Notebook PV2`_
 
-.. _Alphavantage Notebook PV: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
+.. _Alphavantage Notebook PV2: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
 
 Link to `Alphavantage NB`_
 
@@ -17,6 +17,10 @@ Link to `Alphavantage NB`_
 :ref:`The reference approach <JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`
 
 :ref:`The second reference approach <JupyterNotebooks/Alphavantage.ipynb>`
+
+:ref:`JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock`
+
+:ref:`JupyterNotebooks/Alphavantage.ipynb`
 
 This is an example page
 
@@ -61,7 +65,6 @@ The data covered in this documentation include:
 .. toctree::
    :maxdepth: 1
    :caption: Notebooks
-   :titlesonly:
    :hidden:
    
    JupyterNotebooks/Alphavantage.ipynb
