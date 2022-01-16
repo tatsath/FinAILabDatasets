@@ -34,7 +34,7 @@ The data covered in this documentation include:
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
 .. list-table:: Summary
-   :widths: 25 25 50
+   :widths: auto
    :header-rows: 1
 
    * - EQUITIES
@@ -99,55 +99,18 @@ The data covered in this documentation include:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Notebooks
-   :titlesonly:
-   
-   JupyterNotebooks/Alphavantage.ipynb
-   JupyterNotebooks/EOD.ipynb
-   JupyterNotebooks/finviz.ipynb
-   JupyterNotebooks/FRED.ipynb
-   JupyterNotebooks/FundamentalAnalysis.ipynb
-   JupyterNotebooks/FXCM.ipynb
-   JupyterNotebooks/IEX.ipynb
-   JupyterNotebooks/Oanda.ipynb
-   JupyterNotebooks/quandl.ipynb
-   JupyterNotebooks/stooq.ipynb
-   JupyterNotebooks/yahoofinancials.ipynb
-   JupyterNotebooks/yfinance.ipynb
-
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Categories
-
-   Type/Equities
-   Type/FX
-   Type/OptionFutures
-   Type/FixedIncome
-   Type/Commodities
-   Type/Crypto
-   Type/Fundamentals
-   Type/News
-   Type/Macroeconomic
-   Type/AlternativeData
-   Type/Realtime
-   Type/FinancialDatasets
-
-.. toctree::
-   :maxdepth: 1
    :caption: Source
 
    Source/YahooFinance
    Source/Alphavantage
-   Source/FXCM
+   Source/FundamentalAnalysis
    Source/quandl
    Source/FRED
    Source/Stooq
    Source/IEX
+   Source/Oanda
+   Source/finviz
 
-.. toctree::
-  :maxdepth: 1
-  :caption: DataFrequency
 
 
 
