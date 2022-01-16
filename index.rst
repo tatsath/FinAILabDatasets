@@ -33,7 +33,7 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
-.. list-table:: Summary
+.. table:: Summary
    :widths: auto
    :header-rows: 1
 
