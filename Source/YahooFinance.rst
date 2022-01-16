@@ -10,23 +10,35 @@ To Do:
 Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
 
 
-Fetching the data
+Table of Contents
 -----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
--  `6. Finanical Indices <#6>`__
--  `7. Currencies <#7>`_
-- `8. Crypto <#8>`_
-- `9. Mutual Funds <#9>`_
-- `10. Treasury <#10>`_
-- `11. Stock Fundamentals <#11>`_
-- `12.   Financials <#12>`_
-- `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`__
+-  `Historical Price and Volume for 1 Stock`_
+-  `Time Periods`_
+-  `Frequency`_
+-  `Split and Dividends`_
+-  `Many Stocks`_
+-  `Finanical Indices`_
+-  `Currencies`_
+-  `Crypto`_
+-  `Mutual Funds`_
+-  `Treasury`_
+-  `Stock Fundamentals`_
+-  `Financials`_
+-  `Put Call Options`_
+-  `Stream Real  Time Data`_
+
+Install and Import
+------------------
+
+Install yfinance using pip:
+
+.. code:: ipython3
+
+    pip install yfinance --upgrade --no-cache-dir
+
+.. note::
+    To install yfinance using conda, see `this <https://anaconda.org/ranaroussi/yfinance>`_
 
 .. code:: ipython3
 

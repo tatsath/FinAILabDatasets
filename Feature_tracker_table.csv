@@ -2,20 +2,7 @@ EQUITIES,Foreign Exchange,FIXED INCOME,COMMODITIES,CRYPTOCURRENCIES,STOCK FUNDAM
 Yahoo Finance,Yahoo Finance,,Yahoo Finance,Yahoo Financials,Yahoo Finance,Alphavantage,Alphavantage,,,Yahoo Finance
 Alphavantage,AlphaVantage,,Quandl,AlphaVantage,Quandl,Quandl,Quandl,,,Alphavantage
 Quandl,Pandas Datareader,,Pandas Datareader,Quandl,Fundamental Analysis,FRED,FRED,,,Quandl
-Fundamental Analysis,,,Stooq,Pandas Datareader,Pandas Datareader,Pandas Datareader,Pandas Datareader,,,Fundamental Analysis
+Fundamental Analysis,Oanda,,Stooq,Pandas Datareader,Pandas Datareader,Pandas Datareader,Pandas Datareader,,,Fundamental Analysis
 Pandas Datareader,,,IEX,Stooq,IEX,IEX,IEX,,,Pandas Datareader
 Oanda,,,,IEX,FinViz,FinViz,,,,IEX
 ,,,,FinViz,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,
-,,,,,,,,,,

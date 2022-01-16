@@ -33,19 +33,69 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
-.. list-table:: Title
+.. list-table:: Summary
    :widths: 25 25 50
    :header-rows: 1
 
    * - EQUITIES
      - FOREIGN EXCHANGE
      - FIXED INCOME
-   * - Yahoo Finance
-     -
-     - Row 1, column 3
-   * - `Alphavantage <JupyterNotebooks/Alphavantage.ipynb>`_
-     - `Alphavantage <JupyterNotebooks/Alphavantage.ipynb#historic-stock-price-and-volume>`_
-     - Row 2, column 3
+     - COMMODITIES
+     - CRYPTOCURRENCIES 
+     - STOCK FUNDAMENTALS
+     - NEWS AND SENTIMENTS 
+     - MACROECONOMIC DATA
+     - ALTERNATIVE DATA 
+     - REALTIME DATA 
+     - FINANCIAL STATEMENTS
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `Fundamental Analysis <Source/FundamentalAnalysis.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `Oanda <Source/Oanda.rst>`_
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `Oanda <Source/Oanda.rst>`_
+   * - 
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `Stooq <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `Stooq <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
+     - `FinViz <Source/finviz.rst>`_
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `Fundamental Analysis <Source/FundamentalAnalysis.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
+     - `FinViz <Source/finviz.rst>`_
+   * - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `FRED <Source/FRED.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
+     - `FinViz <Source/finviz.rst>`_
+   * - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `FRED <Source/FRED.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
+   * - 
+   * - 
+   * - `Yahoo Finance <Source/YahooFinance.rst>`_
+     - `Alphavantage <Source/Alphavantage.rst>`_
+     - `Quandl <Source/quandl.rst>`_
+     - `Fundamental Analysis <Source/FundamentalAnalysis.rst>`_
+     - `Pandas Datareader <Source/Stooq.rst>`_
+     - `IEX <Source/IEX.rst>`_
 
 .. toctree::
    :maxdepth: 1

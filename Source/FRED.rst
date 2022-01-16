@@ -2,9 +2,6 @@
 
 FRED
 =========
-To Do:
-
-
 
 To Do:
 - Add more details from the website: https://github.com/mortada/fredapi
@@ -12,16 +9,35 @@ To Do:
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
-Fetching the data
+Table of Contents
 -----------------
+- `Installation`_
+- `Usage`_
+- `Historical Price and Volume for 1 Stock`_
+- `Many Stocks`_
+- `Currencies`_
+- `Cryptocurrencies`_
+- `Mutual Funds`_
+- `Treasury Rates`_
+- `Sentiment`_
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Many Stocks <#2>`__
--  `3. Currencies <#3>`_
-- `4. Crypto <#4>`_
-- `5. Mutual Funds <#5>`_
-- `6. Treasury <#6>`_
+Installation
+------------------
 
+Install with pip:
+
+.. code:: ipython3
+
+    pip install oandapyV20
+
+Or from Github:
+
+.. code:: ipython3
+
+    pip install git+https://github.com/hootnot/oanda-api-v20.git
+
+Usage
+-----
 
 .. code:: ipython3
 
@@ -31,21 +47,23 @@ Fetching the data
     import seaborn as sns
     from datetime import datetime
 
-    # specify time periods
-    start = datetime(2010,1,1)
-    end = datetime(2030,1,1)
-
-    SP500 = web.DataReader('SP500','fred',start,end)
-
 Historical Price for 1 Stock
 ----------------------------
 
 .. code:: ipython3
     
+    # Specify time periods
+    start = datetime(2010,1,1)
+    end = datetime(2030,1,1)
+
+    SP500 = web.DataReader('SP500','fred',start,end)
+
+.. code:: ipython3
+
     sns.set() #run this to overide matplotlib
     SP500['SP500'].plot(title='S&P 500 Price',figsize=(20, 6))
 
-    #Use the below to save the chart as an image file
+    # Use the below to save the chart as an image file
     plt.savefig('s&p500.png')
 
 Many Stocks
@@ -66,7 +84,7 @@ Currencies
     er.plot(title = 'Chinese Yuan Renminbi to U.S. Dollar Spot Exchange Rate', secondary_y = "DGS10", figsize=(20, 6))
     plt.tight_layout()
 
-Crypto
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
@@ -99,3 +117,11 @@ Treasury Rates
     treasury.plot(title = '3-Month Treasury Bill Secondary Market Rate', secondary_y = "DGS10", figsize=(20, 6))
     plt.tight_layout()
 
+Sentiment
+---------
+
+.. code:: ipython3
+
+    sentiment = web.DataReader('UMCSENT', 'fred',start,end)
+    sentiment.plot(title = 'U Michigan Consumer Sentiment', secondary_y = "DGS10", figsize=(20, 6))
+    plt.tight_layout()
