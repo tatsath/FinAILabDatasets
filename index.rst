@@ -2,14 +2,21 @@ FinAILab's Datasets! - Free Financial data for building AI and Machine Learning 
 ==========================================================================================
 
 .. csv-table:: Table Title
-   :file: 'Feature_tracker_table.csv'
+   :file: feature_tracker_table.csv
    :header-rows: 1
 
 
-Link to `Alphavantage Notebook`_
+Link to `Alphavantage Notebook PV`_
 
-.. _Alphavantage Notebook: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
+.. _Alphavantage Notebook PV: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
 
+Link to `Alphavantage NB`_
+
+.. _Alphavantage NB: JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock
+
+:ref:`The reference approach <JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`
+
+:ref:`The second reference approach <JupyterNotebooks/Alphavantage.ipynb>`
 
 This is an example page
 
@@ -55,6 +62,7 @@ The data covered in this documentation include:
    :maxdepth: 1
    :caption: Notebooks
    :titlesonly:
+   :hidden:
    
    JupyterNotebooks/Alphavantage.ipynb
    JupyterNotebooks/EOD.ipynb
