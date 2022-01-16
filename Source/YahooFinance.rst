@@ -12,7 +12,8 @@ Yahoo! Finance is a component of Yahoo’s network. It is the most widely used b
 
 Table of Contents
 -----------------
-
+-  `Installation`_
+-  `Usage`_
 -  `Historical Price and Volume for 1 Stock`_
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
@@ -27,8 +28,8 @@ Table of Contents
 -  `Put Call Options`_
 -  `Stream Realtime Data`_
 
-Install and Import
-------------------
+Installation
+------------
 
 Install yfinance using pip:
 
@@ -38,6 +39,9 @@ Install yfinance using pip:
 
 .. note::
     To install yfinance using conda, see `this <https://anaconda.org/ranaroussi/yfinance>`_
+
+Usage
+-----
 
 .. code:: ipython3
 

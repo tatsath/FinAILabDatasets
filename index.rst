@@ -33,21 +33,22 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
 
-.. table:: Summary
-   :widths: auto
-   :header-rows: 1
 
+.. list-table:: Summary
+   :widths: 12 12 12 12 12 12 12 12 12 12 12
+   :header-rows: 1
+   :
    * - EQUITIES
-     - FOREIGN EXCHANGE
+     - FX
      - FIXED INCOME
      - COMMODITIES
-     - CRYPTOCURRENCIES 
-     - STOCK FUNDAMENTALS
-     - NEWS AND SENTIMENTS 
-     - MACROECONOMIC DATA
-     - ALTERNATIVE DATA 
-     - REALTIME DATA 
-     - FINANCIAL STATEMENTS
+     - CRYPTO
+     - FUNDAMENTALS
+     - SENTIMENT
+     - MACRO DATA
+     - ALT DATA
+     - REALTIME DATA
+     - FINANCIALS
    * - `Yahoo Finance <Source/YahooFinance.rst>`_
      - `Alphavantage <Source/Alphavantage.rst>`_
      - `Quandl <Source/quandl.rst>`_
