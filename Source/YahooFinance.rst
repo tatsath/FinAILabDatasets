@@ -14,19 +14,19 @@ Table of Contents
 -----------------
 
 -  `Historical Price and Volume for 1 Stock`_
--  `Time Periods`_
--  `Frequency`_
--  `Split and Dividends`_
+-  `Adding Time Periods`_
+-  `Frequency Setting`_
+-  `Stock Split and Dividends`_
 -  `Many Stocks`_
 -  `Finanical Indices`_
 -  `Currencies`_
--  `Crypto`_
+-  `Cryptocurrencies`_
 -  `Mutual Funds`_
--  `Treasury`_
+-  `Treasury Rates`_
 -  `Stock Fundamentals`_
 -  `Financials`_
 -  `Put Call Options`_
--  `Stream Real  Time Data`_
+-  `Stream Realtime Data`_
 
 Install and Import
 ------------------
@@ -100,7 +100,7 @@ Frequency Setting
     #Pre or post market data
     GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
-Stock Split and dividends
+Stock Split and Dividends
 -------------------------
 
 .. code:: ipython3
@@ -167,7 +167,7 @@ Currencies
 
 
 
-Crypto
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
@@ -245,8 +245,8 @@ Stock Fundamentals
 
     df.info()
 
-Import Financials
------------------
+Financials
+----------
 
 .. code:: ipython3
 
@@ -265,8 +265,8 @@ Import Financials
 
     dis.cashflow
 
-Put Call Option
----------------
+Put Call Options
+----------------
 
 .. code:: ipython3
 
@@ -287,7 +287,8 @@ Put Call Option
     puts = dis.option_chain()[1]
     puts
 
- ### Stream Realtime Data
+Stream Realtime Data
+--------------------
 
 .. code:: ipython3
 

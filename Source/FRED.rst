@@ -13,7 +13,7 @@ Table of Contents
 -----------------
 - `Installation`_
 - `Usage`_
-- `Historical Price and Volume for 1 Stock`_
+- `Historical Price for 1 Stock`_
 - `Many Stocks`_
 - `Currencies`_
 - `Cryptocurrencies`_

@@ -54,16 +54,28 @@ The data covered in this documentation include:
      - `Fundamental Analysis <Source/FundamentalAnalysis.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `Oanda <Source/Oanda.rst>`_
+     - 
    * - `Yahoo Finance <Source/YahooFinance.rst>`_
      - `Alphavantage <Source/Alphavantage.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `Oanda <Source/Oanda.rst>`_
+     - 
+     - 
+     -  
    * - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
    * - `Yahoo Finance <Source/YahooFinance.rst>`_
      - `Quandl <Source/quandl.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `Stooq <Source/Stooq.rst>`_
      - `IEX <Source/IEX.rst>`_
+     - 
+     - 
    * - `Yahoo Finance <Source/YahooFinance.rst>`_
      - `Alphavantage <Source/Alphavantage.rst>`_
      - `Quandl <Source/quandl.rst>`_
@@ -77,25 +89,42 @@ The data covered in this documentation include:
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `IEX <Source/IEX.rst>`_
      - `FinViz <Source/finviz.rst>`_
+     - 
    * - `Alphavantage <Source/Alphavantage.rst>`_
      - `Quandl <Source/quandl.rst>`_
      - `FRED <Source/FRED.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `IEX <Source/IEX.rst>`_
      - `FinViz <Source/finviz.rst>`_
+     - 
    * - `Alphavantage <Source/Alphavantage.rst>`_
      - `Quandl <Source/quandl.rst>`_
      - `FRED <Source/FRED.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `IEX <Source/IEX.rst>`_
+     - 
+     - 
    * - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
    * - 
+     - 
+     - 
+     - 
+     - 
+     - 
+     - 
    * - `Yahoo Finance <Source/YahooFinance.rst>`_
      - `Alphavantage <Source/Alphavantage.rst>`_
      - `Quandl <Source/quandl.rst>`_
      - `Fundamental Analysis <Source/FundamentalAnalysis.rst>`_
      - `Pandas Datareader <Source/Stooq.rst>`_
      - `IEX <Source/IEX.rst>`_
+     - 
 
 .. toctree::
    :maxdepth: 1

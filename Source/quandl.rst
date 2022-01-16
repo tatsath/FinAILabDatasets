@@ -32,9 +32,8 @@ Table of Contents
 - `Installation`_
 - `Usage`_ 
 - `Historical Price and Volume for 1 Stock`_
-- `Time Periods`_
-- `Frequency`_
-- `Split and Dividends`_
+- `Adding Time Periods`_
+- `Stock Split and Dividends`_
 - `Many Stocks`_
 - `Cryptocurrencies`_
 - `Mutual Funds`_
@@ -119,7 +118,7 @@ Stock Split and dividends
     sp[['Dividend', 'Real Dividend']]
 
 
-Crypto
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
@@ -154,8 +153,8 @@ Stock Fundamentals
     sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
     sp
 
-Put Call Option
----------------
+Put Call Options
+----------------
 
 .. code:: ipython3
     

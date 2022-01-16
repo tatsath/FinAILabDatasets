@@ -17,7 +17,7 @@ Table of Contents
 
 - `Installation`_
 - `Usage`_
-- `Historical Price and Volume for 1 Stock.`_
+- `Historical Price and Volume for 1 Stock`_
 - `Adding Time Periods`_
 - `Mutual Funds`_
 

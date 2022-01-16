@@ -83,8 +83,8 @@ Stock Fundamentals
     profile = fa.profile(ticker, api_key)
     profile
 
-Import Financials
------------------
+Financials
+----------
 
 .. code:: ipython3
 
