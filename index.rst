@@ -31,13 +31,13 @@ The data covered in this documentation include:
 - Real-time and Historical Data (back to 1960s)
 - Streaming high-frequency real-time Data
 - Stock Splits and Dividends and how these are reflected in Stock Prices
-… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
+… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!).
 
 
 .. list-table:: Summary
    :widths: 12 12 12 12 12 12 12 12 12 12 12
    :header-rows: 1
-   :
+   
    * - EQUITIES
      - FX
      - FIXED INCOME
