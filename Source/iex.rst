@@ -35,6 +35,7 @@ Usage
     import pyEX as p 
     import requests
 
+
 Show all Functions
 ------------------
 

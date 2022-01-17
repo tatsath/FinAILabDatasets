@@ -17,6 +17,7 @@ https://github.com/RomelTorres/alpha_vantage
 Table of Contents
 -----------------
 
+
 -  `Link to the Jupyter Notebook <FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb>`
 -  `Installation`_
 -  `Usage`_
@@ -64,6 +65,7 @@ Or install from the source
 Usage
 -----
 
+
 .. code:: ipython3
 
     from alpha_vantage.timeseries import TimeSeries
@@ -88,9 +90,11 @@ Symbol Search
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
+
 Link to the `historic price and volume of one stock <../JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
 
 Adjust the symbol using the dictionary below
+
 
 .. code:: ipython3
 
@@ -164,7 +168,9 @@ Financial Indices
 -----------------
 Link to the `financial indices`_ JupyterNB cell.
 
+
 .. _financial indices: JupyterNotebooks/Alphavantage.ipynb#Indices
+
 
 .. code:: ipython3
 
@@ -176,10 +182,12 @@ Link to the `financial indices`_ JupyterNB cell.
 
 
 Currencies
+
 ----------
 Link to the `currency exchange`_ JupyterNB cell.
 
 .. _currency exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
+
 
 .. code:: ipython3
 
@@ -195,7 +203,9 @@ Cryptocurrencies
 ----------------
 Link to the `cryptocurrencies`_ JupyterNB cell.
 
+
 .. _cryptocurrencies: JupyterNotebooks/Alphavantage.ipynb#Cryptocurrencies
+
 
 .. code:: ipython3
 
@@ -211,6 +221,7 @@ Mutual Funds
 ---------------
 Link to the `mutual funds`_ JupyterNB cell.
 
+
 .. _mutual funds: JupyterNotebooks/Alphavantage.ipynb#Mutual-Funds
 
 .. code:: ipython3
@@ -224,7 +235,9 @@ Treasury Rates
 ---------------
 Link to the `treasury yield`_ JupyterNB cell.
 
+
 .. _treasury yield: JupyterNotebooks/Alphavantage.ipynb#Treasury-Yield
+
 
 .. code:: ipython3
 
@@ -236,6 +249,9 @@ Link to the `treasury yield`_ JupyterNB cell.
 
 Stock Fundamentals
 ------------------
+Link to the `intraday data`_ JupyterNB cell.
+
+.. _intraday data: JupyterNotebooks/Alphavantage.ipynb#Intraday-Data
 
 .. code:: ipython3
 
@@ -244,11 +260,13 @@ Stock Fundamentals
     r = requests.get(url)
     data = r.json()
 
+
 Financials
 ----------
 Link to the `financials`_ JupyterNB cell.
 
 .. _financials: JupyterNotebooks/Alphavantage.ipynb#Financials
+
 
 .. code:: ipython3
 
@@ -260,6 +278,7 @@ Link to the `financials`_ JupyterNB cell.
 Stream Realtime Data
 --------------------
 Link to the `realtime data`_ JupyterNB cell.
+
 
 .. _realtime data: JupyterNotebooks/Alphavantage.ipynb#Realtime-Data
 
@@ -287,7 +306,9 @@ Economic Indicators
 -------------------
 Link to the `economic indicators`_ JupyterNB cell.
 
+
 .. _economic indicators: JupyterNotebooks/Alphavantage.ipynb#Economic-Indicators
+
 
 .. code:: ipython3
 

@@ -25,7 +25,6 @@ To do- Add details from following sites
 - Provide a link to the jupyter notebook for this.
 
 
-
 Table of Contents
 -----------------
 
@@ -151,6 +150,7 @@ Stock Fundamentals
 
     sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
     sp
+
 
 Put Call Options
 ----------------
