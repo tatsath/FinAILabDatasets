@@ -11,25 +11,60 @@ https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-
 https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
 https://github.com/RomelTorres/alpha_vantage
 
-Fetching the data
+.. warning::
+    Links to JupyterNBs are currently not working.
+
+Table of Contents
 -----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`_
--  `2. Time Periods <#2>`_
--  `3. Frequency <#3>`_
--  `4. Split and Dividends <#4>`_
--  `5. Many Stocks <#5>`_
--  `6. Finanical Indices <#6>`_
--  `7. Currencies <#7>`_
--  `8. Crypto <#8>`_
--  `9. Mutual Funds <#9>`_
--  `10. Treasury <#10>`_
--  `11. Stock Fundamentals <#11>`_
--  `12. Financials <#12>`_
--  `13. Put Call Options <#13>`_
--  `14. Stream Real  Time Data <#14>`_
--  `15. Economic Indicators <#15>`_
--  `16. Technical Indicators <#16>`_
+
+-  `Link to the Jupyter Notebook <FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb>`
+-  `Installation`_
+-  `Usage`_
+-  `Symbol Search`_
+-  `Historical Price and Volume for 1 Stock`_
+-  `Adding Time Periods`_
+-  `Frequency Setting`_
+-  `Stock Split and Dividends`_
+-  `Currencies`_
+-  `Cryptocurrencies`_
+-  `Mutual Funds`_
+-  `Treasury Rates`_
+-  `Stock Fundamentals`_
+-  `Financials`_
+-  `Stream Realtime Data`_
+-  `Economic Indicators`_
+-  `Technical Indicators`_
+
+Installation
+------------
+
+.. note::
+    Before working with this API, you will need to obtain
+    a key from `AlphaVantage's Website <https://www.alphavantage.co>`_
+
+To install the package use:
+
+.. code:: ipython3
+
+    pip install alpha_vantage 
+
+Or install with pandas support
+
+.. code:: ipython3
+
+    pip install alpha_vantage pandas
+
+Or install from the source
+
+.. code:: ipython3
+
+    git clone https://github.com/RomelTorres/alpha_vantage.git
+    pip install -e alpha_vantage
+
+Usage
+-----
+
 
 .. code:: ipython3
 
@@ -39,29 +74,42 @@ Fetching the data
     import requests
     from io import BytesIO
 
+    key = 'insert your unique key here'
+
+Symbol Search
+-------------
+
+.. code:: ipython3
+
+    symbol_to_search = 'TSLA'
+    url = 'https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords='+symbol_to_search+'&apikey={key}'
+    r = requests.get(url)
+    data = r.json()
+    data = pd.DataFrame(data['bestMatches'])
+    
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Link to the `historic price and volume of one stock`_ JupyterNB cell.
 
-.. _historic price and volume of one stock: JupyterNotebooks/Alphavantage.ipynb#Historic-Stock-Price-and-Volume
+Link to the `historic price and volume of one stock <../JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
+
+Adjust the symbol using the dictionary below
+
 
 .. code:: ipython3
 
     data = {
-    "function": "DIGITAL_CURRENCY_DAILY", # WEEKLY, MONTHLY possible
-    "symbol": "ETH",
-    "market": 'CNY',
+    "function": "TIME_SERIES_DAILY", # WEEKLY, MONTHLY possible
+    "symbol": "TSLA",
     "apikey": key
     }
     r = requests.get(url, params=data)
     data = r.json()
-    crypto_df = pd.DataFrame(data['Time Series (Digital Currency Daily)']).T.reset_index()
-    crypto_df = crypto_df.rename(columns={"index": "Date"})
-    crypto_df['Date'] = pd.to_datetime(crypto_df['Date'])
+    data = pd.DataFrame(data['Time Series (Daily)']).T
+    data
 
 Adding Time Periods
--------------------
+^^^^^^^^^^^^^^^^^^^
 
 .. code:: ipython3
 
@@ -120,7 +168,9 @@ Financial Indices
 -----------------
 Link to the `financial indices`_ JupyterNB cell.
 
-.. _Financial Indices: JupyterNotebooks/Alphavantage.ipynb#Indices
+
+.. _financial indices: JupyterNotebooks/Alphavantage.ipynb#Indices
+
 
 .. code:: ipython3
 
@@ -132,10 +182,12 @@ Link to the `financial indices`_ JupyterNB cell.
 
 
 Currencies
----------------
+
+----------
 Link to the `currency exchange`_ JupyterNB cell.
 
-.. _Currency Exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
+.. _currency exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
+
 
 .. code:: ipython3
 
@@ -151,7 +203,9 @@ Cryptocurrencies
 ----------------
 Link to the `cryptocurrencies`_ JupyterNB cell.
 
-.. _Cryptocurrencies: JupyterNotebooks/Alphavantage.ipynb#Cryptocurrencies
+
+.. _cryptocurrencies: JupyterNotebooks/Alphavantage.ipynb#Cryptocurrencies
+
 
 .. code:: ipython3
 
@@ -167,7 +221,8 @@ Mutual Funds
 ---------------
 Link to the `mutual funds`_ JupyterNB cell.
 
-.. _Mutual Funds: JupyterNotebooks/Alphavantage.ipynb#Mutual-Funds
+
+.. _mutual funds: JupyterNotebooks/Alphavantage.ipynb#Mutual-Funds
 
 .. code:: ipython3
 
@@ -176,14 +231,13 @@ Link to the `mutual funds`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
-
-
-
 Treasury Rates
 ---------------
 Link to the `treasury yield`_ JupyterNB cell.
 
-.. _Treasury Yield: JupyterNotebooks/Alphavantage.ipynb#Treasury-Yield
+
+.. _treasury yield: JupyterNotebooks/Alphavantage.ipynb#Treasury-Yield
+
 
 .. code:: ipython3
 
@@ -192,7 +246,6 @@ Link to the `treasury yield`_ JupyterNB cell.
     url = 'https://www.alphavantage.co/query?function=TREASURY_YIELD&interval='+interval+'&maturity='+maturity+'&apikey={key}'
     r = requests.get(url)
     data = r.json()
-
 
 Stock Fundamentals
 ------------------
@@ -207,11 +260,13 @@ Link to the `intraday data`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
-Import Financials
------------------
+
+Financials
+----------
 Link to the `financials`_ JupyterNB cell.
 
-.. _Financials: JupyterNotebooks/Alphavantage.ipynb#Financials
+.. _financials: JupyterNotebooks/Alphavantage.ipynb#Financials
+
 
 .. code:: ipython3
 
@@ -224,7 +279,8 @@ Stream Realtime Data
 --------------------
 Link to the `realtime data`_ JupyterNB cell.
 
-.. _Realtime Data: JupyterNotebooks/Alphavantage.ipynb#Realtime-Data
+
+.. _realtime data: JupyterNotebooks/Alphavantage.ipynb#Realtime-Data
 
 .. code:: ipython3
 
@@ -250,7 +306,9 @@ Economic Indicators
 -------------------
 Link to the `economic indicators`_ JupyterNB cell.
 
-.. _Economic Indicators: JupyterNotebooks/Alphavantage.ipynb#Economic-Indicators
+
+.. _economic indicators: JupyterNotebooks/Alphavantage.ipynb#Economic-Indicators
+
 
 .. code:: ipython3
 

@@ -4,15 +4,30 @@ FundamentalAnalysis
 ===================
 
 
-Fetching the data
------------------
+-  `Installation`_
+-  `Usage`_
+-  `List all Commands`_
+-  `Historical Price and Volume for 1 Stock`_
+-  `Financial Ratios`_
+-  `Stock Fundamentals`_
+-  `Financials`_
+-  `Key Metrics`_
 
--  `1. List all Commands <#1>`__
--  `2. Historical Price and Volume for 1 Stock. <#2>`__
--  `3. Finanical Ratios <#3>`__
--  `4. Stock Fundamentals <#4>`__
--  `5. Financials <#5>`__
--  `6. Key Metrics <#6>`__
+Installation
+------------
+
+.. note::
+    Before working with this API, you will need to obtain
+    a key from `FinancialModellingPrep's API <https://site.financialmodelingprep.com/developer/docs/>`_
+
+Install with pip:
+
+.. code:: ipython3
+    
+    pip install FundamentalAnalysis
+
+Usage
+-----
 
 .. code:: ipython3
 
@@ -69,8 +84,8 @@ Stock Fundamentals
     profile = fa.profile(ticker, api_key)
     profile
 
-Import Financials
------------------
+Financials
+----------
 
 .. code:: ipython3
 

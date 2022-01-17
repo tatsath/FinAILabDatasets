@@ -1,7 +1,7 @@
 .. _Sources:
 
 Data Sources
-=========
+============
 
 There are following Data sources for Finance:
 
@@ -14,10 +14,11 @@ There are following Data sources for Finance:
 - Stooq
 - Tiingo
 - Marketstack
+- IEX
 
 
 * :ref:`Details on Yahoo Finance <Type.YahooFinance>`
 
 
 Details on Yahoo Finance `YahooFinance page <YahooFinance.html>`_
----------------
+------------------------------------------------------------------

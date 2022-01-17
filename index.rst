@@ -1,5 +1,5 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
-===========================================================
+==========================================================================================
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
 This documentation contains the information about the **Free financial dataset** for thousands
@@ -13,7 +13,7 @@ Some of them provide powerful APIs and Python wrapper packages, which makes it e
 This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code
 
 The data covered in this documentation include:
---------------------------------------
+-----------------------------------------------
 - Historical Price and Volume Data for thousands of Stocks, Indexes, Mutual Funds and ETFs
 - Data of macroeconomic variables
 - 60+ Exchanges all around the world
@@ -31,24 +31,13 @@ The data covered in this documentation include:
 - Real-time and Historical Data (back to 1960s)
 - Streaming high-frequency real-time Data
 - Stock Splits and Dividends and how these are reflected in Stock Prices
-… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
+… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!).
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Categories
-
-   Type/Equity
-   Type/FX
-   Type/OptionFutures
-   Type/FixedIncome
-   Type/Commodities
-   Type/Crypto
-   Type/Fundamentals
-   Type/News
-   Type/Macroeconomic
-   Type/AlternativeData
-   Type/Realtime
-   Type/FinancialDatasets
+.. csv-table::   
+   :file: Data/feature_tracker_table.csv
+   :header-rows: 1
+   :class: longtable
+   :widths: auto
 
 .. toctree::
    :maxdepth: 1
@@ -56,14 +45,14 @@ The data covered in this documentation include:
 
    Source/YahooFinance
    Source/Alphavantage
-   Source/FXCM
+   Source/FundamentalAnalysis
    Source/quandl
    Source/FRED
    Source/Stooq
+   Source/IEX
+   Source/Oanda
+   Source/finviz
 
-.. toctree::
-  :maxdepth: 1
-  :caption: DataFrequency
 
 
 

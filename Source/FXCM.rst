@@ -10,7 +10,7 @@ To Do:
 - Provide a link to the jupyter notebook for this.
 
 Fetching the data
----------------
+-----------------
 
 -  `1. Historical Price and Volume for 1 Stock. <#1>`__
 -  `2. Time Periods <#2>`__
@@ -33,16 +33,17 @@ Fetching the data
     import yfinance as yf
 
 Historical Price and Volume for 1 Stock
-----------
+---------------------------------------
 
 .. code:: ipython3
+    
     import numpy as np
     import yfinance as yf
     ticker = 'GE'
     yf.download(ticker)
 
 Adding Time Periods
-----------
+-------------------
 
 .. code:: ipython3
 
@@ -76,7 +77,7 @@ Adding Time Periods
 
 
 Frequency Setting
-----------
+-----------------
 
 .. code:: ipython3
 
@@ -87,7 +88,7 @@ Frequency Setting
     GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
 Stock Split and dividends
-----------
+-------------------------
 
 .. code:: ipython3
 
@@ -109,7 +110,7 @@ Stock Split and dividends
 
 
 FInancial Indices
- ---------------
+-----------------
 
 .. code:: ipython3
 
@@ -132,7 +133,7 @@ FInancial Indices
 
 
 Currencies
----------------
+----------
 
 .. code:: ipython3
 
@@ -154,7 +155,7 @@ Currencies
 
 
 Crypto
----------------
+------
 
 .. code:: ipython3
 
@@ -169,7 +170,7 @@ Crypto
 
 
 Mutual Funds
----------------
+------------
 
 .. code:: ipython3
 
@@ -198,7 +199,7 @@ Treasury Rates
 
 
 Stock Fundamentals
----------------
+------------------
 
 .. code:: ipython3
 
@@ -232,7 +233,7 @@ Stock Fundamentals
     df.info()
 
 Import Financials
----------------
+-----------------
 
 .. code:: ipython3
 
