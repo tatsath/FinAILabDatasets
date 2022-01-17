@@ -25,314 +25,138 @@ To do- Add details from following sites
 - Provide a link to the jupyter notebook for this.
 
 
+Table of Contents
+-----------------
 
-Fetching the data
----------------
+- `Installation`_
+- `Usage`_ 
+- `Historical Price and Volume for 1 Stock`_
+- `Adding Time Periods`_
+- `Stock Split and Dividends`_
+- `Cryptocurrencies`_
+- `Mutual Funds`_
+- `Treasury Rates`_
+- `Stock Fundamentals`_
+- `Put Call Options`_
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
--  `6. Finanical Indices <#6>`__
--  `7. Currencies <#7>`_
-- `8. Crypto <#8>`_
-- `9. Mutual Funds <#9>`_
-- `10. Treasury <#10>`_
-- `11. Stock Fundamentals <#11>`_
-- `12.   Financials <#12>`_
-- `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`__
+Installation
+------------
+
+Install with pip:
 
 .. code:: ipython3
 
-      import quandl
+    pip install quandl
+
+Usage
+-----
+
+.. note::
+    Before working with this API, you will need to obtain
+    a key from `Nasdaq Data Link <https://data.nasdaq.com/users/login>`_
+
+.. code:: ipython3
+
+    import quandl
+    import pandas as pd 
+    import numpy as np 
+    from datetime import datetime
+    from matplotlib import pyplot as plt
+    import seaborn as sns
+
+.. code:: ipython3
+
+    # To get your API key, sign up for a free Quandl account.
+    # Then, you can find your API key on Quandl account settings page.
+    QUANDL_API_KEY = 'REPLACE-THIS-TEXT-WITH-A-REAL-API-KEY'
 
 
-      # To get your API key, sign up for a free Quandl account.
-      # Then, you can find your API key on Quandl account settings page.
-      QUANDL_API_KEY = 'REPLACE-THIS-TEXT-WITH-A-REAL-API-KEY'
+    # This is to prompt you to change the Quandl Key
+    if QUANDL_API_KEY == 'REPLACE-THIS-TEXT-WITH-A-REAL-API-KEY':
+        raise Exception("Please provide a valid Quandl API key!")
 
-
-      # This is to prompt you to change the Quandl Key
-      if QUANDL_API_KEY == 'REPLACE-THIS-TEXT-WITH-A-REAL-API-KEY':
-      raise Exception("Please provide a valid Quandl API key!")
-
-      # Set the start and end date
-      start_date = '1990-01-01'
-      end_date = '2018-03-01'
-
-
-      # Set the ticker name
-      ticker = 'AMZN'
-
-
-      # Feth the data
-      data = quandl.get('WIKI/'+ticker,
-                    start_date=start_date,
-                    end_date=end_date,
-                    api_key=QUANDL_API_KEY)
-
-
-      # Print the first 5 rows of the dataframe
-data.head()
-
-
+.. code:: ipython3
+    
+    quandl.ApiConfig.api_key = QUANDL_API_KEY
 
 Historical Price and Volume for 1 Stock
-----------
+---------------------------------------
 
 .. code:: ipython3
-    import numpy as np
-    import yfinance as yf
-    ticker = 'GE'
-    yf.download(ticker)
+
+    # Set the start and end date
+    start_date = '1990-01-01'
+    end_date = '2018-03-01'
+
+    # Set the ticker name
+    ticker = 'AMZN'
+                
+.. code:: ipython3
+
+    data = quandl.get('WIKI/'+ticker)
+    data.head()
 
 Adding Time Periods
-----------
+-------------------
 
 .. code:: ipython3
 
-    yf.download(ticker, start = "2014-01-01", end = "2018-12-31")
-    GE = yf.download(ticker, start = "2014-01-01", end = "2018-12-31")
-    GE.info()
+    data = quandl.get('WIKI/'+ticker,
+              start_date=start,
+              end_date=end)
+    data.head()
 
-
-.. parsed-literal::
-
-    <class 'pandas.core.frame.DataFrame'>
-    DatetimeIndex: 1257 entries, 2014-01-02 to 2018-12-28
-    Data columns (total 6 columns):
-    Open         1257 non-null float64
-    High         1257 non-null float64
-    Low          1257 non-null float64
-    Close        1257 non-null float64
-    Adj Close    1257 non-null float64
-    Volume       1257 non-null int64
-    dtypes: float64(5), int64(1)
-    memory usage: 68.7 KB
-
-
-
-.. code:: ipython3
-
-    yf.download(ticker, period = "ytd")
-    yf.download(ticker, period = "1mo")
-    yf.download(ticker, period = "5d")
-    yf.download(ticker, period = "10y")
-
-
-Frequency Setting
-----------
-
-.. code:: ipython3
-
-    yf.download('GE',period='1mo',interval='1h')
-    yf.download('GE',period='1mo',interval='5m')
-    GE = yf.download('GE',period='5d',interval='5m')
-    #Pre or post market data
-    GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
 Stock Split and dividends
-----------
+-------------------------
 
 .. code:: ipython3
 
-    ticker = "AAPL"
-    # action = True for dividend and Stock Split
-    AAPL = yf.download(ticker, period="10y", actions = True)
-    AAPL.head()
-
-.. code:: ipython3
-
-    AAPL[AAPL["Dividends"]>0]
-    AAPL.loc["2019-08-05":"2019-08-15"].diff()
-    AAPL[AAPL["Stock Splits"] > 0]
-    ticker = ['GE', 'AAPL','FB']
-     yf.download(ticker, period="5y")
-.. code:: ipython3
-
-     stock=yf.download(ticker, period="5y").Close
+    sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
+    sp[['Dividend', 'Real Dividend']]
 
 
-FInancial Indices
- ---------------
-
-.. code:: ipython3
-
-    index = ['^DJI', '^GSPC']
-
-.. code:: ipython3
-
-    stock = yf.download(index,period='10y').Close
-
-
-.. code:: ipython3
-
-    #Total Return
-    index = ['^DJITR', '^SP500TR']
-
-.. code:: ipython3
-
-    indexes = yf.download(index,period='10y').Close
-
-
-
-Currencies
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
 
-    #Tickers
-    ticker1 = "EURUSD=X"
-    ticker2 = "USDEUR=X"
-
-.. code:: ipython3
-
-    yf.download(ticker1,period='5y')
-
-.. code:: ipython3
-
-    yf.download(ticker2,period='5y')
-
-
-
-
-
-
-Crypto
----------------
-
-.. code:: ipython3
-
-    #Tickers
-    ticker1 = ["BTC-USD", "ETH-USD"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,start='2019-08-01',end='2020-05-01')
-
-
-
+    # bitcoin price
+    btc = quandl.get('BCHAIN/MKPRU', start_date='2020-12-29', end_date='2021-12-29')
+    btc
 
 Mutual Funds
 ---------------
 
 .. code:: ipython3
 
-    #Tickers
-    #20+Y Treasury Bobd ETF and Vivoldi Multi-Strategy Fund Class
-    ticker1 = ["TLT", "OMOIX"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,start='2019-08-01',end='2020-05-01')
-
-
-
+    # Mutual Fund Assets to GDP for World
+    mf = quandl.get('FRED/DDDI071WA156NWDB', start_date='1980-04-01', end_date='2020-10-01')
+    mf.plot(title = 'Mutual Fund Assets to GDP', figsize=(20, 6))
 
 Treasury Rates
 ---------------
 
 .. code:: ipython3
 
-    #10Y and 5Y Treasury Rates
-    ticker1 = ["^TNX", "^FVX"]
-
-.. code:: ipython3
-
-    data = yf.download(ticker1,period="5y")
+    mf = quandl.get('USTREASURY/REALLONGTERM', start_date='2000-04-01', end_date='2020-10-01')
+    mf.plot(title = 'Treasury Real Long-Term Rates', figsize=(20, 6))
 
 
 Stock Fundamentals
----------------
+------------------
 
 .. code:: ipython3
 
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
+    sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
+    sp
+
+
+Put Call Options
+----------------
 
 .. code:: ipython3
+    
+    fo = quandl.get('CFTC/1170E1_FO_ALL', start_date='2015-04-01', end_date='2021-10-01')
+    fo
 
-    dis.ticker
-
-
-.. parsed-literal::
-
-    'DIS'
-
-.. code:: ipython3
-
-    data=dis.history()
-
-.. code:: ipython3
-
-    ticker = ["MSFT","FB"]
-
-.. code:: ipython3
-
-    for i in ticker:
-        df.loc["{}".format(i)] = pd.Series(yf.Ticker(i).info)
-
-.. code:: ipython3
-
-    df.info()
-
-Import Financials
----------------
-
-.. code:: ipython3
-
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
-
-.. code:: ipython3
-
-    dis.balance_sheet
-
-.. code:: ipython3
-
-    dis.financials
-
-.. code:: ipython3
-
-    dis.cashflow
-
-Put Call Option
----------------
-
-.. code:: ipython3
-
-    ticker ="DIS"
-    dis = yf.Ticker(ticker)
-
-.. code:: ipython3
-
-    dis.option_chain()
-
-.. code:: ipython3
-
-    calls = dis.option_chain()[0]
-    calls
-
-.. code:: ipython3
-
-    puts = dis.option_chain()[1]
-    puts
-
- ### Stream Realtime Data
-
-.. code:: ipython3
-
-    import time
-
-.. code:: ipython3
-
-    ticker1 ="EURUSD=X"
-    data = yf.download(ticker1,interval = '1m', period='1d')
-    print(data.index[-1], data.iloc[-1,3])
-    #Every 5 second data corresponding to 5 seconds
-    while True:
-        time.sleep(5)
-        data = yf.download(ticker1,interval = '1m', period='1d')
-        print(data.index[-1], data.iloc[-1,3])

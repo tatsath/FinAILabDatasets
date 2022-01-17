@@ -1,7 +1,7 @@
 .. _YahooFinance:
 
 Yahoo Finance
-=========
+=============
 
 To Do:
 - Add more description into each of the component.
@@ -11,23 +11,38 @@ To Do:
 Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
 
 
-Fetching the data
----------------
+Table of Contents
+-----------------
+-  `Installation`_
+-  `Usage`_
+-  `Historical Price and Volume for 1 Stock`_
+-  `Adding Time Periods`_
+-  `Frequency Setting`_
+-  `Stock Split and Dividends`_
+-  `Financial Indices`_
+-  `Currencies`_
+-  `Cryptocurrencies`_
+-  `Mutual Funds`_
+-  `Treasury Rates`_
+-  `Stock Fundamentals`_
+-  `Financials`_
+-  `Put Call Options`_
+-  `Stream Realtime Data`_
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
--  `6. Finanical Indices <#6>`__
--  `7. Currencies <#7>`_
-- `8. Crypto <#8>`_
-- `9. Mutual Funds <#9>`_
-- `10. Treasury <#10>`_
-- `11. Stock Fundamentals <#11>`_
-- `12.   Financials <#12>`_
-- `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`__
+Installation
+------------
+
+Install yfinance using pip:
+
+.. code:: ipython3
+
+    pip install yfinance --upgrade --no-cache-dir
+
+.. note::
+    To install yfinance using conda, see `this <https://anaconda.org/ranaroussi/yfinance>`_
+
+Usage
+-----
 
 .. code:: ipython3
 
@@ -35,16 +50,17 @@ Fetching the data
     import yfinance as yf
 
 Historical Price and Volume for 1 Stock
-----------
+---------------------------------------
 
 .. code:: ipython3
+
     import numpy as np
     import yfinance as yf
     ticker = 'GE'
     yf.download(ticker)
 
 Adding Time Periods
-----------
+-------------------
 
 .. code:: ipython3
 
@@ -78,7 +94,7 @@ Adding Time Periods
 
 
 Frequency Setting
-----------
+-----------------
 
 .. code:: ipython3
 
@@ -88,8 +104,8 @@ Frequency Setting
     #Pre or post market data
     GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
-Stock Split and dividends
-----------
+Stock Split and Dividends
+-------------------------
 
 .. code:: ipython3
 
@@ -110,8 +126,8 @@ Stock Split and dividends
      stock=yf.download(ticker, period="5y").Close
 
 
-FInancial Indices
- ---------------
+Financial Indices
+-----------------
 
 .. code:: ipython3
 
@@ -155,7 +171,7 @@ Currencies
 
 
 
-Crypto
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
@@ -200,7 +216,7 @@ Treasury Rates
 
 
 Stock Fundamentals
----------------
+------------------
 
 .. code:: ipython3
 
@@ -233,8 +249,8 @@ Stock Fundamentals
 
     df.info()
 
-Import Financials
----------------
+Financials
+----------
 
 .. code:: ipython3
 
@@ -253,8 +269,8 @@ Import Financials
 
     dis.cashflow
 
-Put Call Option
----------------
+Put Call Options
+----------------
 
 .. code:: ipython3
 
@@ -275,7 +291,8 @@ Put Call Option
     puts = dis.option_chain()[1]
     puts
 
- ### Stream Realtime Data
+Stream Realtime Data
+--------------------
 
 .. code:: ipython3
 
