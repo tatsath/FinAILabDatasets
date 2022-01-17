@@ -20,9 +20,9 @@ The data covered in this documentation include:
 - Stock Options, Stock Splits and Dividends for 5000+ Stocks
 - Fundamentals, Metrics and Ratios for Stocks, Bonds, Indexes, Mutual Funds and ETFs
 - Balance Sheets, Cashflow and Profit and Loss Statements (P&L)
-- 50+ Technical Indicators (i.e. SMA, Bollinger Bands)- 
+- 50+ Technical Indicators (i.e. SMA, Bollinger Bands)-
 
-.. csv-table::   
+.. csv-table::
    :file: Data/feature_tracker_table.csv
    :header-rows: 1
    :class: longtable
@@ -41,6 +41,12 @@ The data covered in this documentation include:
    Source/IEX
    Source/Oanda
    Source/finviz
+
+.. toctree::
+  :maxdepth: 1
+  :caption: Categories
+
+  Type/Equities
 
 
 Contributing
