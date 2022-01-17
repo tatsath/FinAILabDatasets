@@ -33,20 +33,17 @@ The data covered in this documentation include:
 - Stock Splits and Dividends and how these are reflected in Stock Prices
 … and use appropriately adjusted data for your tasks! (avoid the Pitfalls!).
 
-+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-|   EQUITIES   |      FX      | FIXED INCOME | COMMODITIES  |    CRYPTO    | FUNDAMENTALS |  SENTIMENT   |  MACRO DATA  |   ALT DATA   | REALTIME DATA|  FINANCIALS  |
-+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+==============+
-|`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_| column 3  |`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_|`Yahoo Finance <Source/YahooFinance.rst>`_|`Alphavantage <Source/Alphavantage.rst>`_|`Alphavantage <Source/Alphavantage.rst>`_| column 3  | body row 1 |`Yahoo Finance <Source/YahooFinance.rst>`_|
-+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
-+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
-+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
-| body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   | column 3  | body row 1 | column 2   |
-+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+.. csv-table:: Cheatsheet
+   :file: Data/feature_tracker_table.csv
+   :header-rows: 1
+   :class: longtable
+   :widths: auto
 
-.. list-table:: Summary
-   :widths: 12 12 12 12 12 12 12 12 12 12 12
+.. tabularcolumns:: |p{4cm}|p{4cm}|p{4cm}||p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|p{4cm}|
+
+.. table:: Summary
+   :widths: auto
+   :class: longtable
    :header-rows: 1
    
    * - EQUITIES
