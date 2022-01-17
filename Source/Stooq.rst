@@ -12,16 +12,26 @@ To Do:
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
-Fetching the data
+Table of Contents
 -----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
-- `3. Mutual Funds <#3>`_
+- `Installation`_
+- `Usage`_
+- `Historical Price and Volume for 1 Stock`_
+- `Adding Time Periods`_
+- `Mutual Funds`_
 
+Installation
+------------
 
+Install with pip:
 
-Replace the ticker variable to whatever you would like from: https://stooq.com/q/?s=btc.v
+.. code:: ipython3
+
+    pip install pandas-datareader
+
+Usage
+-----
 
 .. code:: ipython3
 
@@ -29,6 +39,9 @@ Replace the ticker variable to whatever you would like from: https://stooq.com/q
     import numpy as np
     import pandas_datareader.data as web
     from datetime import datetime
+
+.. note::
+    Replace the ticker variable to whatever you would like from: https://stooq.com/q/?s=btc.v
 
 Historical Price and Volume for 1 Stock
 ---------------------------------------

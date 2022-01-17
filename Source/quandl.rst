@@ -26,19 +26,35 @@ To do- Add details from following sites
 
 
 
-Fetching the data
+Table of Contents
 -----------------
 
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
-- `6. Crypto <#6>`_
-- `7. Mutual Funds <#7>`_
-- `8. Treasury <#8>`_
-- `9. Stock Fundamentals <#9>`_
-- `10. Put Call Options <#10>`_
+- `Installation`_
+- `Usage`_ 
+- `Historical Price and Volume for 1 Stock`_
+- `Adding Time Periods`_
+- `Stock Split and Dividends`_
+- `Cryptocurrencies`_
+- `Mutual Funds`_
+- `Treasury Rates`_
+- `Stock Fundamentals`_
+- `Put Call Options`_
+
+Installation
+------------
+
+Install with pip:
+
+.. code:: ipython3
+
+    pip install quandl
+
+Usage
+-----
+
+.. note::
+    Before working with this API, you will need to obtain
+    a key from `Nasdaq Data Link <https://data.nasdaq.com/users/login>`_
 
 .. code:: ipython3
 
@@ -49,6 +65,7 @@ Fetching the data
     from matplotlib import pyplot as plt
     import seaborn as sns
 
+.. code:: ipython3
 
     # To get your API key, sign up for a free Quandl account.
     # Then, you can find your API key on Quandl account settings page.
@@ -57,34 +74,24 @@ Fetching the data
 
     # This is to prompt you to change the Quandl Key
     if QUANDL_API_KEY == 'REPLACE-THIS-TEXT-WITH-A-REAL-API-KEY':
-    raise Exception("Please provide a valid Quandl API key!")
+        raise Exception("Please provide a valid Quandl API key!")
+
+.. code:: ipython3
+    
     quandl.ApiConfig.api_key = QUANDL_API_KEY
+
+Historical Price and Volume for 1 Stock
+---------------------------------------
+
+.. code:: ipython3
 
     # Set the start and end date
     start_date = '1990-01-01'
     end_date = '2018-03-01'
 
-
     # Set the ticker name
     ticker = 'AMZN'
-
-
-    # Feth the data
-    data = quandl.get('WIKI/'+ticker,
-                start_date=start_date,
-                end_date=end_date,
-                api_key=QUANDL_API_KEY)
-
-
-    # Print the first 5 rows of the dataframe
-    data.head()
-    sns.set()
-
-
-
-Historical Price and Volume for 1 Stock
----------------------------------------
-
+                
 .. code:: ipython3
 
     data = quandl.get('WIKI/'+ticker)
@@ -110,7 +117,7 @@ Stock Split and dividends
     sp[['Dividend', 'Real Dividend']]
 
 
-Crypto
+Cryptocurrencies
 ---------------
 
 .. code:: ipython3
@@ -145,8 +152,8 @@ Stock Fundamentals
     sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
     sp
 
-Put Call Option
----------------
+Put Call Options
+----------------
 
 .. code:: ipython3
     

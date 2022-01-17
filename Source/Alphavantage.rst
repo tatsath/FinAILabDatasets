@@ -17,6 +17,7 @@ https://github.com/RomelTorres/alpha_vantage
 Table of Contents
 -----------------
 
+-  `Link to the Jupyter Notebook <FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb>`
 -  `Installation`_
 -  `Usage`_
 -  `Symbol Search`_
@@ -87,7 +88,7 @@ Symbol Search
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Link to the `historic price and volume of one stock <FinAILabDatasets/JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
+Link to the `historic price and volume of one stock <../JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
 
 Adjust the symbol using the dictionary below
 

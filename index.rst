@@ -1,17 +1,5 @@
-.. toctree::
-   :hidden:
-
-   Equities
-
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
-
-L1.1
-This will :hoverxref:`first link <Equities:Equities>` in the linked words to ``hoverxref``.
-
-L2
-This will :hoverxref:`second link <Equities:volume-and-price-data>` in the linked words to ``hoverxref``.
-
 
 Welcome to the Documentation for `FinAILab Dataset <http://finailab.com/all-datasets/>`_.
 This documentation contains the information about the **Free financial dataset** for thousands
@@ -43,41 +31,13 @@ The data covered in this documentation include:
 - Real-time and Historical Data (back to 1960s)
 - Streaming high-frequency real-time Data
 - Stock Splits and Dividends and how these are reflected in Stock Prices
-… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!)
+… and use appropriately adjusted data for your tasks! (avoid the Pitfalls!).
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Notebooks
-
-   JupyterNotebooks/Alphavantage.ipynb
-   JupyterNotebooks/EOD.ipynb
-   JupyterNotebooks/finviz.ipynb
-   JupyterNotebooks/FRED.ipynb
-   JupyterNotebooks/FundamentalAnalysis.ipynb
-   JupyterNotebooks/FXCM.ipynb
-   JupyterNotebooks/IEX.ipynb
-   JupyterNotebooks/Oanda.ipynb
-   JupyterNotebooks/quandl.ipynb
-   JupyterNotebooks/stooq.ipynb
-   JupyterNotebooks/yahoofinancials.ipynb
-   JupyterNotebooks/yfinance.ipynb
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Categories
-
-   Type/Equity
-   Type/FX
-   Type/OptionFutures
-   Type/FixedIncome
-   Type/Commodities
-   Type/Crypto
-   Type/Fundamentals
-   Type/News
-   Type/Macroeconomic
-   Type/AlternativeData
-   Type/Realtime
-   Type/FinancialDatasets
+.. csv-table::   
+   :file: Data/feature_tracker_table.csv
+   :header-rows: 1
+   :class: longtable
+   :widths: auto
 
 .. toctree::
    :maxdepth: 1
@@ -85,15 +45,14 @@ The data covered in this documentation include:
 
    Source/YahooFinance
    Source/Alphavantage
-   Source/FXCM
+   Source/FundamentalAnalysis
    Source/quandl
    Source/FRED
    Source/Stooq
    Source/IEX
+   Source/Oanda
+   Source/finviz
 
-.. toctree::
-  :maxdepth: 1
-  :caption: DataFrequency
 
 
 

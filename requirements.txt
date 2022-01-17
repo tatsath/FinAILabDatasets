@@ -1,6 +1,9 @@
 gym
 pandas
+pandoc
+sphinx
 nbsphinx
+sphinx-press-theme
 sphinx-hoverxref
 ipykernel
 numpy
@@ -16,4 +19,4 @@ FundamentalAnalysis
 financedatabase
 pyEX
 quandl
-YahooFinancials 
+yahoofinancials 
