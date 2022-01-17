@@ -20,8 +20,6 @@ The data can be obtained from the following sources. Click to view the code to r
 - `Fundamental Analysis <https://finailabdatasets.readthedocs.io/en/latest/Source/FundamentalAnalysis.html#historical-price-and-volume-for-1-stock>`_
 
 
-- `Fundamental Analysis <https://finailabdatasets.readthedocs.io/en/latest/Source/FundamentalAnalysis.html#historical-price-and-volume-for-1-stock>`_
-
 - `Quandl <https://finailabdatasets.readthedocs.io/en/latest/Source/quandl.html#historical-price-and-volume-for-1-stock>`_
 
 - `FRED <https://finailabdatasets.readthedocs.io/en/latest/Source/FRED.html#historical-price-for-1-stock>`_

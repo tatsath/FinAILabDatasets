@@ -10,7 +10,7 @@ There are many alternatives out there (YahooFinance, AlphaVantage, Quandl etc.).
 This page describes how to download the data from different sources.
 
 Treasury Rates:
------------------------------=
+-----------------------------
 
 The data can be obtained from the following sources. Click to view the code to retrieve it
 
