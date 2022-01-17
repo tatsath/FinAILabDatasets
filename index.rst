@@ -22,6 +22,9 @@ The data covered in this documentation include:
 - Balance Sheets, Cashflow and Profit and Loss Statements (P&L)
 - 50+ Technical Indicators (i.e. SMA, Bollinger Bands)-
 
+Financial Datasets - Summary by source and types:
+-----------------------------------------------
+
 .. csv-table::
    :file: Data/feature_tracker_table.csv
    :header-rows: 1
@@ -54,7 +57,7 @@ The data covered in this documentation include:
   Type/Macroeconomic
   Type/News
   Type/Fundamentals
-  Type/Equities
+
 
 
 
