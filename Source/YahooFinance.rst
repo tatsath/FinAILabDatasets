@@ -41,6 +41,8 @@ Install yfinance using pip:
 .. note::
     To install yfinance using conda, see `this <https://anaconda.org/ranaroussi/yfinance>`_
 
+Test: read the :ref:`Alphavantage:Symbol Search` section.
+
 Usage
 -----
 
