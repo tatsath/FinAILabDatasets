@@ -41,7 +41,7 @@ Install yfinance using pip:
 .. note::
     To install yfinance using conda, see `this <https://anaconda.org/ranaroussi/yfinance>`_
 
-Test: read the :ref:`Alphavantage:Symbol Search` section.
+Test: read the `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Source/Alphavantage.html#historical-price-and-volume-for-1-stock>`_
 
 Usage
 -----
