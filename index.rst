@@ -4,7 +4,7 @@ FinAILab's Datasets! - Free Financial data for building AI and Machine Learning 
 This documentation contains the information about the **Free financial dataset** for thousands
 of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `FinAILab <http://finailab.com/>`_.
 
-This doumentation shows you how to get massive amounts of Financial Data and explains in detail how to install required Libraries and how to download and import the data with few lines of Python Code
+This doumentation shows you how to get massive amounts of Financial Data and explains how to **install required Libraries** and how to **download/import the data** with few lines of Python Code.
 
 The data covered in this documentation include:
 -----------------------------------------------
