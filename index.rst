@@ -47,6 +47,15 @@ The data covered in this documentation include:
   :caption: Categories
 
   Type/Equities
+  Type/FixedIncome
+  Type/FX
+  Type/Crypto
+  Type/OptionFuture
+  Type/Macroeconomic
+  Type/News
+  Type/Fundamentals
+  Type/Equities
+
 
 
 Contributing

@@ -4,120 +4,32 @@
 Options and Future
 =================
 
-o	Yahoo Finance: https://aroussi.com/post/download-options-data
+The Data of Options and Future  from several indices for thousands of tickers across several frenquncies can be downloaded freely.
+There are many alternatives out there (YahooFinance, AlphaVantage, Quandl etc.).
 
-Python-based master template for supervised regression, a time
-series model template, and the Jupyter notebook for all case studies
-presented is included in the Chapter 5 - Sup.
-Learning - Regression and Time Series models of the code repository
-for this book.
-For any new supervised regression–based case study, use the com‐
-mon template from the code repository, modify the elements spe‐
-cific to the case study, and borrow the concepts and insights from
-the case studies presented in this chapter. The template also
-includes the implementation and tuning of the ARIMA and LSTM
-models.3 The templates are designed to run on the cloud (i.e., Kag‐
-gle, Google Colab, and AWS). All the case studies have been
-designed on a uniform regression template.4
+This page describes how to download the data from different sources.
 
-`RL Baselines ZooO <https://github.com/araffin/rl-baselines-zoo>`_. is a collection of pre-trained Reinforcement Learning agents using
-Stable-Baselines.
-It also provides basic scripts for training, evaluating agents, tuning hyperparameters and recording videos.
+Options and Future - Volume and price data:
+-----------------------------
 
-Goals of this repository:
+The data can be obtained from the following sources. Click to view the code to retrieve it
 
-1. Provide a simple interface to train and enjoy RL agents
-2. Benchmark the different Reinforcement Learning algorithms
-3. Provide tuned hyperparameters for each environment and RL algorithm
-4. Have fun with the trained agents!
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Source/YahooFinance.html#put-call-options>`_
 
-Installation
-------------
-
-1. Install dependencies
-::
-
-   apt-get install swig cmake libopenmpi-dev zlib1g-dev ffmpeg
-   pip install stable-baselines box2d box2d-kengz pyyaml pybullet optuna pytablewriter
-
-2. Clone the repository:
-
-::
-
-  git clone https://github.com/araffin/rl-baselines-zoo
+- `Quandl <https://finailabdatasets.readthedocs.io/en/latest/Source/quandl.html#put-call-options>`_
 
 
-Train an Agent
---------------
 
-The hyperparameters for each environment are defined in
-``hyperparameters/algo_name.yml``.
+Changing Time period
+-----------------------------
 
-If the environment exists in this file, then you can train an agent
-using:
-
-::
-
- python train.py --algo algo_name --env env_id
-
-For example (with tensorboard support):
-
-::
-
- python train.py --algo ppo2 --env CartPole-v1 --tensorboard-log /tmp/stable-baselines/
-
-Train for multiple environments (with one call) and with tensorboard
-logging:
-
-::
-
- python train.py --algo a2c --env MountainCar-v0 CartPole-v1 --tensorboard-log /tmp/stable-baselines/
-
-Continue training (here, load pretrained agent for Breakout and continue
-training for 5000 steps):
-
-::
-
- python train.py --algo a2c --env BreakoutNoFrameskip-v4 -i trained_agents/a2c/BreakoutNoFrameskip-v4.pkl -n 5000
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Source/YahooFinance.html#adding-time-periods>`_
 
 
-Enjoy a Trained Agent
----------------------
-
-If the trained agent exists, then you can see it in action using:
-
-::
-
-  python enjoy.py --algo algo_name --env env_id
-
-For example, enjoy A2C on Breakout during 5000 timesteps:
-
-::
-
-  python enjoy.py --algo a2c --env BreakoutNoFrameskip-v4 --folder trained_agents/ -n 5000
+- `Quandl <https://finailabdatasets.readthedocs.io/en/latest/Source/quandl.html#adding-time-periods>`_
 
 
-Hyperparameter Optimization
----------------------------
+Realtime Data
+-----------------------------
 
-We use `Optuna <https://optuna.org/>`_ for optimizing the hyperparameters.
-
-
-Tune the hyperparameters for PPO2, using a random sampler and median pruner, 2 parallels jobs,
-with a budget of 1000 trials and a maximum of 50000 steps:
-
-::
-
-  python train.py --algo ppo2 --env MountainCar-v0 -n 50000 -optimize --n-trials 1000 --n-jobs 2 \
-    --sampler random --pruner median
-
-
-Colab Notebook: Try it Online!
-------------------------------
-
-You can train agents online using Google `colab notebook <https://colab.research.google.com/github/Stable-Baselines-Team/rl-colab-notebooks/blob/master/rl-baselines-zoo.ipynb>`_.
-
-
-.. note::
-
-	You can find more information about the rl baselines zoo in the repo `README <https://github.com/araffin/rl-baselines-zoo>`_. For instance, how to record a video of a trained agent.
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Source/YahooFinance.html#stream-realtime-data>`_
