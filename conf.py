@@ -18,6 +18,11 @@ source_suffix = [".rst", ".md"]
 # The master toctree document.
 master_doc = 'index'
 
+extensions = [
+    'sphinx.ext.autosectionlabel'
+]
+autosectionlabel_prefix_document = True
+
 # exclude_patterns = [
 # 	'_build'
 # ]
