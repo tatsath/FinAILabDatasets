@@ -84,7 +84,6 @@ Currencies
     er.plot(title = 'Chinese Yuan Renminbi to U.S. Dollar Spot Exchange Rate', secondary_y = "DGS10", figsize=(20, 6))
     plt.tight_layout()
 
-
 Cryptocurrencies
 ---------------
 

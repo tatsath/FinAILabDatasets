@@ -8,7 +8,7 @@ By searching a ticker and going to ‘historical data’, you can get historical
 You can also download a .csv. Unfortunately there is no API access but its a great resource nonetheless.
 
 To Do:
-- Add more description into each of the component.
+
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
