@@ -35,31 +35,28 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Source
 
-   Source/YahooFinance
-   Source/Alphavantage
-   Source/FundamentalAnalysis
-   Source/quandl
-   Source/FRED
-   Source/Stooq
-   Source/IEX
-   Source/Oanda
-   Source/finviz
+   Docs/YahooFinance
+   Docs/Alphavantage
+   Docs/FundamentalAnalysis
+   Docs/quandl
+   Docs/FRED
+   Docs/Stooq
+   Docs/IEX
+   Docs/Oanda
+   Docs/finviz
 
 .. toctree::
   :maxdepth: 1
   :caption: Categories
 
-  Type/Equities
-  Type/FixedIncome
-  Type/FX
-  Type/Crypto
-  Type/OptionFuture
-  Type/Macroeconomic
-  Type/News
-  Type/Fundamentals
-
-
-
+  Docs/Equities
+  Docs/FixedIncome
+  Docs/FX
+  Docs/Crypto
+  Docs/OptionFuture
+  Docs/Macroeconomic
+  Docs/News
+  Docs/Fundamentals
 
 Contributing
 ------------
