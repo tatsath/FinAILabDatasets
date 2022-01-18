@@ -25,12 +25,11 @@ To do- Add details from following sites
 - Provide a link to the jupyter notebook for this.
 
 
-
 Table of Contents
 -----------------
 
 - `Installation`_
-- `Usage`_ 
+- `Usage`_
 - `Historical Price and Volume for 1 Stock`_
 - `Adding Time Periods`_
 - `Stock Split and Dividends`_
@@ -59,8 +58,8 @@ Usage
 .. code:: ipython3
 
     import quandl
-    import pandas as pd 
-    import numpy as np 
+    import pandas as pd
+    import numpy as np
     from datetime import datetime
     from matplotlib import pyplot as plt
     import seaborn as sns
@@ -77,7 +76,7 @@ Usage
         raise Exception("Please provide a valid Quandl API key!")
 
 .. code:: ipython3
-    
+
     quandl.ApiConfig.api_key = QUANDL_API_KEY
 
 Historical Price and Volume for 1 Stock
@@ -91,7 +90,7 @@ Historical Price and Volume for 1 Stock
 
     # Set the ticker name
     ticker = 'AMZN'
-                
+
 .. code:: ipython3
 
     data = quandl.get('WIKI/'+ticker)
@@ -152,11 +151,11 @@ Stock Fundamentals
     sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
     sp
 
+
 Put Call Options
 ----------------
 
 .. code:: ipython3
-    
+
     fo = quandl.get('CFTC/1170E1_FO_ALL', start_date='2015-04-01', end_date='2021-10-01')
     fo
-
