@@ -11,8 +11,7 @@ https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-
 https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
 https://github.com/RomelTorres/alpha_vantage
 
-.. warning::
-    Links to JupyterNBs are currently not working.
+
 
 Table of Contents
 -----------------
@@ -25,7 +24,7 @@ Table of Contents
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
 -  `Stock Split and Dividends`_
--  `Currencies`_
+-  `Foreign Exchange`_
 -  `Cryptocurrencies`_
 -  `Mutual Funds`_
 -  `Treasury Rates`_
@@ -34,6 +33,7 @@ Table of Contents
 -  `Stream Realtime Data`_
 -  `Economic Indicators`_
 -  `Technical Indicators`_
+-  `Sector Performance`_
 
 Installation
 ------------
@@ -64,6 +64,8 @@ Or install from the source
 Usage
 -----
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
     from alpha_vantage.timeseries import TimeSeries
@@ -72,10 +74,18 @@ Usage
     import requests
     from io import BytesIO
 
+.. code:: ipython3
+
     key = 'insert your unique key here'
 
 Symbol Search
 -------------
+
+For checking to see if the equity, commodity, mutual fund, etc. you want is available on Alphavantage:
+
+.. note::
+    This example, and the following, also demonstrate how to convert an Alphavantage dictionary
+    into a Pandas DataFrame for easier data analysis.
 
 .. code:: ipython3
 
@@ -88,46 +98,47 @@ Symbol Search
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Link to the `historic price and volume of one stock <../JupyterNotebooks/Alphavantage.ipynb#historical-price-and-volume-for-1-stock>`_ JupyterNB cell.
+Outputs a Pandas DataFrame containing the values for open, high, low, close, and volume (OHLCV) of an equity.
 
-Adjust the symbol using the dictionary below
+.. note::
+    See the data dictionary for adjustments to time frame. Daily, weekly, and monthly time frames are available for equities.
 
 .. code:: ipython3
 
     data = {
-    "function": "TIME_SERIES_DAILY", # WEEKLY, MONTHLY possible
-    "symbol": "TSLA",
-    "apikey": key
+        "function": "TIME_SERIES_DAILY", # WEEKLY, MONTHLY possible
+        "symbol": "TSLA",
+        "apikey": key
     }
     r = requests.get(url, params=data)
     data = r.json()
     data = pd.DataFrame(data['Time Series (Daily)']).T
-    data
 
 Adding Time Periods
 ^^^^^^^^^^^^^^^^^^^
 
+Shown below are the adjusted dictionaries for weekly and monthly time frames.
+
 .. code:: ipython3
 
     weekly = {
-    "function": "DIGITAL_CURRENCY_WEEKLY", # WEEKLY, MONTHLY possible
-    "symbol": "ETH",
-    "market": 'CNY',
-    "apikey": key
+        "function": "DIGITAL_CURRENCY_WEEKLY",
+        "symbol": "ETH",
+        "market": 'CNY',
+        "apikey": key
     }
 
     monthly = {
-    "function": "DIGITAL_CURRENCY_MONTHLY", # WEEKLY, MONTHLY possible
-    "symbol": "ETH",
-    "market": 'CNY',
-    "apikey": key
+        "function": "DIGITAL_CURRENCY_MONTHLY",
+        "symbol": "ETH",
+        "market": 'CNY',
+        "apikey": key
     }
 
 Frequency Setting
 -----------------
-Link to the `intraday data`_ JupyterNB cell.
 
-.. _intraday data: JupyterNotebooks/Alphavantage.ipynb#Intraday-Data
+Outputs a similar Pandas DataFrame that breaks the OHLCV down into 1 minute intervals.
 
 .. code:: ipython3
 
@@ -147,9 +158,8 @@ Link to the `intraday data`_ JupyterNB cell.
 
 Stock Split and dividends
 -------------------------
-Link to the `dividends`_ JupyterNB cell.
 
-.. _dividends: JupyterNotebooks/Alphavantage.ipynb#Dividends
+Outputs a Pandas DataFrame with the DPS, Yield, Dividend Date and ExDate for the given ticker.
 
 .. code:: ipython3
 
@@ -162,24 +172,22 @@ Link to the `dividends`_ JupyterNB cell.
 
 Financial Indices
 -----------------
-Link to the `financial indices`_ JupyterNB cell.
 
-.. _financial indices: JupyterNotebooks/Alphavantage.ipynb#Indices
+.. note::
+    This feature requires a premium subscription.
 
 .. code:: ipython3
 
-    # premium feature, NOT FULLY TESTED
     index = "DJI" # FCHI, IXIC, ...
     url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol='+index+'&outputsize=full&apikey={key}'
     r = requests.get(url)
     data = r.json()
 
 
-Currencies
-----------
-Link to the `currency exchange`_ JupyterNB cell.
+Foreign Exchange
+----------------
 
-.. _currency exchange: JupyterNotebooks/Alphavantage.ipynb#Currency-Exchange
+Outputs a dictionary with the exchange rate's OHLC values on the given time interval.
 
 .. code:: ipython3
 
@@ -191,11 +199,23 @@ Link to the `currency exchange`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
+Alternatively, you can use the ```ForeignExchange``` library.
+
+.. code:: ipython3
+
+    from alpha_vantage.foreignexchange import ForeignExchange
+    from pprint import pprint
+    cc = ForeignExchange(key='YOUR_API_KEY')
+    # There is no metadata in this call
+    data, _ = cc.get_currency_exchange_rate(from_currency='BTC',to_currency='USD')
+    pprint(data)
+
 Cryptocurrencies
 ----------------
-Link to the `cryptocurrencies`_ JupyterNB cell.
 
-.. _cryptocurrencies: JupyterNotebooks/Alphavantage.ipynb#Cryptocurrencies
+There are multiple ways to view data on cryptocurrencies.
+
+The first is using Alphavantage's API request which returns the OHLCV for the given crypto:
 
 .. code:: ipython3
 
@@ -204,14 +224,38 @@ Link to the `cryptocurrencies`_ JupyterNB cell.
     r = requests.get(url)
     data = r.json()
 
+Another way is to import the ```CryptoCurrencies``` library, which allows for easy plotting:
 
+.. code:: ipython3
 
+    from alpha_vantage.cryptocurrencies import CryptoCurrencies
+    import matplotlib.pyplot as plt
+
+    cc = CryptoCurrencies(key='YOUR_API_KEY', output_format='pandas')
+    data, meta_data = cc.get_digital_currency_daily(symbol='BTC', market='CNY')
+    data['4b. close (USD)'].plot()
+    plt.tight_layout()
+    plt.title('Daily close value for bitcoin (BTC)')
+    plt.grid()
+    plt.show()
+
+Lastly, we can view the excahnge rates for cryptos:
+
+.. code:: ipython3
+
+    data = {
+    "function": "CURRENCY_EXCHANGE_RATE", # WEEKLY, MONTHLY possible
+    "from_currency": "ETH",
+    "to_currency": 'USD',
+    "apikey": key
+    }
+    r = requests.get(url, params=data)
+    data = r.json()
 
 Mutual Funds
 ---------------
-Link to the `mutual funds`_ JupyterNB cell.
 
-.. _mutual funds: JupyterNotebooks/Alphavantage.ipynb#Mutual-Funds
+Outputs a dictionary of the OHLCV values for the given mutual fund.
 
 .. code:: ipython3
 
@@ -222,20 +266,26 @@ Link to the `mutual funds`_ JupyterNB cell.
 
 Treasury Rates
 ---------------
-Link to the `treasury yield`_ JupyterNB cell.
 
-.. _treasury yield: JupyterNotebooks/Alphavantage.ipynb#Treasury-Yield
+Outputs a dictionary of the daily, weekly, or monthly treasury rate.
 
 .. code:: ipython3
 
-    maturity = '10year' # 3month, 5year, 10year, 30year
-    interval = 'daily' # weekly, monthly
-    url = 'https://www.alphavantage.co/query?function=TREASURY_YIELD&interval='+interval+'&maturity='+maturity+'&apikey={key}'
-    r = requests.get(url)
+    treasury_yield = {
+        "function": "TREASURY_YIELD",
+        "interval": "weekly", # daily, monthly
+        "maturity": "3month", # OPTIONAL 5year, 10year, 30year
+        "apikey": key
+    }
+    r = requests.get(url, params=treasury_yield)
     data = r.json()
 
 Stock Fundamentals
 ------------------
+
+Outputs a dictionary of various stock data, including: AssetType, Description, 
+Sector, Address, Market Cap, EBITDA, PE, EPS, RPS, Profit Margin, Moving Averages,
+Revenue, and Beta.
 
 .. code:: ipython3
 
@@ -246,9 +296,8 @@ Stock Fundamentals
 
 Financials
 ----------
-Link to the `financials`_ JupyterNB cell.
 
-.. _financials: JupyterNotebooks/Alphavantage.ipynb#Financials
+Outputs a dictionary containing the information for a company's balance sheet, cash flows, or income statement. 
 
 .. code:: ipython3
 
@@ -259,9 +308,8 @@ Link to the `financials`_ JupyterNB cell.
 
 Stream Realtime Data
 --------------------
-Link to the `realtime data`_ JupyterNB cell.
 
-.. _realtime data: JupyterNotebooks/Alphavantage.ipynb#Realtime-Data
+Each invocation of the below function will produce the most up-to-date data on the given symbol.
 
 .. code:: ipython3
 
@@ -285,9 +333,9 @@ Link to the `realtime data`_ JupyterNB cell.
 
 Economic Indicators
 -------------------
-Link to the `economic indicators`_ JupyterNB cell.
 
-.. _economic indicators: JupyterNotebooks/Alphavantage.ipynb#Economic-Indicators
+Below are a few dictionaries that contain different economic indicators that can be plugged 
+into the JSON request at the very bottom.
 
 .. code:: ipython3
 
@@ -325,6 +373,11 @@ Link to the `economic indicators`_ JupyterNB cell.
         "function": "UNEMPLOYMENT",
         "apikey": key
     }
+
+Below is the aforementioned JSON request, where you will replace the `params` variable.
+
+.. code:: ipython3
+
     r = requests.get(url, params=unemployment) # REPLACE 'params' with desired dict
     data = r.json()
     df = pd.DataFrame(data['data'])
@@ -332,9 +385,8 @@ Link to the `economic indicators`_ JupyterNB cell.
 
 Technical Indicators
 --------------------
-Link to the `technical indicators`_ JupyterNB cell.
 
-.. _Technical Indicators: JupyterNotebooks/Alphavantage.ipynb#Technical-Indicators
+Below is the JSON request approach to getting data on various technical indicators.
 
 .. code:: ipython3
 
@@ -349,3 +401,35 @@ Link to the `technical indicators`_ JupyterNB cell.
 
     r = requests.get(url, params=popular_ti)
     data = r.json()
+
+Alternatively, you can use the ``TechIndicators`` library to achieve similar results.
+
+.. code:: ipython3
+
+    from alpha_vantage.techindicators import TechIndicators
+    import matplotlib.pyplot as plt
+
+    ti = TechIndicators(key='YOUR_API_KEY', output_format='pandas')
+    data, meta_data = ti.get_bbands(symbol='MSFT', interval='60min', time_period=60)
+    data.plot()
+    plt.title('BBbands indicator for  MSFT stock (60 min)')
+    plt.show()
+
+Sector Performance
+------------------
+
+Lastly, Alphavantage allows you to use the ```SectorPerformances``` library to 
+view the realtime performance, by sector:
+
+.. code:: ipython3
+
+    from alpha_vantage.sectorperformance import SectorPerformances
+    import matplotlib.pyplot as plt
+
+    sp = SectorPerformances(key='YOUR_API_KEY', output_format='pandas')
+    data, meta_data = sp.get_sector()
+    data['Rank A: Real-Time Performance'].plot(kind='bar')
+    plt.title('Real Time Performance (%) per Sector')
+    plt.tight_layout()
+    plt.grid()
+    plt.show()
