@@ -52,11 +52,28 @@ Financial Datasets - Summary by source and types:
   Docs/Equities
   Docs/FixedIncome
   Docs/FX
+  Docs/Commodities
   Docs/Crypto
+  Docs/Fundamentals
   Docs/OptionFuture
   Docs/Macroeconomic
   Docs/News
-  Docs/Fundamentals
+  Docs/AlternativeData
+  
+.. toctree::
+   :maxdepth: 2
+   :caption: Notebooks:
+
+   Docs/JupyterNotebooks/Alphavantage.ipynb
+   Docs/JupyterNotebooks/finviz.ipynb
+   Docs/JupyterNotebooks/FRED.ipynb
+   Docs/JupyterNotebooks/FundamentalAnalysis.ipynb
+   Docs/JupyterNotebooks/IEX.ipynb
+   Docs/JupyterNotebooks/Oanda.ipynb
+   Docs/JupyterNotebooks/quandl.ipynb
+   Docs/JupyterNotebooks/stooq.ipynb
+   Docs/JupyterNotebooks/yfinance.ipynb
+
 
 Contributing
 ------------

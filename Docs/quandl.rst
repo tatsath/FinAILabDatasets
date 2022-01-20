@@ -29,16 +29,17 @@ To do- Add details from following sites
 Table of Contents
 -----------------
 
+- `Jupyter Notebook <JupyterNotebooks/quandl.ipynb>`_
 - `Installation`_
 - `Usage`_ 
 - `Historical Price and Volume for 1 Stock`_
 - `Adding Time Periods`_
-- `Stock Split and Dividends`_
+- `Dividends`_
 - `Cryptocurrencies`_
 - `Mutual Funds`_
 - `Treasury Rates`_
 - `Stock Fundamentals`_
-- `Put Call Options`_
+- `Futures and Options`_
 
 Installation
 ------------
@@ -55,6 +56,10 @@ Usage
 .. note::
     Before working with this API, you will need to obtain
     a key from `Nasdaq Data Link <https://data.nasdaq.com/users/login>`_
+
+Quandl is the library used for accessing the `Nasdaq Data Link <https://data.nasdaq.com/search>`_ 
+database, so all of the queries below follow a similar pattern that can be reproduced with 
+any of the ID codes from the database.
 
 .. code:: ipython3
 
@@ -83,6 +88,8 @@ Usage
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
+Outputs the OHLCV, as well as dividend data and adjusted OHLCV for the given ``ticker``.
+
 .. code:: ipython3
 
     # Set the start and end date
@@ -95,10 +102,12 @@ Historical Price and Volume for 1 Stock
 .. code:: ipython3
 
     data = quandl.get('WIKI/'+ticker)
-    data.head()
+
 
 Adding Time Periods
 -------------------
+
+Uses ``start`` and ``end`` to denote a time period for the query.
 
 .. code:: ipython3
 
@@ -108,8 +117,10 @@ Adding Time Periods
     data.head()
 
 
-Stock Split and dividends
--------------------------
+Dividends
+---------
+
+Outputs the Dividend and Read Dividend.
 
 .. code:: ipython3
 
@@ -120,6 +131,8 @@ Stock Split and dividends
 Cryptocurrencies
 ---------------
 
+Outputs the date and price of bitcoin.
+
 .. code:: ipython3
 
     # bitcoin price
@@ -128,6 +141,8 @@ Cryptocurrencies
 
 Mutual Funds
 ---------------
+
+Plots the mutual fund assests to GDP from the ``start_date`` to the ``end_date``.
 
 .. code:: ipython3
 
@@ -138,6 +153,8 @@ Mutual Funds
 Treasury Rates
 ---------------
 
+Plots the real long-term treasury rates from the ``start_date`` to the ``end_date``.
+
 .. code:: ipython3
 
     mf = quandl.get('USTREASURY/REALLONGTERM', start_date='2000-04-01', end_date='2020-10-01')
@@ -147,13 +164,17 @@ Treasury Rates
 Stock Fundamentals
 ------------------
 
+Outputs earnings, CPI, price, long interest rate, and PE ratio.
+
 .. code:: ipython3
 
     sp = quandl.get('YALE/SPCOMP', start_date='2015-04-01', end_date='2021-10-01')
     sp
 
-Put Call Options
-----------------
+Futures and Options
+-------------------
+
+Outputs various long, short, and spread data.
 
 .. code:: ipython3
     

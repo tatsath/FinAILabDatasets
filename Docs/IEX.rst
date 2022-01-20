@@ -3,11 +3,12 @@
 IEX
 ===
 
+-  `Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Show all Functions`_
 -  `Historical Price and Volume for 1 Stock`_
--  `Time Periods or Frequency`_
+-  `Adding Time Periods or Frequency`_
 -  `Stock Split and Dividends`_
 -  `News and Sentiment`_
 -  `Stream Realtime Data`_
@@ -29,6 +30,12 @@ Install pyEX with pip:
 Usage
 -----
 
+
+.. note::
+    This library will output a Pandas DataFrame when the function ends with "DF".
+    Otherwise, they can easily be converted to a dataframe, as show in 
+    the `Stream Realtime Data`_ section.
+
 .. code:: ipython3
 
     import pandas as pd
@@ -38,7 +45,8 @@ Usage
 Show all Functions
 ------------------
 
-The following command shows all functions available, all of which follow the same structure as the examples below
+The following command shows all functions available, 
+all of which follow the same structure as the examples below.
 
 .. code:: ipython3
 
@@ -47,12 +55,17 @@ The following command shows all functions available, all of which follow the sam
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
+Outputs the OHLCV for the given ``ticker``.
+
 .. code:: ipython3
 
     history = conn.chartDF(ticker)
 
 Adding Time Periods or Frequency
 --------------------------------
+
+Changing the ``timeframe`` variable adjusts the time frame 
+and frequency of the OHLCV data.
 
 .. code:: ipython3
 
@@ -73,6 +86,8 @@ Stock Split and Dividends
 News and Sentiment
 ------------------
 
+Outputs the headline, source, summary, URL and image of the given ``ticker``.
+
 .. code:: ipython3
 
     news = conn.newsDF(ticker, count=10)
@@ -80,10 +95,15 @@ News and Sentiment
 Stream Realtime Data
 --------------------
 
+Each invocation of this function outputs all current data available for the
+``ticker``.
+
 .. code:: ipython3
 
     ticker = 'GE'
 
     real_time = conn.quote(ticker)
+
+    # convert to Pandas DataFrame
     real_time = pd.DataFrame(real_time, index = ['value']).T
 
