@@ -61,7 +61,7 @@ Financial Datasets - Summary by source and types:
   Docs/AlternativeData
   
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Notebooks:
 
    Docs/JupyterNotebooks/Alphavantage.ipynb
