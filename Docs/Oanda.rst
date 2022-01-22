@@ -37,6 +37,7 @@ Usage
 	You also need to set up an account on `Oanda's Website <https://developer.oanda.com/rest-live-v20/introduction/>`_ 
 	to receive an access token and username.
 
+Import all necessary libraries:
 
 .. code:: ipython3
 

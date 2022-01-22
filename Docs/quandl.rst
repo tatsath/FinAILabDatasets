@@ -61,6 +61,8 @@ Quandl is the library used for accessing the `Nasdaq Data Link <https://data.nas
 database, so all of the queries below follow a similar pattern that can be reproduced with 
 any of the ID codes from the database.
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import quandl

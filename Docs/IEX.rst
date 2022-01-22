@@ -30,11 +30,12 @@ Install pyEX with pip:
 Usage
 -----
 
-
 .. note::
     This library will output a Pandas DataFrame when the function ends with "DF".
     Otherwise, they can easily be converted to a dataframe, as show in 
     the `Stream Realtime Data`_ section.
+
+Import all necessary libraries:
 
 .. code:: ipython3
 

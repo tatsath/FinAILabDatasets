@@ -98,7 +98,8 @@ For checking to see if the equity, commodity, mutual fund, etc. you want is avai
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Outputs a Pandas DataFrame containing the values for open, high, low, close, and volume (OHLCV) of an equity.
+
+
 
 .. note::
     See the data dictionary for adjustments to time frame. Daily, weekly, and monthly time frames are available for equities.

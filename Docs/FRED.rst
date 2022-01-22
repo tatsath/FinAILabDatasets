@@ -47,6 +47,8 @@ Federal Reserve Economic Data database found `here <https://fred.stlouisfed.org>
 To obtain the code needed for the API call, search the database, then locate the 
 unique ID code next to the title. From there, the process follows the examples below.
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import pandas_datareader as web

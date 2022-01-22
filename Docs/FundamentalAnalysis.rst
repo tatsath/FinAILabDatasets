@@ -32,6 +32,8 @@ Usage
 .. note::
     FundamentalAnalysis automatically uses Pandas DataFrames.
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import FundamentalAnalysis as fa

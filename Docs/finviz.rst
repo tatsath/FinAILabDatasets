@@ -36,6 +36,8 @@ Or install from github:
 Usage
 -----
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
 	from finvizfinance.quote import finvizfinance
