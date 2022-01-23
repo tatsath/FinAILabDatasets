@@ -18,6 +18,7 @@ Table of Contents
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
 -  `Stock Split and Dividends`_
+-  `Importing Many Stocks`_
 -  `Financial Indices`_
 -  `Currencies`_
 -  `Cryptocurrencies`_
@@ -43,6 +44,11 @@ Install yfinance using pip:
 Usage
 -----
 
+.. note::
+    YFinance automatically uses Pandas DataFrames.
+
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import numpy as np
@@ -51,15 +57,18 @@ Usage
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
+Outputs a Pandas DataFrame containing the values for 
+open, high, low, close, and volume (OHLCV) of an equity.
+
 .. code:: ipython3
 
-    import numpy as np
-    import yfinance as yf
     ticker = 'GE'
     yf.download(ticker)
 
 Adding Time Periods
 -------------------
+
+Uses ``start`` and ``end`` to denote a time period to get the data from above between.
 
 .. code:: ipython3
 
@@ -67,6 +76,7 @@ Adding Time Periods
     GE = yf.download(ticker, start = "2014-01-01", end = "2018-12-31")
     GE.info()
 
+Output structure:
 
 .. parsed-literal::
 
@@ -82,7 +92,7 @@ Adding Time Periods
     dtypes: float64(5), int64(1)
     memory usage: 68.7 KB
 
-
+Alternative, static time periods:
 
 .. code:: ipython3
 
@@ -95,16 +105,26 @@ Adding Time Periods
 Frequency Setting
 -----------------
 
+Outputs a similar Pandas DataFrame that breaks the OHLCV down into smaller 
+minute or hour intervals.
+
+
 .. code:: ipython3
 
     yf.download('GE',period='1mo',interval='1h')
     yf.download('GE',period='1mo',interval='5m')
     GE = yf.download('GE',period='5d',interval='5m')
-    #Pre or post market data
+
+You can even get pre and post market data using ``prepost``:
+
+.. code:: ipython3
+
     GE=yf.download('GE',prepost=True,period='5d',interval='5m')
 
 Stock Split and Dividends
 -------------------------
+
+Gets the quarterly dividend data for the given ``ticker``.
 
 .. code:: ipython3
 
@@ -113,20 +133,34 @@ Stock Split and Dividends
     AAPL = yf.download(ticker, period="10y", actions = True)
     AAPL.head()
 
+You can use Pandas to narrow the data down by date or other 
+features, such as stock splits.
+
 .. code:: ipython3
 
     AAPL[AAPL["Dividends"]>0]
     AAPL.loc["2019-08-05":"2019-08-15"].diff()
     AAPL[AAPL["Stock Splits"] > 0]
-    ticker = ['GE', 'AAPL','FB']
-     yf.download(ticker, period="5y")
+
+Importing Many Stocks
+---------------------
+
+Use an array to get data on more than one stock.
+
 .. code:: ipython3
 
-     stock=yf.download(ticker, period="5y").Close
+    ticker = ['GE', 'AAPL','FB']
+    yf.download(ticker, period="5y")
+
+.. code:: ipython3
+
+    stock=yf.download(ticker, period="5y").Close
 
 
 Financial Indices
 -----------------
+
+Getting OHLCV data on multiple indices with the ``download`` function.
 
 .. code:: ipython3
 
@@ -151,6 +185,8 @@ Financial Indices
 Currencies
 ---------------
 
+Getting currency OHLCV data with the ``download`` function.
+
 .. code:: ipython3
 
     #Tickers
@@ -171,7 +207,9 @@ Currencies
 
 
 Cryptocurrencies
----------------
+----------------
+
+Getting crypto OHLCV data with the ``download`` function.
 
 .. code:: ipython3
 
@@ -187,6 +225,8 @@ Cryptocurrencies
 
 Mutual Funds
 ---------------
+
+Getting mutual fund data with the ``download`` function.
 
 .. code:: ipython3
 
@@ -204,6 +244,8 @@ Mutual Funds
 Treasury Rates
 ---------------
 
+Getting treasury rates with the ``download`` function.
+
 .. code:: ipython3
 
     #10Y and 5Y Treasury Rates
@@ -217,23 +259,33 @@ Treasury Rates
 Stock Fundamentals
 ------------------
 
+To get fundamentals, use the ``Ticker`` object to instantiate new 
+values.
+
 .. code:: ipython3
 
     ticker ="DIS"
     dis = yf.Ticker(ticker)
 
+Simply list the current ticker
+
 .. code:: ipython3
 
     dis.ticker
-
 
 .. parsed-literal::
 
     'DIS'
 
+Outputs 150+ features on the ticker, including:
+``sector``, ``website``, ``ebitda``, ``targetLowPrice``, ``currentRatio``, 
+``currentPrice``, ``debtToEquity``, and ``totalRevenue``.
+
 .. code:: ipython3
 
-    data=dis.history()
+    data=dis.info
+
+Summary of the information from the ``Ticker`` object.
 
 .. code:: ipython3
 
@@ -251,18 +303,26 @@ Stock Fundamentals
 Financials
 ----------
 
+Designate your desired ticker.
+
 .. code:: ipython3
 
     ticker ="DIS"
     dis = yf.Ticker(ticker)
 
+Gets the balance sheet.
+
 .. code:: ipython3
 
     dis.balance_sheet
 
+Gets the income statement.
+
 .. code:: ipython3
 
     dis.financials
+
+Gets the statement of cash flows.
 
 .. code:: ipython3
 
@@ -271,10 +331,18 @@ Financials
 Put Call Options
 ----------------
 
+.. note:: 
+    This output does not default to a Pandas DataFrame.
+
+Designate your desired ticker.
+
 .. code:: ipython3
 
-    ticker ="DIS"
+    ticker = "DIS"
     dis = yf.Ticker(ticker)
+
+Gets the ``call``, ``contractSymbol``, ``lastTradeDate``, ``strike``, 
+``lastPrice``, ``bid``, and ``ask``.
 
 .. code:: ipython3
 
@@ -292,6 +360,8 @@ Put Call Options
 
 Stream Realtime Data
 --------------------
+
+Continuously gets the latest data in 1 minute intervals.
 
 .. code:: ipython3
 

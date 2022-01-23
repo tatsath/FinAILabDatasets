@@ -3,15 +3,16 @@
 FinViz
 ======
 
-.. warning::
-    Links to JupyterNBs are currently not working.
+.. note:: 
+	This library is ideal for fundamentals and sentiment analysis projects.
 
 Table of Contents
 -----------------
 
+-  `Jupyter Notebook <JupyterNotebooks/finviz.ipynb>`
 -  `Installation`_
 -  `Usage`_
--  `Fundamentals`_
+-  `Stock Fundamentals`_
 -  `Ticker Description`_
 -  `Multiple Tickers`_
 -  `Sentiment and News`_
@@ -35,13 +36,21 @@ Or install from github:
 Usage
 -----
 
+Import all necessary libraries:
+
 .. code:: ipython3
 
 	from finvizfinance.quote import finvizfinance
 	import pandas as pd
 
-Fundamentals
-------------
+.. code:: ipython3
+
+	stock = finvizfinance('tsla')
+
+Stock Fundamentals
+------------------
+
+Getting information (fundamentals, description, outer rating, stock news, inside trader) of an individual stock.
 
 .. code:: ipython3
 
@@ -55,12 +64,16 @@ Fundamentals
 Ticker Description
 ------------------
 
+Outputs a brief description of the chosen stock. 'Tesla, Inc. designs, develops, manufactures, ...'
+
 .. code:: ipython3
 
 	description = stock.ticker_description()
 
 Multiple Tickers 
 ----------------
+
+Getting multiple tickers' information according to the filters.
 
 .. code:: ipython3
 
@@ -73,6 +86,8 @@ Multiple Tickers
 	
 Sentiment and News
 ------------------
+
+Gets recent financial news, including a rating for sentiment.
 
 .. code:: ipython3
 
@@ -93,6 +108,10 @@ Sentiment and News
 
 Insider Trades
 --------------
+
+Outputs a Pandas DataFrame of insider trades, their relationship, cost, value,
+number of shares, and more.
+
 
 .. code:: ipython3
 

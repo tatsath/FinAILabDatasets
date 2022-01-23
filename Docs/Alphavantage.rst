@@ -16,14 +16,14 @@ https://github.com/RomelTorres/alpha_vantage
 Table of Contents
 -----------------
 
--  `Link to the Jupyter Notebook <JupyterNotebooks/Alphavantage.ipynb>`
+-  `Jupyter Notebook <JupyterNotebooks/Alphavantage>`_
 -  `Installation`_
 -  `Usage`_
 -  `Symbol Search`_
 -  `Historical Price and Volume for 1 Stock`_
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
--  `Stock Split and Dividends`_
+-  `Stock Splits and Dividends`_
 -  `Foreign Exchange`_
 -  `Cryptocurrencies`_
 -  `Mutual Funds`_
@@ -98,7 +98,8 @@ For checking to see if the equity, commodity, mutual fund, etc. you want is avai
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
-Outputs a Pandas DataFrame containing the values for open, high, low, close, and volume (OHLCV) of an equity.
+
+
 
 .. note::
     See the data dictionary for adjustments to time frame. Daily, weekly, and monthly time frames are available for equities.
@@ -156,7 +157,7 @@ Outputs a similar Pandas DataFrame that breaks the OHLCV down into 1 minute inte
     df = df.iloc[::-1]
     df.tail()
 
-Stock Split and dividends
+Stock Splits and Dividends
 -------------------------
 
 Outputs a Pandas DataFrame with the DPS, Yield, Dividend Date and ExDate for the given ticker.

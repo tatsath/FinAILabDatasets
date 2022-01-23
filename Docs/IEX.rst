@@ -3,13 +3,14 @@
 IEX
 ===
 
+-  `Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Show all Functions`_
 -  `Historical Price and Volume for 1 Stock`_
--  `Time Periods or Frequency`_
+-  `Adding Time Periods or Frequency`_
 -  `Stock Split and Dividends`_
--  `News and Sentiment`_
+-  `Sentiment and News`_
 -  `Stream Realtime Data`_
 
 
@@ -29,6 +30,13 @@ Install pyEX with pip:
 Usage
 -----
 
+.. note::
+    This library will output a Pandas DataFrame when the function ends with "DF".
+    Otherwise, they can easily be converted to a dataframe, as show in 
+    the `Stream Realtime Data`_ section.
+
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import pandas as pd
@@ -38,7 +46,8 @@ Usage
 Show all Functions
 ------------------
 
-The following command shows all functions available, all of which follow the same structure as the examples below
+The following command shows all functions available, 
+all of which follow the same structure as the examples below.
 
 .. code:: ipython3
 
@@ -47,12 +56,17 @@ The following command shows all functions available, all of which follow the sam
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
+Outputs the OHLCV for the given ``ticker``.
+
 .. code:: ipython3
 
     history = conn.chartDF(ticker)
 
 Adding Time Periods or Frequency
 --------------------------------
+
+Changing the ``timeframe`` variable adjusts the time frame 
+and frequency of the OHLCV data.
 
 .. code:: ipython3
 
@@ -70,20 +84,35 @@ Stock Split and Dividends
     timeframe = '6m'
     dividends = conn.dividendsDF(ticker)
 
-News and Sentiment
+Sentiment and News
 ------------------
+
+Outputs the headline, source, summary, URL and image of the given ``ticker``.
 
 .. code:: ipython3
 
     news = conn.newsDF(ticker, count=10)
 
+Insider Trades
+--------------
+
+.. warning:: 
+    This feature requires a premium subscription
+
+trades = conn.insiderTransactionsDF(ticker)
+
 Stream Realtime Data
 --------------------
+
+Each invocation of this function outputs all current data available for the
+``ticker``.
 
 .. code:: ipython3
 
     ticker = 'GE'
 
     real_time = conn.quote(ticker)
+
+    # convert to Pandas DataFrame
     real_time = pd.DataFrame(real_time, index = ['value']).T
 

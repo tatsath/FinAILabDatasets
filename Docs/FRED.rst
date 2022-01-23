@@ -11,6 +11,8 @@ To Do:
 
 Table of Contents
 -----------------
+
+- `Jupyter Notebook <JupyterNotebooks/FRED.ipynb>`_
 - `Installation`_
 - `Usage`_
 - `Historical Price for 1 Stock`_
@@ -39,6 +41,14 @@ Or from Github:
 Usage
 -----
 
+Below are examples of how to get and plot data from datasets found in the 
+Federal Reserve Economic Data database found `here <https://fred.stlouisfed.org>`_. 
+
+To obtain the code needed for the API call, search the database, then locate the 
+unique ID code next to the title. From there, the process follows the examples below.
+
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import pandas_datareader as web
@@ -50,12 +60,16 @@ Usage
 Historical Price for 1 Stock
 ----------------------------
 
+Gets the S&P price data from the ``start`` to the ``end`` dates specified,
+and plots them.
+
 .. code:: ipython3
     
     # Specify time periods
     start = datetime(2010,1,1)
     end = datetime(2030,1,1)
 
+    # create your DataReader object for the S&P
     SP500 = web.DataReader('SP500','fred',start,end)
 
 .. code:: ipython3
@@ -69,6 +83,8 @@ Historical Price for 1 Stock
 Many Stocks
 -----------
 
+Plots multiple market cap indices against each other.
+
 .. code:: ipython3
 
     mkt_cap = web.DataReader(['WILLLRGCAPGR', 'WILLSMLCAP'], 'fred',start,end)
@@ -78,6 +94,8 @@ Many Stocks
 Currencies
 ---------------
 
+Plots the exchange rate between the Yuan and the Dollar.
+
 .. code:: ipython3
 
     er = web.DataReader('AEXCHUS', 'fred',start,end)
@@ -86,6 +104,8 @@ Currencies
 
 Cryptocurrencies
 ---------------
+
+Plots the price of bitcoin.
 
 .. code:: ipython3
 
@@ -99,6 +119,8 @@ Cryptocurrencies
 Mutual Funds
 ---------------
 
+Plots the mutual fund assets.
+
 .. code:: ipython3
 
     mf = web.DataReader('BOGZ1LM193064005Q', 'fred',start,end)
@@ -111,6 +133,8 @@ Mutual Funds
 Treasury Rates
 ---------------
 
+Plots the treasury rate.
+
 .. code:: ipython3
 
     treasury = web.DataReader('TB3MS', 'fred',start,end)
@@ -119,6 +143,8 @@ Treasury Rates
 
 Sentiment
 ---------
+
+Plots the U Michigan consumer sentiment.
 
 .. code:: ipython3
 

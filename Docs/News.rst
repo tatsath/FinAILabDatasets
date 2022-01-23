@@ -12,12 +12,16 @@ Sentiment data:
 
 The data can be obtained from the following sources. Click to view the code to retrieve it
 
-- `Finviz <https://finailabdatasets.readthedocs.io/en/latest/Source/finviz.html#sentiment-and-news>`_
+- `Finviz <https://finailabdatasets.readthedocs.io/en/latest/Docs/finviz.html#sentiment-and-news>`_
 
-- `FRED <https://finailabdatasets.readthedocs.io/en/latest/Source/FRED.html#sentiment>`_
+- `FRED <https://finailabdatasets.readthedocs.io/en/latest/Docs/FRED.html#sentiment>`_
+
+- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#news-and-sentiment>`
 
 
 Insider Trades
 -----------------------------
 
-- `Finviz <https://finailabdatasets.readthedocs.io/en/latest/Source/finviz.html#insider-trades>`_
+- `Finviz <https://finailabdatasets.readthedocs.io/en/latest/Docs/finviz.html#insider-trades>`_
+
+- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#insider-trades>`

@@ -9,7 +9,10 @@ There are many alternatives out there (FRED, AlphaVantage, Quandl etc.).
 
 This page describes how to download the data from following sources.
 
+Economic Indicators
+-------------------
+- `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#economic-indicators>`_
 
-- `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Source/Alphavantage.html#economic-indicators>`_
-
-- `FRED <https://finailabdatasets.readthedocs.io/en/latest/Source/FRED.html#treasury-rates>`_
+Treasury Rates
+--------------
+- `FRED <https://finailabdatasets.readthedocs.io/en/latest/Docs/FRED.html#treasury-rates>`_

@@ -26,7 +26,7 @@ Financial Datasets - Summary by source and types:
 -----------------------------------------------
 
 .. csv-table::
-   :file: Data/feature_tracker_table.csv
+   :file: feature_tracker_table.csv
    :header-rows: 1
    :class: longtable
    :widths: auto
@@ -46,17 +46,34 @@ Financial Datasets - Summary by source and types:
    Docs/finviz
 
 .. toctree::
-  :maxdepth: 1
-  :caption: Categories
+   :maxdepth: 1
+   :caption: Categories
 
-  Docs/Equities
-  Docs/FixedIncome
-  Docs/FX
-  Docs/Crypto
-  Docs/OptionFuture
-  Docs/Macroeconomic
-  Docs/News
-  Docs/Fundamentals
+   Docs/Equities
+   Docs/FixedIncome
+   Docs/FX
+   Docs/Commodities
+   Docs/Crypto
+   Docs/Fundamentals
+   Docs/OptionFuture
+   Docs/Macroeconomic
+   Docs/News
+   Docs/AlternativeData
+  
+.. toctree::
+   :maxdepth: 1
+   :caption: Notebooks
+
+   Docs/JupyterNotebooks/Alphavantage.ipynb
+   Docs/JupyterNotebooks/finviz.ipynb
+   Docs/JupyterNotebooks/FRED.ipynb
+   Docs/JupyterNotebooks/FundamentalAnalysis.ipynb
+   Docs/JupyterNotebooks/IEX.ipynb
+   Docs/JupyterNotebooks/Oanda.ipynb
+   Docs/JupyterNotebooks/quandl.ipynb
+   Docs/JupyterNotebooks/stooq.ipynb
+   Docs/JupyterNotebooks/yfinance.ipynb
+
 
 Contributing
 ------------

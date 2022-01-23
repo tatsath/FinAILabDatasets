@@ -3,6 +3,7 @@
 FundamentalAnalysis
 ===================
 
+-  `Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `List all Commands`_
@@ -28,6 +29,11 @@ Install with pip:
 Usage
 -----
 
+.. note::
+    FundamentalAnalysis automatically uses Pandas DataFrames.
+
+Import all necessary libraries:
+
 .. code:: ipython3
 
     import FundamentalAnalysis as fa
@@ -40,6 +46,9 @@ Usage
 List all Commands
 -----------------
 
+Gets all of the options from ``cryptocurrencies``, ``currencies``, ``equities``, ``etfs`` or ``funds`` 
+that are available to be queried.
+
 .. code:: ipython3
 
     # Options: 'cryptocurrencies', 'currencies', 'equities', 'etfs' or 'funds'
@@ -47,14 +56,24 @@ List all Commands
     options = pd.DataFrame(options)
     options
 
+Lists all of the companies that the API offers to be queried.
+
 .. code:: ipython3
 
     # Show the available companies
     companies = fa.available_companies(api_key)
     companies.sort_values('symbol')
 
+Lists all of the exchanges available for access.
+
+.. code:: ipython3
+
+    companies.exchange.unique()
+
 Historical Price and Volume for 1 Stock
 ---------------------------------------
+
+Gets the OHLCV for one stock, given the ``period`` and ``interval``.
 
 .. code:: ipython3
 
@@ -68,9 +87,12 @@ Historical Price and Volume for 1 Stock
 Financial Ratios
 ----------------
 
+.. warning:: 
+    This feature requires a premium subscription.
+
 .. code:: ipython3
 
-    # Premium Feature
+    
     # Large set of in-depth ratios
     financial_ratios_annually = fa.financial_ratios(ticker, api_key, period="annual")
     financial_ratios_quarterly = fa.financial_ratios(ticker, api_key, period="quarter")
@@ -85,6 +107,9 @@ Stock Fundamentals
 
 Financials
 ----------
+
+.. warning:: 
+    This feature requires a premium subscription.
 
 .. code:: ipython3
 
@@ -111,9 +136,21 @@ Financials
 Key Metrics
 -----------
 
+.. warning:: 
+    This feature requires a premium subscription.
+
 .. code:: ipython3
 
-    # Premium Feature
     # Key Metrics
     key_metrics_annually = fa.key_metrics(ticker, api_key, period="annual")
     key_metrics_quarterly = fa.key_metrics(ticker, api_key, period="quarter")
+
+Sentiment
+---------
+
+Gets various ratings and scores for the given ``ticker``.
+
+.. code:: ipython3
+
+    ratings = fa.rating(ticker, api_key)
+
