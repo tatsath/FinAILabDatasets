@@ -26,7 +26,7 @@ Financial Datasets - Summary by source and types:
 -----------------------------------------------
 
 .. csv-table::
-   :file: Data/feature_tracker_table.csv
+   :file: feature_tracker_table.csv
    :header-rows: 1
    :class: longtable
    :widths: auto
