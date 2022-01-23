@@ -1,31 +1,37 @@
 .. _AlternativeData:
 
-======================================
+
 Alternative Data
 ======================================
 
 
 
-Volume and price data:
+Volume and Price data:
 ================================================
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#historical-price-and-volume-for-1-stock>`_
+- `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#historical-price-and-volume-for-1-stock>`_
+
+
 
 https://aroussi.com/post/download-options-data
 https://towardsdatascience.com/a-comprehensive-guide-to-downloading-stock-prices-in-python-2cd93ff821d4
 
 Importing many stocks:
 ================================================
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#importing-many-stocks>`_
 
 Indices
 ================================================
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#financial-indices>`_
 
 Stock Splits and dividends
 ================================================
-	Yahoo Finance
-	Alpha vantage
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#stock-splits-and-dividends>`_
+- `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#stock-splits-and-dividends>`_
 
 Technical Indicators
 ================================================
-	Alpha vantage
+- `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#technical-indicators>`_
 
 
 Which algorithm should I use?

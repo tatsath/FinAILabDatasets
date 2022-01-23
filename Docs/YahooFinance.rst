@@ -45,7 +45,7 @@ Usage
 -----
 
 .. note::
-    FundamentalAnalysis automatically uses Pandas DataFrames.
+    YFinance automatically uses Pandas DataFrames.
 
 Import all necessary libraries:
 
@@ -92,7 +92,7 @@ Output structure:
     dtypes: float64(5), int64(1)
     memory usage: 68.7 KB
 
-Alternative static time periods:
+Alternative, static time periods:
 
 .. code:: ipython3
 

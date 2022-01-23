@@ -10,7 +10,7 @@ IEX
 -  `Historical Price and Volume for 1 Stock`_
 -  `Adding Time Periods or Frequency`_
 -  `Stock Split and Dividends`_
--  `News and Sentiment`_
+-  `Sentiment and News`_
 -  `Stream Realtime Data`_
 
 
@@ -84,7 +84,7 @@ Stock Split and Dividends
     timeframe = '6m'
     dividends = conn.dividendsDF(ticker)
 
-News and Sentiment
+Sentiment and News
 ------------------
 
 Outputs the headline, source, summary, URL and image of the given ``ticker``.
@@ -92,6 +92,14 @@ Outputs the headline, source, summary, URL and image of the given ``ticker``.
 .. code:: ipython3
 
     news = conn.newsDF(ticker, count=10)
+
+Insider Trades
+--------------
+
+.. warning:: 
+    This feature requires a premium subscription
+
+trades = conn.insiderTransactionsDF(ticker)
 
 Stream Realtime Data
 --------------------

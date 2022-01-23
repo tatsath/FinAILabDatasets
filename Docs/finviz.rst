@@ -12,7 +12,7 @@ Table of Contents
 -  `Jupyter Notebook <JupyterNotebooks/finviz.ipynb>`
 -  `Installation`_
 -  `Usage`_
--  `Fundamentals`_
+-  `Stock Fundamentals`_
 -  `Ticker Description`_
 -  `Multiple Tickers`_
 -  `Sentiment and News`_
@@ -47,8 +47,8 @@ Import all necessary libraries:
 
 	stock = finvizfinance('tsla')
 
-Fundamentals
-------------
+Stock Fundamentals
+------------------
 
 Getting information (fundamentals, description, outer rating, stock news, inside trader) of an individual stock.
 

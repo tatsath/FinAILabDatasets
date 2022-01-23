@@ -23,7 +23,7 @@ Table of Contents
 -  `Historical Price and Volume for 1 Stock`_
 -  `Adding Time Periods`_
 -  `Frequency Setting`_
--  `Stock Split and Dividends`_
+-  `Stock Splits and Dividends`_
 -  `Foreign Exchange`_
 -  `Cryptocurrencies`_
 -  `Mutual Funds`_
@@ -157,7 +157,7 @@ Outputs a similar Pandas DataFrame that breaks the OHLCV down into 1 minute inte
     df = df.iloc[::-1]
     df.tail()
 
-Stock Split and dividends
+Stock Splits and Dividends
 -------------------------
 
 Outputs a Pandas DataFrame with the DPS, Yield, Dividend Date and ExDate for the given ticker.
