@@ -46,23 +46,23 @@ Financial Datasets - Summary by source and types:
    Docs/finviz
 
 .. toctree::
-  :maxdepth: 1
-  :caption: Categories
+   :maxdepth: 1
+   :caption: Categories
 
-  Docs/Equities
-  Docs/FixedIncome
-  Docs/FX
-  Docs/Commodities
-  Docs/Crypto
-  Docs/Fundamentals
-  Docs/OptionFuture
-  Docs/Macroeconomic
-  Docs/News
-  Docs/AlternativeData
+   Docs/Equities
+   Docs/FixedIncome
+   Docs/FX
+   Docs/Commodities
+   Docs/Crypto
+   Docs/Fundamentals
+   Docs/OptionFuture
+   Docs/Macroeconomic
+   Docs/News
+   Docs/AlternativeData
   
 .. toctree::
-   :maxdepth: 3
-   :caption: Notebooks:
+   :maxdepth: 1
+   :caption: Notebooks
 
    Docs/JupyterNotebooks/Alphavantage.ipynb
    Docs/JupyterNotebooks/finviz.ipynb

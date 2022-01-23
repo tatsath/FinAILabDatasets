@@ -67,6 +67,8 @@ Financials
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#financials>`_
 
+- `Fundamental Analysis <https://finailabdatasets.readthedocs.io/en/latest/Docs/FundamentalAnalysis.html#financials>`
+
 Frequency Setting(including High Frequncy)
 -----------------------------
 
