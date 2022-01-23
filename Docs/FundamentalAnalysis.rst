@@ -3,7 +3,7 @@
 FundamentalAnalysis
 ===================
 
--  `Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`
+-  `Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `List all Commands`_
