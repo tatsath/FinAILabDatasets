@@ -35,7 +35,7 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Source
 
-   Docs/YahooFinance
+   Docs/yfinance
    Docs/Alphavantage
    Docs/FundamentalAnalysis
    Docs/quandl
