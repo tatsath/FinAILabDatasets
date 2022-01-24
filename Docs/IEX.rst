@@ -11,6 +11,7 @@ IEX
 -  `Adding Time Periods or Frequency`_
 -  `Stock Split and Dividends`_
 -  `Sentiment and News`_
+-  `Insider Trades`_`
 -  `Stream Realtime Data`_
 
 
