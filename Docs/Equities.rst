@@ -11,9 +11,9 @@ This page describes how to download the data from different sources.
 Single Stock- Volume and price data
 -----------------------------
 
-The data can be obtained from the following sources. Click to view the code to retrieve it
+The data can be obtained from the following sources. Click to view the code to retrieve it.
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#historical-price-and-volume-for-1-stock>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Source/YahooFinance.html#historical-price-and-volume-for-1-stock>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#historical-price-and-volume-for-1-stock>`_
 

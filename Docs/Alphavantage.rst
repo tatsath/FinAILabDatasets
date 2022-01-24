@@ -16,7 +16,7 @@ https://github.com/RomelTorres/alpha_vantage
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/Alphavantage>`_
+-  `Jupyter Notebook <JupyterNotebooks/Alphavantage.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Symbol Search`_
