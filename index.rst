@@ -8,7 +8,7 @@ This doumentation shows you how to get massive amounts of Financial Data and exp
 
 The data covered in this documentation include:
 -----------------------------------------------
-- Historical Price and Volume Data for 100,000+ Symbols/Instruments
+- Historical Price and Volume Data for 100,000+ Symbols/Instruments.
 - 50+ Exchanges all around the world.
 - Real-time and Historical Data (back to 1960s)
 - High-frequency real-time Data
@@ -35,7 +35,7 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Source
 
-   Docs/yfinance
+   Docs/YahooFinance
    Docs/Alphavantage
    Docs/FundamentalAnalysis
    Docs/quandl
