@@ -9,8 +9,7 @@ html_theme = 'press'
 # hoverxref_mathjax = True
 
 extensions = [
-	"nbsphinx",
-	"hoverxref.extension"
+	"nbsphinx"
 ]
 
 source_suffix = [".rst", ".md"]
