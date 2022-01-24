@@ -16,7 +16,7 @@ The data can be obtained from the following sources. Click to view the code to r
 
 - `FRED <https://finailabdatasets.readthedocs.io/en/latest/Docs/FRED.html#sentiment>`_
 
-- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#news-and-sentiment>`
+- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#sentiment-and-news>`_
 
 
 Insider Trades
@@ -24,4 +24,4 @@ Insider Trades
 
 - `Finviz <https://finailabdatasets.readthedocs.io/en/latest/Docs/finviz.html#insider-trades>`_
 
-- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#insider-trades>`
+- `IEX <https://finailabdatasets.readthedocs.io/en/latest/Docs/IEX.html#insider-trades>`_
