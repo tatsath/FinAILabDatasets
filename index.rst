@@ -20,7 +20,7 @@ The data covered in this documentation include:
 - Stock Options, Stock Splits and Dividends for 5000+ Stocks
 - Fundamentals, Metrics and Ratios for Stocks, Bonds, Indexes, Mutual Funds and ETFs
 - Balance Sheets, Cashflow and Profit and Loss Statements (P&L)
-- 50+ Technical Indicators (i.e. SMA, Bollinger Bands)-
+- 50+ Technical Indicators (i.e. SMA, Bollinger Bands)
 
 Financial Datasets - Summary by source and types:
 -----------------------------------------------
@@ -35,7 +35,7 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Source
 
-   Docs/YahooFinance
+   Docs/yfinance
    Docs/Alphavantage
    Docs/FundamentalAnalysis
    Docs/quandl
@@ -64,15 +64,15 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Notebooks
 
-   Docs/JupyterNotebooks/Alphavantage.ipynb
-   Docs/JupyterNotebooks/finviz.ipynb
-   Docs/JupyterNotebooks/FRED.ipynb
-   Docs/JupyterNotebooks/FundamentalAnalysis.ipynb
-   Docs/JupyterNotebooks/IEX.ipynb
-   Docs/JupyterNotebooks/Oanda.ipynb
-   Docs/JupyterNotebooks/quandl.ipynb
-   Docs/JupyterNotebooks/stooq.ipynb
-   Docs/JupyterNotebooks/yfinance.ipynb
+   Docs/JupyterNotebooks/Alphavantage
+   Docs/JupyterNotebooks/finviz
+   Docs/JupyterNotebooks/FRED
+   Docs/JupyterNotebooks/FundamentalAnalysis
+   Docs/JupyterNotebooks/IEX
+   Docs/JupyterNotebooks/Oanda
+   Docs/JupyterNotebooks/quandl
+   Docs/JupyterNotebooks/stooq
+   Docs/JupyterNotebooks/yfinance
 
 
 Contributing

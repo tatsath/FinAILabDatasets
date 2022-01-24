@@ -4,16 +4,16 @@ Equities
 ========
 
 The Data of Equities from 100+ indices for thousands of tickers across several frenquncies can be downloaded freely.
-There are many alternatives out there (YahooFinance, AlphaVantage, Quandl etc.).
+There are many alternatives out there (yfinance, AlphaVantage, Quandl etc.).
 
 This page describes how to download the data from different sources.
 
 Single Stock- Volume and price data
 -----------------------------
 
-The data can be obtained from the following sources. Click to view the code to retrieve it
+The data can be obtained from the following sources. Click to view the code to retrieve it.
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#historical-price-and-volume-for-1-stock>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#historical-price-and-volume-for-1-stock>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#historical-price-and-volume-for-1-stock>`_
 
@@ -32,14 +32,14 @@ The data can be obtained from the following sources. Click to view the code to r
 Indices
 -----------------------------
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#financial-indices>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#financial-indices>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#financial-indices>`_
 
 
 Stock Splits and Dividends
 -----------------------------
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#stock-split-and-dividends>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#stock-split-and-dividends>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#stock-split-and-dividends>`_
 
@@ -49,21 +49,21 @@ Stock Splits and Dividends
 
 Technical Indicators
 -----------------------------
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#financial-indices>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#financial-indices>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#technical-indicators>`_
 
 
 Stock Fundamentals
 -----------------------------
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#stock-fundamentals>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#stock-fundamentals>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#stock-fundamentals>`_
 
 Financials
 -----------------------------
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#financials>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#financials>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#financials>`_
 
@@ -72,14 +72,14 @@ Financials
 Frequency Setting(including High Frequncy)
 -----------------------------
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#frequency-setting>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#frequency-setting>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#frequency-setting>`_
 
 Changing Time Period
 -----------------------------
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#adding-time-periods>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#adding-time-periods>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#adding-time-periods>`_
 
@@ -89,6 +89,6 @@ Changing Time Period
 Realtime Data
 -----------------------------
 
-- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#stream-realtime-data>`_
+- `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/yfinance.html#stream-realtime-data>`_
 
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#stream-realtime-data>`_
