@@ -9,8 +9,13 @@ html_theme = 'press'
 # hoverxref_mathjax = True
 
 extensions = [
-	"nbsphinx"
+	# "nbsphinx"
+	'sphinx_tabs.tabs',
+	'hoverxref.extension',
 ]
+hoverxref_auto_ref = True
+
+sphinx_tabs_valid_builders = ['linkcheck']
 
 source_suffix = [".rst", ".md"]
 

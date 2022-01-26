@@ -5,6 +5,7 @@ sphinx
 nbsphinx
 sphinx-press-theme
 sphinx-hoverxref
+sphinx-tabs
 ipykernel
 numpy
 yfinance
