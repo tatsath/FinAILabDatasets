@@ -24,71 +24,11 @@ The data covered in this documentation include:
 
 Financial Datasets - Summary by source and types:
 -------------------------------------------------
-Test:
-
-1
-This will show :hoverxreftooltip:`equities <Equities:Equities>`
-
-2
-This will show :hoverxreftooltip:`equities <Docs/Equities:Equities>`
-
-3
-This will show :hoverxreftooltip:`equities <Docs/Equities:stock-splits-and-dividends>`
-
-5
-This will show :hoverxreftooltip:`equities <Equities:stock-splits-and-dividends>`
-
-6
-This will show :doc:`equities <Equities:stock-splits-and-dividends>`
-
-
-7
-This will show :doc:`equities <Docs/Equities:stock-splits-and-dividends>`
-
-8
-This will show :doc:`equities <Equities:equities>`
-
-9
-This will show :hoverxreftooltip:`equities <Categories:Equities>`
-
-10
-This will show :hoverxreftooltip:`equities <Categories:Equities>`
-
-11
-This will show :hoverxreftooltip:`equities <Categories:stock-splits-and-dividends>`
-
-12
-This will show :hoverxreftooltip:`equities <Categories:stock-splits-and-dividends>`
-
-13
-This will show :doc:`equities <Categories:stock-splits-and-dividends>`
-
-14
-This will show :doc:`equities <Categories:stock-splits-and-dividends>`
-
-15
-This will show :doc:`equities <Categories:equities>`
-
-
-16
-This will show :ref:`equities <Equities:Equities>`
-
-
 Tabs test:
 
 .. tabs::
 
    .. tab:: Equities
-
-      .. tabs::
-
-         .. tab:: Indices
-
-            `YFinance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html>`_
-
-         .. tab:: Technical Indicators
-
-            `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#technical-indicators>`_
 
       `YFinance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html>`_
 
