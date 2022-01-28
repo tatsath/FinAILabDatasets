@@ -65,7 +65,7 @@ The data covered in this documentation include:
 - Stock Options, Stock Splits and Dividends for 5000+ Stocks
 - Fundamentals, Metrics and Ratios for Stocks, Bonds, Indexes, Mutual Funds and ETFs
 - Balance Sheets, Cashflow and Profit and Loss Statements (P&L)
-- 50+ Technical Indicators (i.e. SMA, Bollinger Bands)
+- 50+ Technical Indicators (i.e. SMA, Bollinger Bands).
 
 Financial Datasets - Summary by source and types:
 -------------------------------------------------
