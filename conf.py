@@ -11,11 +11,15 @@ html_theme = 'press'
 extensions = [
 	# "nbsphinx"
 	'sphinx_tabs.tabs',
-	'hoverxref.extension',
+	'sphinx_panels'
+	# 'hoverxref.extension',
 ]
-hoverxref_auto_ref = True
 
-sphinx_tabs_valid_builders = ['linkcheck']
+sphinx_tabs_valid_builders = ['readthedocsdirhtml']
+
+panels_add_bootstrap_css = False
+
+# sphinx_tabs_valid_builders = ['linkcheck']
 
 source_suffix = [".rst", ".md"]
 

@@ -1,6 +1,51 @@
 FinAILab's Datasets! - Free Financial data for building AI and Machine Learning in Finance
 ==========================================================================================
 
+
+.. dropdown:: Panels in a drop-down
+    :title: bg-success text-warning
+    :open:
+    :animate: fade-in-slide-down
+
+    .. panels::
+        :container: container-fluid pb-1
+        :column: col-lg-6 col-md-6 col-sm-12 col-xs-12 p-2
+        :card: shadow
+        :header: border-0
+        :footer: border-0
+
+        ---
+        :card: + bg-warning
+
+        header
+        ^^^^^^
+
+        Content of the top-left panel
+
+        ++++++
+        footer
+
+        ---
+        :card: + bg-info
+        :footer: + bg-danger
+
+        header
+        ^^^^^^
+
+        Content of the top-right panel
+
+        ++++++
+        footer
+
+        ---
+        :column: col-lg-12 p-3
+        :card: + text-center
+
+        .. link-button:: panels/usage
+            :type: ref
+            :text: Clickable Panel
+            :classes: btn-link stretched-link font-weight-bold
+
 This documentation contains the information about the **Free financial dataset** for thousands
 of asset classes, macroeconomic data, fundamentals and alternative data that can be used for building models on `FinAILab <http://finailab.com/>`_.
 
@@ -24,21 +69,33 @@ The data covered in this documentation include:
 
 Financial Datasets - Summary by source and types:
 -------------------------------------------------
-Tabs test:
 
 .. tabs::
 
    .. tab:: Equities
-
-      `YFinance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html>`_
-
-   .. tab:: Crypto
-
-      `YFinance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html>`_
-
+      
+      Some.
+      
    .. tab:: FX
 
-      `YFinance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html>`_
+      another.
+
+
+.. dropdown:: Click on me to see my content!
+
+    I'm the content which can be anything:
+
+    .. link-button:: https://example.com
+        :text: Like a Button
+        :classes: btn-primary
+
+
+.. tabbed:: Tab 4
+    :selected:
+
+    .. dropdown:: Nested Dropdown
+
+        Some content
 
 .. csv-table::
    :file: feature_tracker_table.csv
