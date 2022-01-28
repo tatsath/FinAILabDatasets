@@ -19,7 +19,7 @@ html_theme = 'press'
 
 
 
-sphinx_tabs_valid_builders = ['readthedocsdirhtml']
+sphinx_tabs_valid_builders = ['readthedocshtml']
 
 panels_add_bootstrap_css = False
 
