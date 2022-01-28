@@ -1,4 +1,13 @@
-import os
+import sys, os
+
+sys.path.insert(0, os.path.abspath('extensions'))
+
+extensions = [
+	# "nbsphinx"
+	'sphinx_tabs.tabs',
+	'sphinx_panels'
+	# 'hoverxref.extension',
+]
 
 html_theme = 'press'
 
@@ -8,12 +17,7 @@ html_theme = 'press'
 # hoverxref_sphinxtabs = True
 # hoverxref_mathjax = True
 
-extensions = [
-	# "nbsphinx"
-	'sphinx_tabs.tabs',
-	'sphinx_panels'
-	# 'hoverxref.extension',
-]
+
 
 sphinx_tabs_valid_builders = ['readthedocsdirhtml']
 
