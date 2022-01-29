@@ -12,6 +12,8 @@ Yahoo! Finance is a component of Yahoo’s network. It is the most widely used b
 
 Table of Contents
 -----------------
+
+-  `Jupyter Notebook <JupyterNotebooks/yfinance.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Historical Price and Volume for 1 Stock`_

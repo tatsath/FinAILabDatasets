@@ -11,7 +11,7 @@ You can also download a .csv. Unfortunately, there is no API access but its a gr
 Table of Contents
 -----------------
 
-- `Jupyter Notebook <Notebooks/stooq>`_
+- `Jupyter Notebook <JupyterNotebooks/stooq.ipynb>`_
 - `Installation`_
 - `Usage`_
 - `Historical Price and Volume for 1 Stock`_

@@ -61,15 +61,7 @@ Financial Datasets - Summary by source and types:
    :maxdepth: 1
    :caption: Notebooks
 
-   Docs/JupyterNotebooks/Alphavantage
-   Docs/JupyterNotebooks/finviz
-   Docs/JupyterNotebooks/FRED
-   Docs/JupyterNotebooks/FundamentalAnalysis
-   Docs/JupyterNotebooks/IEX
-   Docs/JupyterNotebooks/Oanda
-   Docs/JupyterNotebooks/quandl
-   Docs/JupyterNotebooks/stooq
-   Docs/JupyterNotebooks/yfinance
+   Docs/JupyterNotebooks/*.ipynb
 
 
 Contributing

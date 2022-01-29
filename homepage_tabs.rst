@@ -40,7 +40,7 @@
 
 			---
 
-			.. link-button:: https://finailabdatasets.readthedocs.io/en/latest/Docs/Equities.html#frequency-setting(including-high-frequency)
+			.. link-button:: https://finailabdatasets.readthedocs.io/en/latest/Docs/Equities.html#frequency-setting
 				:text: (High)Frequency Setting
 				:classes: stretched-link
 
