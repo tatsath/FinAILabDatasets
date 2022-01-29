@@ -13,6 +13,12 @@ extensions = [
 	'IPython.sphinxext.ipython_console_highlighting',
 ]
 
+# List of arguments to be passed to the kernel that executes the notebooks:
+nbsphinx_execute_arguments = [
+    "--InlineBackend.figure_formats={'svg', 'pdf'}",
+    "--InlineBackend.rc=figure.dpi=96",
+]
+
 html_theme = 'press'
 
 nbsphinx_allow_errors = True

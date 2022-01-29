@@ -11,7 +11,7 @@ sphinx-tabs
 ipykernel
 nbformat
 nbconvert
-pandoc
+jupytext
 numpy
 yfinance
 alphavantage
