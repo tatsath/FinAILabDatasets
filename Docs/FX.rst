@@ -18,7 +18,7 @@ The data can be obtained from the following sources. Click to view the code to r
 - `FRED <https://finailabdatasets.readthedocs.io/en/latest/Docs/FRED.html#currencies>`_
 
 
-Changing Time period
+Changing Time Period
 -----------------------------
 
 - `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#adding-time-periods>`_

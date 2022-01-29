@@ -16,7 +16,7 @@ https://github.com/RomelTorres/alpha_vantage
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/Alphavantage.ipynb>`_
+-  Link to `Jupyter Notebook`_
 -  `Installation`_
 -  `Usage`_
 -  `Symbol Search`_
@@ -34,6 +34,8 @@ Table of Contents
 -  `Economic Indicators`_
 -  `Technical Indicators`_
 -  `Sector Performance`_
+
+.. _Jupyter Notebook: JupyterNotebooks/Alphavantage.ipynb
 
 Installation
 ------------
