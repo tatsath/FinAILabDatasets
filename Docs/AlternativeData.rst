@@ -16,7 +16,7 @@ Volume and Price data:
 https://aroussi.com/post/download-options-data
 https://towardsdatascience.com/a-comprehensive-guide-to-downloading-stock-prices-in-python-2cd93ff821d4
 
-Importing many stocks:
+Importing Many Stocks:
 ================================================
 - `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#importing-many-stocks>`_
 
@@ -24,7 +24,7 @@ Indices
 ================================================
 - `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#financial-indices>`_
 
-Stock Splits and dividends
+Stock Splits and Dividends
 ================================================
 - `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#stock-splits-and-dividends>`_
 - `Alphavantage <https://finailabdatasets.readthedocs.io/en/latest/Docs/Alphavantage.html#stock-splits-and-dividends>`_
