@@ -14,7 +14,7 @@ html_theme = 'press'
 
 nbsphinx_allow_errors = True
 
-source_suffix = [".rst", ".md"]
+source_suffix = [".rst", ".md", ".ipynb"]
 
 
 # panels_add_bootstrap_css = False
