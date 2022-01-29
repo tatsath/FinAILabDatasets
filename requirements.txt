@@ -1,3 +1,5 @@
+sphinx-panels
+sphinx-design
 gym
 pandas
 pandoc
@@ -5,6 +7,7 @@ sphinx
 nbsphinx
 sphinx-press-theme
 sphinx-hoverxref
+sphinx-tabs
 ipykernel
 numpy
 yfinance

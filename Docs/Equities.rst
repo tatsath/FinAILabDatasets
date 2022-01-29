@@ -8,8 +8,8 @@ There are many alternatives out there (yfinance, AlphaVantage, Quandl etc.).
 
 This page describes how to download the data from different sources.
 
-Single Stock- Volume and price data
------------------------------
+Single Stock- Volume and Price data
+-----------------------------------
 
 The data can be obtained from the following sources. Click to view the code to retrieve it.
 
