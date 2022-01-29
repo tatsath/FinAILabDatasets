@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.abspath('extensions'))
 
 extensions = [
 	"sphinx_design",
-	# "nbsphinx"
+	"nbsphinx",
 	'sphinx_tabs.tabs',
 	'sphinx_panels',
 	'sphinx.ext.autosectionlabel'
