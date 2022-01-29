@@ -14,6 +14,8 @@ html_theme = 'press'
 
 nbsphinx_allow_errors = True
 
+html_sourcelink_suffix = ''
+
 source_suffix = [".rst", ".md", ".ipynb"]
 
 

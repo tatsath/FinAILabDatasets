@@ -58,6 +58,7 @@ Financial Datasets - Summary by source and types:
    Docs/AlternativeData
   
 .. toctree::
+   :maxdepth: 1
    :caption: Notebooks
 
    Docs/JupyterNotebooks/*
