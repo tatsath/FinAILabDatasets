@@ -19,15 +19,15 @@ html_sourcelink_suffix = ''
 html_static_path = ['_static']
 html_css_files = ['my-own-style.css']
 
-nbsphinx_prolog = """
-.. raw:: html
+# nbsphinx_prolog = """
+# .. raw:: html
 
-    <style>
-        h1 {
-            color: chartreuse;
-        }
-    </style>
-"""
+#     <style>
+#         h1 {
+#             color: chartreuse;
+#         }
+#     </style>
+# """
 
 
 source_suffix = [".rst", ".md", ".ipynb"]
