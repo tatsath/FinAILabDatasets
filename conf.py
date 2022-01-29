@@ -10,14 +10,14 @@ extensions = [
 	'sphinx.ext.autosectionlabel'
 ]
 
-html_theme = 'press'
+# html_theme = 'press'
 
 nbsphinx_allow_errors = True
 
 html_sourcelink_suffix = ''
 
-html_static_path = ['_static']
-html_css_files = ['my-own-style.css']
+# html_static_path = ['_static']
+# html_css_files = ['my-own-style.css']
 
 # nbsphinx_prolog = """
 # .. raw:: html
