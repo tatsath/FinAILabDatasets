@@ -69,7 +69,7 @@ Financials
 
 - `Fundamental Analysis <https://finailabdatasets.readthedocs.io/en/latest/Docs/FundamentalAnalysis.html#financials>`_
 
-Frequency Setting(including High Frequncy)
+Frequency Setting
 -----------------------------
 
 - `Yahoo Finance <https://finailabdatasets.readthedocs.io/en/latest/Docs/YahooFinance.html#frequency-setting>`_

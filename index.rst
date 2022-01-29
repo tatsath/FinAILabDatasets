@@ -58,18 +58,18 @@ Financial Datasets - Summary by source and types:
    Docs/AlternativeData
   
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Notebooks
 
-   Docs/JupyterNotebooks/Alphavantage
-   Docs/JupyterNotebooks/finviz
-   Docs/JupyterNotebooks/FRED
-   Docs/JupyterNotebooks/FundamentalAnalysis
-   Docs/JupyterNotebooks/IEX
-   Docs/JupyterNotebooks/Oanda
-   Docs/JupyterNotebooks/quandl
-   Docs/JupyterNotebooks/stooq
-   Docs/JupyterNotebooks/yfinance
+   Docs/JupyterNotebooks/Alphavantage.ipynb
+   Docs/JupyterNotebooks/finviz.ipynb
+   Docs/JupyterNotebooks/FRED.ipynb
+   Docs/JupyterNotebooks/FundamentalAnalysis.ipynb
+   Docs/JupyterNotebooks/IEX.ipynb
+   Docs/JupyterNotebooks/Oanda.ipynb
+   Docs/JupyterNotebooks/quandl.ipynb
+   Docs/JupyterNotebooks/stooq.ipynb
+   Docs/JupyterNotebooks/yfinance.ipynb
 
 
 Contributing

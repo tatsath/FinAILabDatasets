@@ -9,7 +9,7 @@ FinViz
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/finviz.ipynb>`
+-  :ref:`Jupyter Notebook </JupyterNotebooks/finviz.ipynb>`
 -  `Installation`_
 -  `Usage`_
 -  `Stock Fundamentals`_
