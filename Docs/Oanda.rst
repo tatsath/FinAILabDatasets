@@ -6,7 +6,7 @@ Oanda
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <Docs/JupyterNotebooks/Oanda>`_
+-  `Jupyter Notebook <Docs/JupyterNotebooks/Oanda.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Historical OHLA and Volume for 1 Currency`_

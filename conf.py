@@ -7,7 +7,10 @@ extensions = [
 	"nbsphinx",
 	'sphinx_tabs.tabs',
 	'sphinx_panels',
-	'sphinx.ext.autosectionlabel'
+	'sphinx.ext.autosectionlabel',
+	'sphinx.ext.autodoc',
+	'sphinx.ext.mathjax',
+	'IPython.sphinxext.ipython_console_highlighting',
 ]
 
 html_theme = 'press'
