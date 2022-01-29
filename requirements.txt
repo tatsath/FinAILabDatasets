@@ -9,6 +9,8 @@ sphinx-press-theme
 sphinx-hoverxref
 sphinx-tabs
 ipykernel
+notebook
+jupyterlab
 numpy
 yfinance
 alphavantage
