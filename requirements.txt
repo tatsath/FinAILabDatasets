@@ -1,4 +1,4 @@
-sphinx-design
+sphinx-panels
 gym
 pandas
 pandoc
