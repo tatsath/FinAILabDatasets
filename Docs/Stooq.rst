@@ -7,11 +7,12 @@ Stooq is an odd one. This website looks about 20 years old but it is a real hidd
 By searching a ticker and going to ‘historical data’, you can get historical data going back over 20 years.
 You can also download a .csv. Unfortunately, there is no API access but its a great resource nonetheless.
 
+.. note::
+    Refer to `Stooq Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/stooq.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
 
-- `Jupyter Notebook <JupyterNotebooks/stooq.ipynb>`_
 - `Installation`_
 - `Usage`_
 - `Historical Price and Volume for 1 Stock`_

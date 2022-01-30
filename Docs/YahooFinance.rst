@@ -9,13 +9,13 @@ To Do:
 
 Yahoo! Finance is a component of Yahoo’s network. It is the most widely used business news website in the United States, featuring stock quotes, press announcements, financial reports, and original content, as well as financial news, data, and commentary. They provide market data, fundamental and option data, market analysis, and news for cryptocurrencies, fiat currencies, commodities futures, equities, and bonds, as well as fundamental and option data, market analysis, and news.
 
-Refer to `Yahoo Finance Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/yfinance.ipynb>`_ for more details
+.. note::
+    Refer to `Yahoo Finance Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/yfinance.ipynb>`_ for more details.
 
 
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/yfinance.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Historical Price and Volume for 1 Stock`_

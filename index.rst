@@ -57,11 +57,6 @@ Financial Datasets - Summary by source and types:
    Docs/News
    Docs/AlternativeData
   
-.. toctree::
-   :maxdepth: 1
-   :caption: Notebooks
-
-   Docs/JupyterNotebooks/*.ipynb
 
 
 Contributing
