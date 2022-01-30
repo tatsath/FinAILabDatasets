@@ -1,9 +1,11 @@
 .. _IEX:
 
+.. note::
+    Refer to `IEX Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/IEX.ipynb>`_ for more details.
+
 IEX
 ===
 
--  `Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Show all Functions`_

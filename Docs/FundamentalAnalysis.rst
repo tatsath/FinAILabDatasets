@@ -1,9 +1,11 @@
 .. _FundamentalAnalysis:
 
+.. note::
+    Refer to `FundamentalAnalysis Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/FundamentalAnalysis.ipynb>`_ for more details.
+
 FundamentalAnalysis
 ===================
 
--  `Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `List all Commands`_

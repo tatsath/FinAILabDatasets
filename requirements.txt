@@ -1,13 +1,11 @@
-sphinx-panels
-sphinx-design
 gym
 pandas
-pandoc
 sphinx
 nbsphinx
 sphinx-press-theme
-sphinx-hoverxref
 sphinx-tabs
+sphinx-panels
+sphinx-design
 ipykernel
 numpy
 yfinance
@@ -17,9 +15,4 @@ finvizfinance
 requests
 seaborn
 matplotlib
-pandas_datareader
-FundamentalAnalysis
-financedatabase
-pyEX
-quandl
-yahoofinancials 
+

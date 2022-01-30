@@ -7,8 +7,11 @@ extensions = [
 	"nbsphinx",
 	'sphinx_tabs.tabs',
 	'sphinx_panels',
-	'sphinx.ext.autosectionlabel'
+	'sphinx.ext.autosectionlabel',
+
 ]
+
+
 
 html_theme = 'press'
 

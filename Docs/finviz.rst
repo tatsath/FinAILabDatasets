@@ -6,10 +6,13 @@ FinViz
 .. note:: 
 	This library is ideal for fundamentals and sentiment analysis projects.
 
+
+.. note::
+    Refer to `FinViz Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/finviz.ipynb>`_ for more details.
+
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/finviz.ipynb>`
 -  `Installation`_
 -  `Usage`_
 -  `Stock Fundamentals`_
