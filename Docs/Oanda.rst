@@ -3,7 +3,7 @@
 Oanda
 =====
 
-Refer to `Oanda Jupyter Notebook <JupyterNotebooks/Oanda.ipynb>`_ for more details.
+Refer to `Oanda Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/Oanda.ipynb>`_ for more details.
 
 Table of Contents
 -----------------

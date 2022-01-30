@@ -24,7 +24,7 @@ To do- Add details from following sites
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
-Refer to `Quandl Jupyter Notebook <JupyterNotebooks/quandl.ipynb>`_ for more details.
+Refer to `Quandl Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/quandl.ipynb>`_ for more details.
 
 Table of Contents
 -----------------

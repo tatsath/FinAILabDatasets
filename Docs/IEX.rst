@@ -1,6 +1,6 @@
 .. _IEX:
 
-Refer to `IEX Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_ for more details.
+Refer to `IEX Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/IEX.ipynb>`_ for more details.
 
 IEX
 ===
