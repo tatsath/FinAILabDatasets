@@ -1,9 +1,10 @@
 .. _FundamentalAnalysis:
 
+Refer to `FundamentalAnalysis Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`_ for more details.
+
 FundamentalAnalysis
 ===================
 
--  `Jupyter Notebook <JupyterNotebooks/FundamentalAnalysis.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `List all Commands`_

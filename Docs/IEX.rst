@@ -1,9 +1,10 @@
 .. _IEX:
 
+Refer to `IEX Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_ for more details.
+
 IEX
 ===
 
--  `Jupyter Notebook <JupyterNotebooks/IEX.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Show all Functions`_

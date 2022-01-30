@@ -9,10 +9,11 @@ To Do:
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
+Refer to `FRED Jupyter Notebook <JupyterNotebooks/FRED.ipynb>`_ for more details.
+
 Table of Contents
 -----------------
 
-- `Jupyter Notebook <JupyterNotebooks/FRED.ipynb>`_
 - `Installation`_
 - `Usage`_
 - `Historical Price for 1 Stock`_

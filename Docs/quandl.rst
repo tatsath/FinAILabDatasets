@@ -24,12 +24,11 @@ To do- Add details from following sites
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
-
+Refer to `Quandl Jupyter Notebook <JupyterNotebooks/quandl.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
 
-- `Jupyter Notebook <JupyterNotebooks/quandl.ipynb>`_
 - `Installation`_
 - `Usage`_ 
 - `Historical Price and Volume for 1 Stock`_

@@ -11,12 +11,11 @@ https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-
 https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
 https://github.com/RomelTorres/alpha_vantage
 
-
+Refer to `Alphavantage Jupyter Notebook <JupyterNotebooks/Alphavantage.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
 
--  Link to `Jupyter Notebook <JupyterNotebooks/Alphavantage.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Symbol Search`_

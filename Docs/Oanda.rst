@@ -3,10 +3,11 @@
 Oanda
 =====
 
+Refer to `Oanda Jupyter Notebook <JupyterNotebooks/Oanda.ipynb>`_ for more details.
+
 Table of Contents
 -----------------
 
--  `Jupyter Notebook <JupyterNotebooks/Oanda.ipynb>`_
 -  `Installation`_
 -  `Usage`_
 -  `Historical OHLA and Volume for 1 Currency`_
