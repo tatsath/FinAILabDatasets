@@ -9,7 +9,8 @@ To Do:
 - Add the details about how to see the list of all tickers available for download in each section.
 - Provide a link to the jupyter notebook for this.
 
-Refer to `FRED Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/FRED.ipynb>`_ for more details.
+.. note::
+    Refer to `FRED Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/FRED.ipynb>`_ for more details.
 
 Table of Contents
 -----------------
