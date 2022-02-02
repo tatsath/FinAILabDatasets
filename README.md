@@ -16,11 +16,7 @@ Get Your API Key here - https://www.alphavantage.co/support/#api-key
 Get your API Key here - https://financialmodelingprep.com/developer/docs/
 
 
-### Why am I demonstrating multiple libraries ?
-
-We never know which one goes out of support, at what time. For example, pandas datareader used to be the most popular choice once, but it stopped supporting Yahoo finance API, therefore, it became outdated.
-
-### My Recommendation
+### Our Recommendation
 
 * I personally prefer yfinance for technical analysis, because it has an easy-to-use API and very convenient most of the times.
 
