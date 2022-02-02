@@ -5,11 +5,6 @@ Alphavantage
 
 Alpha Vantage provides enterprise-grade financial market data through a set of powerful and developer-friendly APIs. To set up this environment you will need to have an API key, it can be straightly taken from the documentation here.
 
-To do:
-Add all the details:
-https://analyticsindiamag.com/top-python-libraries-to-get-historical-stock-data-with-code/
-https://medium.com/codex/alpha-vantage-an-introduction-to-a-highly-efficient-free-stock-api-6d17f4481bf
-https://github.com/RomelTorres/alpha_vantage
 
 .. note::
     Refer to `Alphavantage Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/Alphavantage.ipynb>`_ for more details.
@@ -48,7 +43,7 @@ To install the package use:
 
 .. code:: ipython3
 
-    pip install alpha_vantage 
+    pip install alpha_vantage
 
 Or install with pandas support
 
@@ -96,7 +91,7 @@ For checking to see if the equity, commodity, mutual fund, etc. you want is avai
     r = requests.get(url)
     data = r.json()
     data = pd.DataFrame(data['bestMatches'])
-    
+
 Historical Price and Volume for 1 Stock
 ---------------------------------------
 
@@ -286,7 +281,7 @@ Outputs a dictionary of the daily, weekly, or monthly treasury rate.
 Stock Fundamentals
 ------------------
 
-Outputs a dictionary of various stock data, including: AssetType, Description, 
+Outputs a dictionary of various stock data, including: AssetType, Description,
 Sector, Address, Market Cap, EBITDA, PE, EPS, RPS, Profit Margin, Moving Averages,
 Revenue, and Beta.
 
@@ -300,7 +295,7 @@ Revenue, and Beta.
 Financials
 ----------
 
-Outputs a dictionary containing the information for a company's balance sheet, cash flows, or income statement. 
+Outputs a dictionary containing the information for a company's balance sheet, cash flows, or income statement.
 
 .. code:: ipython3
 
@@ -337,7 +332,7 @@ Each invocation of the below function will produce the most up-to-date data on t
 Economic Indicators
 -------------------
 
-Below are a few dictionaries that contain different economic indicators that can be plugged 
+Below are a few dictionaries that contain different economic indicators that can be plugged
 into the JSON request at the very bottom.
 
 .. code:: ipython3
@@ -421,7 +416,7 @@ Alternatively, you can use the ``TechIndicators`` library to achieve similar res
 Sector Performance
 ------------------
 
-Lastly, Alphavantage allows you to use the ``SectorPerformances`` library to 
+Lastly, Alphavantage allows you to use the ``SectorPerformances`` library to
 view the realtime performance, by sector:
 
 .. code:: ipython3

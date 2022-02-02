@@ -2,30 +2,13 @@
 
 FXCM
 =========
-https://fxcm-api.readthedocs.io/en/latest/fxcmpy.html
+FXCM provides a API to interact with its trading platform. Among others, it allows the retrieval of historical data as well as of streaming data. In addition, it allows to place different types of orders and to read out account information. The overall goal is to allow the implementation automated, algortithmic trading programs. fxcmpy.py is a Python wrapper package for that API.
 
-To Do:
-- Add more description into each of the component.
-- Add the details about how to see the list of all tickers available for download in each section.
-- Provide a link to the jupyter notebook for this.
+.. note::
+    Refer to `documentation <https://fxcm-api.readthedocs.io/en/latest/fxcmpy.html>`_ for more details.
 
 Fetching the data
 -----------------
-
--  `1. Historical Price and Volume for 1 Stock. <#1>`__
--  `2. Time Periods <#2>`__
--  `3. Frequency <#3>`__
--  `4. Split and Dividends <#4>`__
--  `5. Many Stocks <#5>`__
--  `6. Finanical Indices <#6>`__
--  `7. Currencies <#7>`_
-- `8. Crypto <#8>`_
-- `9. Mutual Funds <#9>`_
-- `10. Treasury <#10>`_
-- `11. Stock Fundamentals <#11>`_
-- `12.   Financials <#12>`_
-- `13. Put Call Options <#13>`_
-- `14. Stream Real  Time Data <#14>`__
 
 .. code:: ipython3
 
@@ -36,7 +19,7 @@ Historical Price and Volume for 1 Stock
 ---------------------------------------
 
 .. code:: ipython3
-    
+
     import numpy as np
     import yfinance as yf
     ticker = 'GE'

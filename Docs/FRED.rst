@@ -3,11 +3,7 @@
 FRED
 =========
 
-To Do:
-- Add more details from the website: https://github.com/mortada/fredapi
-- Add more description into each of the component.
-- Add the details about how to see the list of all tickers available for download in each section.
-- Provide a link to the jupyter notebook for this.
+`FRED <https://fred.stlouisfed.org/>`_ is one of the richest source of economic data containing 816,000 US and international time series from 107 sources.
 
 .. note::
     Refer to `FRED Jupyter Notebook <https://github.com/tatsath/FinAILabDatasets/blob/main/Docs/JupyterNotebooks/FRED.ipynb>`_ for more details.
@@ -43,10 +39,10 @@ Or from Github:
 Usage
 -----
 
-Below are examples of how to get and plot data from datasets found in the 
-Federal Reserve Economic Data database found `here <https://fred.stlouisfed.org>`_. 
+Below are examples of how to get and plot data from datasets found in the
+Federal Reserve Economic Data database found `here <https://fred.stlouisfed.org>`_.
 
-To obtain the code needed for the API call, search the database, then locate the 
+To obtain the code needed for the API call, search the database, then locate the
 unique ID code next to the title. From there, the process follows the examples below.
 
 Import all necessary libraries:
@@ -66,7 +62,7 @@ Gets the S&P price data from the ``start`` to the ``end`` dates specified,
 and plots them.
 
 .. code:: ipython3
-    
+
     # Specify time periods
     start = datetime(2010,1,1)
     end = datetime(2030,1,1)
@@ -92,7 +88,7 @@ Plots multiple market cap indices against each other.
     mkt_cap = web.DataReader(['WILLLRGCAPGR', 'WILLSMLCAP'], 'fred',start,end)
     mkt_cap.plot(title = 'Wilshire Large-Cap compared to Small-Cap', secondary_y = "DGS10", figsize=(20, 6))
     plt.tight_layout()
-    
+
 Currencies
 ---------------
 
