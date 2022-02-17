@@ -2,7 +2,7 @@ gym
 pandas
 sphinx
 nbsphinx
-sphinx-press-theme
+sphinx-awesome-theme
 sphinx-tabs
 sphinx-panels
 sphinx-design

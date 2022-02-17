@@ -13,7 +13,7 @@ extensions = [
 
 
 
-html_theme = 'press'
+html_theme = 'awesome'
 
 nbsphinx_allow_errors = True
 
