@@ -13,7 +13,8 @@ extensions = [
 
 
 
-html_theme = 'awesome'
+html_permalinks_icon = '<span>#</span>'
+html_theme = 'sphinxawesome_theme'
 
 nbsphinx_allow_errors = True
 
