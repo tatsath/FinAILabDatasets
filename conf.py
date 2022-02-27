@@ -14,7 +14,7 @@ extensions = [
 
 
 html_permalinks_icon = '<span>#</span>'
-html_theme = 'sphinxawesome_theme'
+html_theme = 'sphinxpress_theme'
 
 nbsphinx_allow_errors = True
 
