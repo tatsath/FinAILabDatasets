@@ -2,7 +2,7 @@ gym
 pandas
 sphinx
 nbsphinx
-sphinxpress-theme
+sphinx-press-theme
 sphinx-tabs
 sphinx-panels
 sphinx-design
@@ -15,4 +15,3 @@ finvizfinance
 requests
 seaborn
 matplotlib
-
